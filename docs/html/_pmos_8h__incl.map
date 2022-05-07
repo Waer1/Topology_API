@@ -1,0 +1,8 @@
+<map id="Pmos.h" name="Pmos.h">
+<area shape="rect" id="node1" title="Pmos is there Three terminal Device." alt="" coords="74,5,141,32"/>
+<area shape="rect" id="node2" href="$_three_terminal_8h.html" title="inheritance class from Device that contain all devices with three terminal" alt="" coords="50,80,165,107"/>
+<area shape="rect" id="node3" href="$_device_8h.html" title="main class of the All componnet or all devices used in this program with virual print to print each t..." alt="" coords="72,155,143,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,60,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="84,229,131,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="155,229,227,256"/>
+</map>

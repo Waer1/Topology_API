@@ -1,0 +1,5 @@
+<map id="API::createListOfDevices" name="API::createListOfDevices">
+<area shape="rect" id="node1" title="Create a List Of Devices object, by looping throught the lists exist in file and give each device to ..." alt="" coords="348,5,515,32"/>
+<area shape="rect" id="node2" href="$class_a_p_i.html#adda7ba5369ee876f8c0ca8a355575235" title="Create a Topology object from json object passed to it by devide it to smaller task ,..." alt="" coords="161,5,300,32"/>
+<area shape="rect" id="node3" href="$class_a_p_i.html#a0f97fcfa25c89c4aa9747b73016c30b4" title="function used to create object from json file and check its empty or not and return pointer no null i..." alt="" coords="5,5,113,32"/>
+</map>

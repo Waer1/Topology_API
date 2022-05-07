@@ -1,0 +1,7 @@
+<map id="API::createResistor" name="API::createResistor">
+<area shape="rect" id="node1" title="Create a Resistor object , called if the device type is Resistor." alt="" coords="736,5,871,32"/>
+<area shape="rect" id="node2" href="$class_a_p_i.html#a5ca1e600b977a5c40e1614a1db03e929" title="Create a Device object given from createListOfDevices by detect Device type and all suitanle function..." alt="" coords="563,5,688,32"/>
+<area shape="rect" id="node3" href="$class_a_p_i.html#a0a62e19f264ac3a8af2a9acd30bf02f9" title="Create a List Of Devices object, by looping throught the lists exist in file and give each device to ..." alt="" coords="348,5,515,32"/>
+<area shape="rect" id="node4" href="$class_a_p_i.html#adda7ba5369ee876f8c0ca8a355575235" title="Create a Topology object from json object passed to it by devide it to smaller task ,..." alt="" coords="161,5,300,32"/>
+<area shape="rect" id="node5" href="$class_a_p_i.html#a0f97fcfa25c89c4aa9747b73016c30b4" title="function used to create object from json file and check its empty or not and return pointer no null i..." alt="" coords="5,5,113,32"/>
+</map>

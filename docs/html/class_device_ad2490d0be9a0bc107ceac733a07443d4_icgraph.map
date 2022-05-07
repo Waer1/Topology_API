@@ -1,0 +1,7 @@
+<map id="Device::set_type" name="Device::set_type">
+<area shape="rect" id="node1" title="Set the type object." alt="" coords="213,81,332,108"/>
+<area shape="rect" id="node2" href="$class_device.html#a64ba12dcc5f4267486c5d545d04dcf68" title="default Construct a new Device object" alt="" coords="32,5,139,32"/>
+<area shape="rect" id="node3" href="$class_nmos.html#a17d7ad73ddabb9048cd4b11e3e8182a0" title="Construct a new Nmos object." alt="" coords="36,56,135,83"/>
+<area shape="rect" id="node4" href="$class_pmos.html#af9a43de10dd50f00ba5cfe8f6c33e9c0" title="Construct a new Pmos object." alt="" coords="36,107,135,133"/>
+<area shape="rect" id="node5" href="$class_resistance.html#aeb7f9dd37b087a2f15803c10eb5946c8" title="Construct a new Resistance object." alt="" coords="5,157,165,184"/>
+</map>

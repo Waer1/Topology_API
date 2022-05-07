@@ -1,0 +1,8 @@
+<map id="Device::Device" name="Device::Device">
+<area shape="rect" id="node1" title="Construct a new Device object." alt="" coords="5,107,112,133"/>
+<area shape="rect" id="node2" href="$class_device.html#a44cd3b15f0e9a16cff36157653d6820c" title="Set the Default object." alt="" coords="160,5,293,32"/>
+<area shape="rect" id="node3" href="$class_device.html#aed16b99dbcd7b28d307adc668bda8dd3" title="Set the Max object." alt="" coords="167,56,286,83"/>
+<area shape="rect" id="node4" href="$class_device.html#ad74f349907b01a87ace4ea100f3b50e6" title="Set the Min object." alt="" coords="169,107,284,133"/>
+<area shape="rect" id="node5" href="$class_device.html#a143d5ae3424066aef14c824422683108" title="Set the netList object." alt="" coords="161,157,293,184"/>
+<area shape="rect" id="node6" href="$class_device.html#a440522d88e792af168cdc517b85c31a9" title="set the ID of the Device" alt="" coords="177,208,276,235"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Device::Print_Device" name="Device::Print_Device">
+<area shape="rect" id="node1" title="print the general device info" alt="" coords="220,56,360,83"/>
+<area shape="rect" id="node2" href="$class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="21,5,157,32"/>
+<area shape="rect" id="node3" href="$class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="21,56,157,83"/>
+<area shape="rect" id="node4" href="$class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="5,107,172,133"/>
+</map>

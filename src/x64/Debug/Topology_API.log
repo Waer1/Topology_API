@@ -1,0 +1,17 @@
+﻿  API.cpp
+  Controller.cpp
+D:\creat by me\Topology_API\src\Controller.cpp(26,12): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\creat by me\Topology_API\src\Controller.cpp(110,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\creat by me\Topology_API\src\Controller.cpp(110,10): message : consider using '%zd' in the format string
+D:\creat by me\Topology_API\src\Controller.cpp(126,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\creat by me\Topology_API\src\Controller.cpp(126,10): message : consider using '%zd' in the format string
+  Device.cpp
+  Nmos.cpp
+  Pmos.cpp
+  Resistance.cpp
+  ThreeTerminal.cpp
+  Topology_API.cpp
+  TwoTerminal.cpp
+  topology.cpp
+  Generating Code...
+  Topology_API.vcxproj -> D:\creat by me\Topology_API\src\x64\Debug\Topology_API.exe

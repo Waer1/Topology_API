@@ -1,0 +1,9 @@
+<map id="API::ReadJson" name="API::ReadJson">
+<area shape="rect" id="node1" title="function used to create object from json file and check its empty or not and return pointer no null i..." alt="" coords="5,56,113,83"/>
+<area shape="rect" id="node2" href="$class_a_p_i.html#adda7ba5369ee876f8c0ca8a355575235" title="Create a Topology object from json object passed to it by devide it to smaller task ,..." alt="" coords="161,56,300,83"/>
+<area shape="rect" id="node3" href="$class_a_p_i.html#a0a62e19f264ac3a8af2a9acd30bf02f9" title="Create a List Of Devices object, by looping throught the lists exist in file and give each device to ..." alt="" coords="348,56,515,83"/>
+<area shape="rect" id="node4" href="$class_a_p_i.html#a5ca1e600b977a5c40e1614a1db03e929" title="Create a Device object given from createListOfDevices by detect Device type and all suitanle function..." alt="" coords="563,56,688,83"/>
+<area shape="rect" id="node5" href="$class_a_p_i.html#a5992c29887197f77d9734de0bf19fe66" title="Create a Nmos object , called if the device type is Nmos." alt="" coords="743,5,864,32"/>
+<area shape="rect" id="node6" href="$class_a_p_i.html#ab9103247deae2c7bc5b5e4026186aa92" title="Create a Nmos object , called if the device type is Pmos." alt="" coords="743,56,864,83"/>
+<area shape="rect" id="node7" href="$class_a_p_i.html#abc509958a1b6399930d535f1ec7a80bd" title="Create a Resistor object , called if the device type is Resistor." alt="" coords="736,107,871,133"/>
+</map>

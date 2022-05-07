@@ -1,0 +1,8 @@
+<map id="Device" name="Device">
+<area shape="rect" id="node1" title="main class of the All componnet or all devices used in this program with" alt="" coords="131,5,191,32"/>
+<area shape="rect" id="node2" href="$class_three_terminal.html" title="inheritance class from Device that contain all devices with three terminal" alt="" coords="49,80,151,107"/>
+<area shape="rect" id="node5" href="$class_two_terminal.html" title="inheritance class from Device that contain all devices with TWo terminal" alt="" coords="175,80,270,107"/>
+<area shape="rect" id="node3" href="$class_nmos.html" title="Nmos is there Three terminal Device." alt="" coords="5,155,61,181"/>
+<area shape="rect" id="node4" href="$class_pmos.html" title="Pmos is there Three terminal Device." alt="" coords="85,155,141,181"/>
+<area shape="rect" id="node6" href="$class_resistance.html" title="Resistance is there Two terminal Device." alt="" coords="179,155,266,181"/>
+</map>

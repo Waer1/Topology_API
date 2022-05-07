@@ -29,8 +29,8 @@ topology* API::createTopology(json jsonObject) {
 
 vector<Device*> API::createListOfDevices(json jsonObject) {
 	vector<Device*> Devices;
-    int n = jsonObject["components"].size();
-	for (int i = 0; i < n; i++)
+    size_t n = jsonObject["components"].size();
+	for (size_t i = 0; i < n; i++)
 		Devices.push_back(createDevice(jsonObject["components"][i]));
 	return Devices;
 }

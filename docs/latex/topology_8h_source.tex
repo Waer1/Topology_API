@@ -1,0 +1,30 @@
+\hypertarget{topology_8h_source}{}\doxysection{topology.\+h}
+\mbox{\hyperlink{topology_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_resistance_8h}{Resistance.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_pmos_8h}{Pmos.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_nmos_8h}{Nmos.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classtopology}{topology}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     \textcolor{keywordtype}{string} id;}
+\DoxyCodeLine{34     vector<Device*> Devices;}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{41     \mbox{\hyperlink{classtopology_a9504e806b619e1d37b04b92dec69fa36}{topology}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{48     \mbox{\hyperlink{classtopology_a9504e806b619e1d37b04b92dec69fa36}{topology}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id}, \textcolor{keyword}{const} vector<Device*>\& Devices);}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtopology_a6487d3c2947949bae349e1e439079770}{setDevices}}(\textcolor{keyword}{const} vector<Device*>\& Devices);}
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtopology_aba9f5a8e65d516e6f8d601319d327549}{setId}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{66     \textcolor{keywordtype}{string} \mbox{\hyperlink{classtopology_a3a23246593d167560e4c06c5c3c6b37c}{getID}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{72     vector<Device*> \mbox{\hyperlink{classtopology_ab5b9447eb6f07912222e3e47e92dd1b7}{getDevices}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{79     vector<Device*> \mbox{\hyperlink{classtopology_a4dee478d19e085b56cf34b7f908c62f2}{getConnectedDevices}}(\textcolor{keywordtype}{string} netListNodeID) \textcolor{keyword}{const};}
+\DoxyCodeLine{88     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtopology_af7d6409e203045faa641db59ab9bff3d}{ISconnectedNetList}}(\textcolor{keywordtype}{string} netListNodeID, map<string, string> netList) \textcolor{keyword}{const};}
+\DoxyCodeLine{93     \mbox{\hyperlink{classtopology_a934eb90831509c8fccba072640faadd5}{\string~topology}}();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+
+\end{DoxyCode}

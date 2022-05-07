@@ -13,3 +13,5 @@ void ThreeTerminal::setSrc(string src) { netList["source"] = src; }
 void ThreeTerminal::setDrain(string drain) { netList["drain"] = drain; }
 
 void ThreeTerminal::setGate(string gate) { netList["gate"] = gate; }
+
+ThreeTerminal::~ThreeTerminal(){}

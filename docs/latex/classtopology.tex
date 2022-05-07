@@ -1,0 +1,217 @@
+\hypertarget{classtopology}{}\doxysection{topology Class Reference}
+\label{classtopology}\index{topology@{topology}}
+
+
+this class hold the topologies which is vector of Devices and its unique id  
+
+
+
+
+{\ttfamily \#include $<$topology.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtopology_a9504e806b619e1d37b04b92dec69fa36}{topology}} (string id)
+\begin{DoxyCompactList}\small\item\em Construct a new empty topology object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtopology_af8cd4056287a7ab3ad86f54cac3d550e}{topology}} (string id, const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&Devices)
+\begin{DoxyCompactList}\small\item\em Construct a new topology object given its id and its set of Devices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtopology_a6487d3c2947949bae349e1e439079770}{set\+Devices}} (const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&Devices)
+\begin{DoxyCompactList}\small\item\em Set the vector of Devices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtopology_aba9f5a8e65d516e6f8d601319d327549}{set\+Id}} (string id)
+\begin{DoxyCompactList}\small\item\em Set the Id object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classtopology_a3a23246593d167560e4c06c5c3c6b37c}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em get\+ID object \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \mbox{\hyperlink{classtopology_ab5b9447eb6f07912222e3e47e92dd1b7}{get\+Devices}} () const
+\begin{DoxyCompactList}\small\item\em Get the Devices object. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \mbox{\hyperlink{classtopology_a4dee478d19e085b56cf34b7f908c62f2}{get\+Connected\+Devices}} (string net\+List\+Node\+ID) const
+\begin{DoxyCompactList}\small\item\em Get the Connected Devices object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtopology_af7d6409e203045faa641db59ab9bff3d}{ISconnected\+Net\+List}} (string net\+List\+Node\+ID, map$<$ string, string $>$ net\+List) const
+\item 
+\mbox{\hyperlink{classtopology_a934eb90831509c8fccba072640faadd5}{$\sim$topology}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the topology object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class hold the topologies which is vector of Devices and its unique id 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtopology_a9504e806b619e1d37b04b92dec69fa36}\label{classtopology_a9504e806b619e1d37b04b92dec69fa36}} 
+\index{topology@{topology}!topology@{topology}}
+\index{topology@{topology}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{topology()}{topology()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily topology\+::topology (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Construct a new empty topology object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of this object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtopology_af8cd4056287a7ab3ad86f54cac3d550e}\label{classtopology_af8cd4056287a7ab3ad86f54cac3d550e}} 
+\index{topology@{topology}!topology@{topology}}
+\index{topology@{topology}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{topology()}{topology()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily topology\+::topology (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&}]{Devices }\end{DoxyParamCaption})}
+
+
+
+Construct a new topology object given its id and its set of Devices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of this object \\
+\hline
+{\em Devices} & set of Devices \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classtopology_af8cd4056287a7ab3ad86f54cac3d550e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtopology_a934eb90831509c8fccba072640faadd5}\label{classtopology_a934eb90831509c8fccba072640faadd5}} 
+\index{topology@{topology}!````~topology@{$\sim$topology}}
+\index{````~topology@{$\sim$topology}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{$\sim$topology()}{~topology()}}
+{\footnotesize\ttfamily topology\+::$\sim$topology (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the topology object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtopology_a4dee478d19e085b56cf34b7f908c62f2}\label{classtopology_a4dee478d19e085b56cf34b7f908c62f2}} 
+\index{topology@{topology}!getConnectedDevices@{getConnectedDevices}}
+\index{getConnectedDevices@{getConnectedDevices}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{getConnectedDevices()}{getConnectedDevices()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ topology\+::get\+Connected\+Devices (\begin{DoxyParamCaption}\item[{string}]{net\+List\+Node\+ID }\end{DoxyParamCaption}) const}
+
+
+
+Get the Connected Devices object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em net\+List\+Node\+ID} & the net list of searched devices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Device$\ast$$>$ the connected devices 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtopology_a4dee478d19e085b56cf34b7f908c62f2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtopology_ab5b9447eb6f07912222e3e47e92dd1b7}\label{classtopology_ab5b9447eb6f07912222e3e47e92dd1b7}} 
+\index{topology@{topology}!getDevices@{getDevices}}
+\index{getDevices@{getDevices}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{getDevices()}{getDevices()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ topology\+::get\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Devices object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Device$\ast$$>$ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtopology_ab5b9447eb6f07912222e3e47e92dd1b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtopology_a3a23246593d167560e4c06c5c3c6b37c}\label{classtopology_a3a23246593d167560e4c06c5c3c6b37c}} 
+\index{topology@{topology}!getID@{getID}}
+\index{getID@{getID}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily string topology\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+ID object 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtopology_a3a23246593d167560e4c06c5c3c6b37c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtopology_af7d6409e203045faa641db59ab9bff3d}\label{classtopology_af7d6409e203045faa641db59ab9bff3d}} 
+\index{topology@{topology}!ISconnectedNetList@{ISconnectedNetList}}
+\index{ISconnectedNetList@{ISconnectedNetList}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{ISconnectedNetList()}{ISconnectedNetList()}}
+{\footnotesize\ttfamily bool topology\+::\+ISconnected\+Net\+List (\begin{DoxyParamCaption}\item[{string}]{net\+List\+Node\+ID,  }\item[{map$<$ string, string $>$}]{net\+List }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em net\+List\+Node\+ID} & \mbox{\hyperlink{class_device}{Device}} id you want to search for \\
+\hline
+{\em net\+List} & the vector of devices that search on it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtopology_af7d6409e203045faa641db59ab9bff3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtopology_a6487d3c2947949bae349e1e439079770}\label{classtopology_a6487d3c2947949bae349e1e439079770}} 
+\index{topology@{topology}!setDevices@{setDevices}}
+\index{setDevices@{setDevices}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{setDevices()}{setDevices()}}
+{\footnotesize\ttfamily void topology\+::set\+Devices (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&}]{Devices }\end{DoxyParamCaption})}
+
+
+
+Set the vector of Devices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Devices} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classtopology_a6487d3c2947949bae349e1e439079770_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtopology_aba9f5a8e65d516e6f8d601319d327549}\label{classtopology_aba9f5a8e65d516e6f8d601319d327549}} 
+\index{topology@{topology}!setId@{setId}}
+\index{setId@{setId}!topology@{topology}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void topology\+::set\+Id (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Set the Id object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}

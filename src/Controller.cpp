@@ -21,7 +21,7 @@ bool Controller::deleteTopology(int index) {
 }
 
 int Controller::findTopology(string topologyID) const {
-	for (int i = 0, n = TopologyList.size(); i < n; i++)
+	for (size_t i = 0, n = TopologyList.size(); i < n; i++)
 		if (TopologyList[i]->getID() == topologyID)
 			return i;
 	return -1;
@@ -91,7 +91,7 @@ void Controller::WriteJson()
 
 void Controller::Querytopologies()
 {
-	for (int i = 0, count = TopologyList.size(); i < count; i++)
+	for (size_t i = 0, count = TopologyList.size(); i < count; i++)
 		cout << "Topology ID: " << TopologyList[i]->getID() << "\n";
 }
 
@@ -106,7 +106,7 @@ void Controller::QueryWhichDevicesIn()
 	int index = getToplogyID();
 	vector<Device*> components = TopologyList[index]->getDevices();
 	if (components.size() > 0) {
-		int count = components.size();
+		size_t count = components.size();
 		printf("Devices in given topology: %d \n", count);
 		for (auto com : components)
 			com->Print_Device();
@@ -122,11 +122,15 @@ void Controller::whichConnected()
 	cin >> nodeID;	
 	vector<Device*> Devices = TopologyList[index]->getConnectedDevices(nodeID);
 	if (Devices.size() > 0) {
-		int count = Devices.size();
+		size_t count = Devices.size();
 		printf("Connected devices : %d \n" ,count );
 		for (auto com : Devices)
 			com->Print_Device();
 	}
+}
+
+Controller::Controller()
+{
 }
 
 void Controller::startprogram()

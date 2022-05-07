@@ -1,0 +1,4 @@
+<map id="topology::topology" name="topology::topology">
+<area shape="rect" id="node1" title="Construct a new topology object given its id and its set of Devices." alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node2" href="$classtopology.html#a6487d3c2947949bae349e1e439079770" title="Set the vector of Devices." alt="" coords="181,5,324,32"/>
+</map>
