@@ -9,43 +9,264 @@ controller class which have all flow control function of the program
 
 {\ttfamily \#include $<$Controller.\+h$>$}
 
+
+
+Collaboration diagram for Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{class_controller__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_controller_a95c56822d667e94b031451729ce069a9}{Controller}} ()
+\mbox{\Hypertarget{class_controller_a95c56822d667e94b031451729ce069a9}\label{class_controller_a95c56822d667e94b031451729ce069a9}} 
+{\bfseries Controller} ()
 \begin{DoxyCompactList}\small\item\em start the main program \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_controller_abd7e2ce75590beb0f1258ec56666ba02}{startprogram}} ()
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_controller_abd7e2ce75590beb0f1258ec56666ba02}\label{class_controller_abd7e2ce75590beb0f1258ec56666ba02}} 
+void {\bfseries startprogram} ()
+\begin{DoxyCompactList}\small\item\em the start function of the program \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_controller_ab77a2425bc94722025e5865957af063c}{getchoice}} ()
+\begin{DoxyCompactList}\small\item\em function to get the user choice and validate on input \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_controller_ab4279de6a80b1fd160a0ce531caa13cf}{valid}} (string choice)
+\begin{DoxyCompactList}\small\item\em function to check the validation of user input if inout between 0 and 7 its correct else output wrong msg and request rfom user other valid input \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_controller_a7752ed6b27da2f0aed8e474caf422a03}{get\+Toplogy\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the get Toplogy ID from user and check if exist or not by calling other function that iterate throw the tobology list. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_controller_a76502e61551a693b9d4a9a847e73623f}{get\+Input\+Json\+File\+Name}} ()
+\begin{DoxyCompactList}\small\item\em get json file name from user and validate on it by chick its alreay created or not and user doent enter empty ot non json file \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_controller_ada742049b8312fe6aa2c13852d902bdc}{find\+Topology}} (string topology\+ID) const
+\begin{DoxyCompactList}\small\item\em general purose function to get topology index in memory \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_af1ca88ffc1cbe7125c82d9e376998442}\label{class_controller_af1ca88ffc1cbe7125c82d9e376998442}} 
+void {\bfseries read\+Json} ()
+\begin{DoxyCompactList}\small\item\em Read a topology from a given JSON file and store it in the memory. by calling api.\+readjson with the input name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_a7744237c0146b480844fc39192ef43c2}\label{class_controller_a7744237c0146b480844fc39192ef43c2}} 
+void {\bfseries Write\+Json} ()
+\begin{DoxyCompactList}\small\item\em Write a given topology from the memory to a JSON file by calling api.\+write with the input name and the topology. \end{DoxyCompactList}\item 
+pair$<$ string, int $>$ \mbox{\hyperlink{class_controller_a2f7b56a88638318d5cfdc9816e9bab53}{get\+Output\+Json\+File\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the Output Json File Name object simple functionget the file name and topolgy id by ohter function and return a pair of them. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_a13800919d9ecca6ab25f6877082f46db}\label{class_controller_a13800919d9ecca6ab25f6877082f46db}} 
+void {\bfseries Querytopologies} ()
+\begin{DoxyCompactList}\small\item\em Query about which topologies are currently in the memory printing all topologyes id from memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_adf9b256aecabb18e3dc722105998f3bc}\label{class_controller_adf9b256aecabb18e3dc722105998f3bc}} 
+void {\bfseries Deletetopology} ()
+\begin{DoxyCompactList}\small\item\em Delete a given topology from memory after take the topology name from user and validate on it. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_controller_abe6dbac253f5f3d44541d6e635be2f11}{delete\+Topology}} (int index)
+\begin{DoxyCompactList}\small\item\em delete specific location in topologylist \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_a0da792bea03fa3ed866889d3683e2b94}\label{class_controller_a0da792bea03fa3ed866889d3683e2b94}} 
+void {\bfseries Query\+Which\+Devices\+In} ()
+\begin{DoxyCompactList}\small\item\em printout the devices connected in some topologies Query about which devices are in a given topology \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_a0e5c8c9370138962661f3c9d9aeabca7}\label{class_controller_a0e5c8c9370138962661f3c9d9aeabca7}} 
+void {\bfseries which\+Connected} ()
+\begin{DoxyCompactList}\small\item\em Query about which devices are connected to a given netlist node in a given topology. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_controller_aa7a121a4b7ddd99b4cbd96f253653fdc}\label{class_controller_aa7a121a4b7ddd99b4cbd96f253653fdc}} 
+\mbox{\hyperlink{class_a_p_i}{API}} {\bfseries api}
+\begin{DoxyCompactList}\small\item\em object from abi class to call it function when need treat with in/out json files \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controller_a2a35135e847d2598fc987bc05be5be2a}\label{class_controller_a2a35135e847d2598fc987bc05be5be2a}} 
+vector$<$ \mbox{\hyperlink{classtopology}{topology}} $\ast$ $>$ {\bfseries Topology\+List}
+\begin{DoxyCompactList}\small\item\em Topology\+List act as memory of the device while hold the converted json files from reading. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 controller class which have all flow control function of the program 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_controller_a95c56822d667e94b031451729ce069a9}\label{class_controller_a95c56822d667e94b031451729ce069a9}} 
-\index{Controller@{Controller}!Controller@{Controller}}
-\index{Controller@{Controller}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{Controller()}{Controller()}}
-{\footnotesize\ttfamily Controller\+::\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-start the main program 
-
-
-
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_controller_abd7e2ce75590beb0f1258ec56666ba02}\label{class_controller_abd7e2ce75590beb0f1258ec56666ba02}} 
-\index{Controller@{Controller}!startprogram@{startprogram}}
-\index{startprogram@{startprogram}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{startprogram()}{startprogram()}}
-{\footnotesize\ttfamily void Controller\+::startprogram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_controller_abe6dbac253f5f3d44541d6e635be2f11}\label{class_controller_abe6dbac253f5f3d44541d6e635be2f11}} 
+\index{Controller@{Controller}!deleteTopology@{deleteTopology}}
+\index{deleteTopology@{deleteTopology}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{deleteTopology()}{deleteTopology()}}
+{\footnotesize\ttfamily bool Controller\+::delete\+Topology (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
 
+
+
+delete specific location in topologylist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & index of deleted topology \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if deleted successfully 
+
+false and not found or any exception 
+\end{DoxyReturn}
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=273pt]{class_controller_abd7e2ce75590beb0f1258ec56666ba02_icgraph}
+\includegraphics[width=350pt]{class_controller_abe6dbac253f5f3d44541d6e635be2f11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_controller_ada742049b8312fe6aa2c13852d902bdc}\label{class_controller_ada742049b8312fe6aa2c13852d902bdc}} 
+\index{Controller@{Controller}!findTopology@{findTopology}}
+\index{findTopology@{findTopology}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{findTopology()}{findTopology()}}
+{\footnotesize\ttfamily int Controller\+::find\+Topology (\begin{DoxyParamCaption}\item[{string}]{topology\+ID }\end{DoxyParamCaption}) const}
+
+
+
+general purose function to get topology index in memory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topology\+ID} & the string is of searched topology \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int if found will return i (index of the topology) if not found will return -\/1 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller_ada742049b8312fe6aa2c13852d902bdc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_controller_ab77a2425bc94722025e5865957af063c}\label{class_controller_ab77a2425bc94722025e5865957af063c}} 
+\index{Controller@{Controller}!getchoice@{getchoice}}
+\index{getchoice@{getchoice}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{getchoice()}{getchoice()}}
+{\footnotesize\ttfamily string Controller\+::getchoice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to get the user choice and validate on input 
+
+
+\begin{DoxyItemize}
+\item its make it stick in while loop till chose correct choice
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+string correct user choice 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_controller_ab77a2425bc94722025e5865957af063c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_controller_ab77a2425bc94722025e5865957af063c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_controller_a76502e61551a693b9d4a9a847e73623f}\label{class_controller_a76502e61551a693b9d4a9a847e73623f}} 
+\index{Controller@{Controller}!getInputJsonFileName@{getInputJsonFileName}}
+\index{getInputJsonFileName@{getInputJsonFileName}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{getInputJsonFileName()}{getInputJsonFileName()}}
+{\footnotesize\ttfamily std\+::string Controller\+::get\+Input\+Json\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get json file name from user and validate on it by chick its alreay created or not and user doent enter empty ot non json file 
+
+\begin{DoxyReturn}{Returns}
+string the file name.\+json 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller_a76502e61551a693b9d4a9a847e73623f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_controller_a2f7b56a88638318d5cfdc9816e9bab53}\label{class_controller_a2f7b56a88638318d5cfdc9816e9bab53}} 
+\index{Controller@{Controller}!getOutputJsonFileName@{getOutputJsonFileName}}
+\index{getOutputJsonFileName@{getOutputJsonFileName}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{getOutputJsonFileName()}{getOutputJsonFileName()}}
+{\footnotesize\ttfamily pair$<$ string, int $>$ Controller\+::get\+Output\+Json\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Output Json File Name object simple functionget the file name and topolgy id by ohter function and return a pair of them. 
+
+\begin{DoxyReturn}{Returns}
+pair$<$string, int$>$ \texorpdfstring{$<$}{<}filename , topology\+ID\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller_a2f7b56a88638318d5cfdc9816e9bab53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller_a2f7b56a88638318d5cfdc9816e9bab53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_controller_a7752ed6b27da2f0aed8e474caf422a03}\label{class_controller_a7752ed6b27da2f0aed8e474caf422a03}} 
+\index{Controller@{Controller}!getToplogyID@{getToplogyID}}
+\index{getToplogyID@{getToplogyID}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{getToplogyID()}{getToplogyID()}}
+{\footnotesize\ttfamily int Controller\+::get\+Toplogy\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the get Toplogy ID from user and check if exist or not by calling other function that iterate throw the tobology list. 
+
+\begin{DoxyReturn}{Returns}
+int if found will return i (index of the topology) if not found will return -\/1 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller_a7752ed6b27da2f0aed8e474caf422a03_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller_a7752ed6b27da2f0aed8e474caf422a03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_controller_ab4279de6a80b1fd160a0ce531caa13cf}\label{class_controller_ab4279de6a80b1fd160a0ce531caa13cf}} 
+\index{Controller@{Controller}!valid@{valid}}
+\index{valid@{valid}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily bool Controller\+::valid (\begin{DoxyParamCaption}\item[{string}]{choice }\end{DoxyParamCaption})}
+
+
+
+function to check the validation of user input if inout between 0 and 7 its correct else output wrong msg and request rfom user other valid input 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & the input from user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if valid coice 
+
+false if invalid choice 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller_ab4279de6a80b1fd160a0ce531caa13cf_icgraph}
 \end{center}
 \end{figure}

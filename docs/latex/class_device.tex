@@ -22,9 +22,10 @@ Inheritance diagram for Device\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_device_a9c17625480f49ed3306cb1f43dfad6f0}{Device}} (string \mbox{\hyperlink{class_device_a157555eda7bcf277b286458011604dd7}{id}}, map$<$ string, string $>$ \mbox{\hyperlink{class_device_a8d5b746dfca41668c1736728cb76030a}{net\+List}}, float def, float \mbox{\hyperlink{class_device_ac1a539b53f299c43ea749cfdaa91376f}{max}}, float \mbox{\hyperlink{class_device_a1f0ac3ac3dc31ba764bedd52492d7a9d}{min}})
+\mbox{\hyperlink{class_device_a9c17625480f49ed3306cb1f43dfad6f0}{Device}} (string \mbox{\hyperlink{class_device_a157555eda7bcf277b286458011604dd7}{id}}, map$<$ string, string $>$ \mbox{\hyperlink{class_device_a8d5b746dfca41668c1736728cb76030a}{net\+List}}, float def, float max, float min)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_device}{Device}} object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_device_a64ba12dcc5f4267486c5d545d04dcf68}{Device}} ()
+\mbox{\Hypertarget{class_device_a64ba12dcc5f4267486c5d545d04dcf68}\label{class_device_a64ba12dcc5f4267486c5d545d04dcf68}} 
+{\bfseries Device} ()
 \begin{DoxyCompactList}\small\item\em default Construct a new \mbox{\hyperlink{class_device}{Device}} object \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_device_a440522d88e792af168cdc517b85c31a9}{set\+ID}} (string \mbox{\hyperlink{class_device_a157555eda7bcf277b286458011604dd7}{id}})
 \begin{DoxyCompactList}\small\item\em set the ID of the \mbox{\hyperlink{class_device}{Device}} \end{DoxyCompactList}\item 
@@ -32,9 +33,9 @@ void \mbox{\hyperlink{class_device_a44cd3b15f0e9a16cff36157653d6820c}{set\+\_\+\
 \begin{DoxyCompactList}\small\item\em Set the Default object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_device_a143d5ae3424066aef14c824422683108}{set\+\_\+net\+List}} (map$<$ string, string $>$ \mbox{\hyperlink{class_device_a8d5b746dfca41668c1736728cb76030a}{net\+List}})
 \begin{DoxyCompactList}\small\item\em Set the net\+List object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_device_aed16b99dbcd7b28d307adc668bda8dd3}{set\+\_\+\+Max}} (float \mbox{\hyperlink{class_device_ac1a539b53f299c43ea749cfdaa91376f}{max}})
+void \mbox{\hyperlink{class_device_aed16b99dbcd7b28d307adc668bda8dd3}{set\+\_\+\+Max}} (float max)
 \begin{DoxyCompactList}\small\item\em Set the Max object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_device_ad74f349907b01a87ace4ea100f3b50e6}{set\+\_\+\+Min}} (float \mbox{\hyperlink{class_device_a1f0ac3ac3dc31ba764bedd52492d7a9d}{min}})
+void \mbox{\hyperlink{class_device_ad74f349907b01a87ace4ea100f3b50e6}{set\+\_\+\+Min}} (float min)
 \begin{DoxyCompactList}\small\item\em Set the Min object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_device_ad2490d0be9a0bc107ceac733a07443d4}{set\+\_\+type}} (string name)
 \begin{DoxyCompactList}\small\item\em Set the type object. \end{DoxyCompactList}\item 
@@ -51,23 +52,27 @@ float \mbox{\hyperlink{class_device_a84b6c9c4b8cf7505c1e2441b16562661}{get\+\_\+
 string \mbox{\hyperlink{class_device_acada68ab3f642242deb479ae553daae7}{get\+\_\+id}} ()
 \begin{DoxyCompactList}\small\item\em Get the id object. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_device_a8941e81633c72f60a504c18492268696}{Print\+\_\+\+Device}} ()
-\begin{DoxyCompactList}\small\item\em print the general device info \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_device_a9dabc419c8d8df3a686c33ce042bc99a}{$\sim$\+Device}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em print the general device info \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-string \mbox{\hyperlink{class_device_a157555eda7bcf277b286458011604dd7}{id}}
+\mbox{\Hypertarget{class_device_a157555eda7bcf277b286458011604dd7}\label{class_device_a157555eda7bcf277b286458011604dd7}} 
+string {\bfseries id}
 \begin{DoxyCompactList}\small\item\em id of the device \end{DoxyCompactList}\item 
-map$<$ string, string $>$ \mbox{\hyperlink{class_device_a8d5b746dfca41668c1736728cb76030a}{net\+List}}
+\mbox{\Hypertarget{class_device_a8d5b746dfca41668c1736728cb76030a}\label{class_device_a8d5b746dfca41668c1736728cb76030a}} 
+map$<$ string, string $>$ {\bfseries net\+List}
 \begin{DoxyCompactList}\small\item\em map contain devices connected to this device 3 terminals or 2 terminals \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{class_device_a45e1856076d6698be39f3f7772491767}{defaulval}}
+\mbox{\Hypertarget{class_device_a45e1856076d6698be39f3f7772491767}\label{class_device_a45e1856076d6698be39f3f7772491767}} 
+float {\bfseries defaulval}
 \begin{DoxyCompactList}\small\item\em the defalt and min and max value that can be connected to component \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{class_device_ac1a539b53f299c43ea749cfdaa91376f}{max}}
+\mbox{\Hypertarget{class_device_ac1a539b53f299c43ea749cfdaa91376f}\label{class_device_ac1a539b53f299c43ea749cfdaa91376f}} 
+float {\bfseries max}
 \item 
-float \mbox{\hyperlink{class_device_a1f0ac3ac3dc31ba764bedd52492d7a9d}{min}}
+\mbox{\Hypertarget{class_device_a1f0ac3ac3dc31ba764bedd52492d7a9d}\label{class_device_a1f0ac3ac3dc31ba764bedd52492d7a9d}} 
+float {\bfseries min}
 \item 
-string \mbox{\hyperlink{class_device_aecd8da12c9d5e6d70fbabca34e005c2f}{type}}
+\mbox{\Hypertarget{class_device_aecd8da12c9d5e6d70fbabca34e005c2f}\label{class_device_aecd8da12c9d5e6d70fbabca34e005c2f}} 
+string {\bfseries type}
 \begin{DoxyCompactList}\small\item\em string hold the type of the \mbox{\hyperlink{class_device}{Device}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -78,7 +83,7 @@ main class of the All componnet or all devices used in this program with
 \mbox{\Hypertarget{class_device_a9c17625480f49ed3306cb1f43dfad6f0}\label{class_device_a9c17625480f49ed3306cb1f43dfad6f0}} 
 \index{Device@{Device}!Device@{Device}}
 \index{Device@{Device}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}}
 {\footnotesize\ttfamily Device\+::\+Device (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{map$<$ string, string $>$}]{net\+List,  }\item[{float}]{def,  }\item[{float}]{max,  }\item[{float}]{min }\end{DoxyParamCaption})}
 
 
@@ -98,37 +103,14 @@ Construct a new \mbox{\hyperlink{class_device}{Device}} object.
 {\em min} & min valude from this device \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=296pt]{class_device_a9c17625480f49ed3306cb1f43dfad6f0_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_device_a64ba12dcc5f4267486c5d545d04dcf68}\label{class_device_a64ba12dcc5f4267486c5d545d04dcf68}} 
-\index{Device@{Device}!Device@{Device}}
-\index{Device@{Device}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Device\+::\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-default Construct a new \mbox{\hyperlink{class_device}{Device}} object 
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=296pt]{class_device_a64ba12dcc5f4267486c5d545d04dcf68_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_device_a9dabc419c8d8df3a686c33ce042bc99a}\label{class_device_a9dabc419c8d8df3a686c33ce042bc99a}} 
-\index{Device@{Device}!````~Device@{$\sim$Device}}
-\index{````~Device@{$\sim$Device}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{$\sim$Device()}{~Device()}}
-{\footnotesize\ttfamily Device\+::$\sim$\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Member Function Documentation}
@@ -145,7 +127,8 @@ Get the Default object.
 \begin{DoxyReturn}{Returns}
 float 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -165,7 +148,8 @@ Get the id object.
 \begin{DoxyReturn}{Returns}
 string 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -185,7 +169,8 @@ Get the max object.
 \begin{DoxyReturn}{Returns}
 float 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -205,7 +190,8 @@ Get the min object.
 \begin{DoxyReturn}{Returns}
 float 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -225,7 +211,8 @@ Get the net\+List object.
 \begin{DoxyReturn}{Returns}
 map$<$string, string$>$ 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -245,7 +232,8 @@ Get the type object.
 \begin{DoxyReturn}{Returns}
 string 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -266,14 +254,16 @@ print the general device info
 
 Reimplemented in \mbox{\hyperlink{class_nmos_a5ea1b8155fde8f80fb8aa989ade3402f}{Nmos}}, \mbox{\hyperlink{class_pmos_ac4556d82c0d759e7465c572c394e12cd}{Pmos}}, and \mbox{\hyperlink{class_resistance_a15e9dadd49a26d07c687b8c961a7fdd9}{Resistance}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=321pt]{class_device_a8941e81633c72f60a504c18492268696_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -295,7 +285,8 @@ Set the Default object.
 {\em def} & new default value of device \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -317,7 +308,8 @@ Set the Max object.
 {\em max} & new max value of device \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -339,7 +331,8 @@ Set the Min object.
 {\em min} & new min value of device \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -361,7 +354,8 @@ Set the net\+List object.
 {\em net\+List} & new net\+List of device \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -383,7 +377,8 @@ Set the type object.
 {\em name} & new type \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -405,65 +400,11 @@ set the ID of the \mbox{\hyperlink{class_device}{Device}}
 {\em id} & new ID of device \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=270pt]{class_device_a440522d88e792af168cdc517b85c31a9_icgraph}
 \end{center}
 \end{figure}
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_device_a45e1856076d6698be39f3f7772491767}\label{class_device_a45e1856076d6698be39f3f7772491767}} 
-\index{Device@{Device}!defaulval@{defaulval}}
-\index{defaulval@{defaulval}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{defaulval}{defaulval}}
-{\footnotesize\ttfamily float Device\+::defaulval\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-the defalt and min and max value that can be connected to component 
-
-\mbox{\Hypertarget{class_device_a157555eda7bcf277b286458011604dd7}\label{class_device_a157555eda7bcf277b286458011604dd7}} 
-\index{Device@{Device}!id@{id}}
-\index{id@{id}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{id}{id}}
-{\footnotesize\ttfamily string Device\+::id\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-id of the device 
-
-\mbox{\Hypertarget{class_device_ac1a539b53f299c43ea749cfdaa91376f}\label{class_device_ac1a539b53f299c43ea749cfdaa91376f}} 
-\index{Device@{Device}!max@{max}}
-\index{max@{max}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{max}{max}}
-{\footnotesize\ttfamily float Device\+::max\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{class_device_a1f0ac3ac3dc31ba764bedd52492d7a9d}\label{class_device_a1f0ac3ac3dc31ba764bedd52492d7a9d}} 
-\index{Device@{Device}!min@{min}}
-\index{min@{min}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{min}{min}}
-{\footnotesize\ttfamily float Device\+::min\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{class_device_a8d5b746dfca41668c1736728cb76030a}\label{class_device_a8d5b746dfca41668c1736728cb76030a}} 
-\index{Device@{Device}!netList@{netList}}
-\index{netList@{netList}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{netList}{netList}}
-{\footnotesize\ttfamily map$<$string, string$>$ Device\+::net\+List\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-map contain devices connected to this device 3 terminals or 2 terminals 
-
-\mbox{\Hypertarget{class_device_aecd8da12c9d5e6d70fbabca34e005c2f}\label{class_device_aecd8da12c9d5e6d70fbabca34e005c2f}} 
-\index{Device@{Device}!type@{type}}
-\index{type@{type}!Device@{Device}}
-\doxysubsubsection{\texorpdfstring{type}{type}}
-{\footnotesize\ttfamily string Device\+::type\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-string hold the type of the \mbox{\hyperlink{class_device}{Device}} 
-

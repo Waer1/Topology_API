@@ -1,0 +1,5 @@
+<map id="API::writeToJSON" name="API::writeToJSON">
+<area shape="rect" id="node1" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" id="node2" href="$class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" id="node3" href="$class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
+</map>

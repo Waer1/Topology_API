@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_three_terminal_8cpp" kind="file" language="C++">
+    <compoundname>ThreeTerminal.cpp</compoundname>
+    <includes refid="_three_terminal_8h" local="yes">ThreeTerminal.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ThreeTerminal.cpp</label>
+        <link refid="_three_terminal_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ThreeTerminal.h</label>
+        <link refid="_three_terminal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_three_terminal_8h" kindref="compound">ThreeTerminal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_three_terminal_1a551a49e99976179b6f1889480bb2b7c6" refkind="member"><highlight class="normal"><ref refid="class_three_terminal_1a551a49e99976179b6f1889480bb2b7c6" kindref="member">ThreeTerminal::ThreeTerminal</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>string&gt;<sp/>netList,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>defalutval,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min):<ref refid="class_device" kindref="compound">Device</ref>(id,<sp/>netList,<sp/>defalutval,<sp/>max,<sp/>min){}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_three_terminal_1a2fa826ec663f34e21242a22069b385ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_three_terminal_1a2fa826ec663f34e21242a22069b385ea" kindref="member">ThreeTerminal::getSrc</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;source&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_three_terminal_1a83a7250805f5f98790476d5bfa9959b3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_three_terminal_1a83a7250805f5f98790476d5bfa9959b3" kindref="member">ThreeTerminal::getGate</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;gate&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_three_terminal_1a226bd66e422d7b684e8356d0fe0d4319" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_three_terminal_1a226bd66e422d7b684e8356d0fe0d4319" kindref="member">ThreeTerminal::getDrain</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;drain&quot;</highlight><highlight class="normal">];<sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_three_terminal_1a0d1b525ce67cd51bf800dc219b8beffb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_three_terminal_1a0d1b525ce67cd51bf800dc219b8beffb" kindref="member">ThreeTerminal::setSrc</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>src)<sp/>{<sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;source&quot;</highlight><highlight class="normal">]<sp/>=<sp/>src;<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_three_terminal_1a3504d9bb3840c9ecfb0fc97ae871bfe0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_three_terminal_1a3504d9bb3840c9ecfb0fc97ae871bfe0" kindref="member">ThreeTerminal::setDrain</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>drain)<sp/>{<sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;drain&quot;</highlight><highlight class="normal">]<sp/>=<sp/>drain;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_three_terminal_1aa1818205b0508cb4d294180122b3e6d1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_three_terminal_1aa1818205b0508cb4d294180122b3e6d1" kindref="member">ThreeTerminal::setGate</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>gate)<sp/>{<sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;gate&quot;</highlight><highlight class="normal">]<sp/>=<sp/>gate;<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">ThreeTerminal::~ThreeTerminal(){}</highlight></codeline>
+    </programlisting>
+    <location file="ThreeTerminal.cpp"/>
+  </compounddef>
+</doxygen>

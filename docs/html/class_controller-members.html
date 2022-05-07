@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -97,8 +88,23 @@ $(document).ready(function(){initNavTree('class_controller.html',''); initResiza
 
 <p>This is the complete list of members for <a class="el" href="class_controller.html">Controller</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#a95c56822d667e94b031451729ce069a9">Controller</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02">startprogram</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#aa7a121a4b7ddd99b4cbd96f253653fdc">api</a></td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#a95c56822d667e94b031451729ce069a9">Controller</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#adf9b256aecabb18e3dc722105998f3bc">Deletetopology</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#abe6dbac253f5f3d44541d6e635be2f11">deleteTopology</a>(int index)</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc">findTopology</a>(string topologyID) const</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#ab77a2425bc94722025e5865957af063c">getchoice</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#a76502e61551a693b9d4a9a847e73623f">getInputJsonFileName</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53">getOutputJsonFileName</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03">getToplogyID</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#a13800919d9ecca6ab25f6877082f46db">Querytopologies</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#a0da792bea03fa3ed866889d3683e2b94">QueryWhichDevicesIn</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#af1ca88ffc1cbe7125c82d9e376998442">readJson</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02">startprogram</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#a2a35135e847d2598fc987bc05be5be2a">TopologyList</a></td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf">valid</a>(string choice)</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_controller.html#a0e5c8c9370138962661f3c9d9aeabca7">whichConnected</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_controller.html#a7744237c0146b480844fc39192ef43c2">WriteJson</a>()</td><td class="entry"><a class="el" href="class_controller.html">Controller</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

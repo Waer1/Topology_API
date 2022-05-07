@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_two_terminal_8h" kind="file" language="C++">
+    <compoundname>TwoTerminal.h</compoundname>
+    <includes refid="_device_8h" local="yes">Device.h</includes>
+    <includedby refid="_resistance_8h" local="yes">Resistance.h</includedby>
+    <includedby refid="_two_terminal_8cpp" local="yes">TwoTerminal.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>API.h</label>
+        <link refid="_a_p_i_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Controller.h</label>
+        <link refid="_controller_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resistance.h</label>
+        <link refid="_resistance_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Topology_API.cpp</label>
+        <link refid="_topology___a_p_i_8cpp"/>
+      </node>
+      <node id="1">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_two_terminal" prot="public">TwoTerminal</innerclass>
+    <briefdescription>
+<para>inheritance class from <ref refid="class_device" kindref="compound">Device</ref> that contain all devices with TWo terminal </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Yousef Alwaer (<ulink url="mailto:elwaeryousef@gmail.com">elwaeryousef@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-05-06</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_device_8h" kindref="compound">Device.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_two_terminal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_two_terminal" kindref="compound">TwoTerminal</ref><sp/>:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_device" kindref="compound">Device</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_terminal_1a6a333713174328fa4cd9340ae25dc3c6" kindref="member">TwoTerminal</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>string&gt;<sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>defalutval,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a5a0eae3771f18083952c6c2f2e5d9285" kindref="member">getT1</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a5a81030fb4fc3baa13831d21ce10c909" kindref="member">getT2</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1ab8787a445e6978e9404a0edfa78aaa36" kindref="member">setT1</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>t1);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a0ce4592b8aae9ca307fe5a6c6f0ecf1b" kindref="member">setT2</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>t2);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="TwoTerminal.h"/>
+  </compounddef>
+</doxygen>

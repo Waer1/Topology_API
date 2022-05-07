@@ -2,7 +2,6 @@ var class_device =
 [
     [ "Device", "class_device.html#a9c17625480f49ed3306cb1f43dfad6f0", null ],
     [ "Device", "class_device.html#a64ba12dcc5f4267486c5d545d04dcf68", null ],
-    [ "~Device", "class_device.html#a9dabc419c8d8df3a686c33ce042bc99a", null ],
     [ "get_Default", "class_device.html#a2c3041835f84c73c86149976f2c6f565", null ],
     [ "get_id", "class_device.html#acada68ab3f642242deb479ae553daae7", null ],
     [ "get_max", "class_device.html#a751b026eebbf5cb268dc0e3aa7f145d7", null ],
@@ -18,8 +17,6 @@ var class_device =
     [ "setID", "class_device.html#a440522d88e792af168cdc517b85c31a9", null ],
     [ "defaulval", "class_device.html#a45e1856076d6698be39f3f7772491767", null ],
     [ "id", "class_device.html#a157555eda7bcf277b286458011604dd7", null ],
-    [ "max", "class_device.html#ac1a539b53f299c43ea749cfdaa91376f", null ],
-    [ "min", "class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d", null ],
     [ "netList", "class_device.html#a8d5b746dfca41668c1736728cb76030a", null ],
     [ "type", "class_device.html#aecd8da12c9d5e6d70fbabca34e005c2f", null ]
 ];

@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classtopology" kind="class" language="C++" prot="public">
+    <compoundname>topology</compoundname>
+    <includes refid="topology_8h" local="no">topology.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtopology_1a51731a610a4d93ddbef3d4cc0473aa93" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string topology::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>topology::id</qualifiedname>
+        <briefdescription>
+<para>id of the topology </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="29" column="12" bodyfile="topology.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtopology_1af6357a380e09ca6055e8b2acf40c55e5" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_device" kindref="compound">Device</ref> * &gt;</type>
+        <definition>vector&lt;Device*&gt; topology::Devices</definition>
+        <argsstring></argsstring>
+        <name>Devices</name>
+        <qualifiedname>topology::Devices</qualifiedname>
+        <briefdescription>
+<para>vector of Devices in this topology </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="34" column="12" bodyfile="topology.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtopology_1a9504e806b619e1d37b04b92dec69fa36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>topology::topology</definition>
+        <argsstring>(string id)</argsstring>
+        <name>topology</name>
+        <qualifiedname>topology::topology</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new empty topology object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of this object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="41" column="5" bodyfile="topology.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1af8cd4056287a7ab3ad86f54cac3d550e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>topology::topology</definition>
+        <argsstring>(string id, const vector&lt; Device * &gt; &amp;Devices)</argsstring>
+        <name>topology</name>
+        <qualifiedname>topology::topology</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="class_device" kindref="compound">Device</ref> * &gt; &amp;</type>
+          <declname>Devices</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new topology object given its id and its set of Devices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of this object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Devices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set of Devices </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="48" column="5" bodyfile="topology.cpp" bodystart="17" bodyend="21"/>
+        <references refid="classtopology_1a6487d3c2947949bae349e1e439079770" compoundref="topology_8cpp" startline="23" endline="33">setDevices</references>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1a6487d3c2947949bae349e1e439079770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void topology::setDevices</definition>
+        <argsstring>(const vector&lt; Device * &gt; &amp;Devices)</argsstring>
+        <name>setDevices</name>
+        <qualifiedname>topology::setDevices</qualifiedname>
+        <param>
+          <type>const vector&lt; <ref refid="class_device" kindref="compound">Device</ref> * &gt; &amp;</type>
+          <declname>Devices</declname>
+        </param>
+        <briefdescription>
+<para>Set the vector of Devices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Devices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="54" column="10" bodyfile="topology.cpp" bodystart="23" bodyend="33"/>
+        <referencedby refid="classtopology_1af8cd4056287a7ab3ad86f54cac3d550e" compoundref="topology_8cpp" startline="17" endline="21">topology</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1aba9f5a8e65d516e6f8d601319d327549" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void topology::setId</definition>
+        <argsstring>(string id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>topology::setId</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Set the Id object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="60" column="10" bodyfile="topology.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1a3a23246593d167560e4c06c5c3c6b37c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string topology::getID</definition>
+        <argsstring>() const</argsstring>
+        <name>getID</name>
+        <qualifiedname>topology::getID</qualifiedname>
+        <briefdescription>
+<para>getID object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="66" column="12" bodyfile="topology.cpp" bodystart="40" bodyend="43"/>
+        <referencedby refid="class_a_p_i_1a7f4a57de2252eabfdc856490fa7dfc97" compoundref="_a_p_i_8cpp" startline="101" endline="105">API::ConvertTopologyTojson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1ab5b9447eb6f07912222e3e47e92dd1b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_device" kindref="compound">Device</ref> * &gt;</type>
+        <definition>vector&lt; Device * &gt; topology::getDevices</definition>
+        <argsstring>() const</argsstring>
+        <name>getDevices</name>
+        <qualifiedname>topology::getDevices</qualifiedname>
+        <briefdescription>
+<para>Get the Devices object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vector&lt;Device*&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="72" column="12" bodyfile="topology.cpp" bodystart="45" bodyend="48"/>
+        <referencedby refid="class_a_p_i_1a7f4a57de2252eabfdc856490fa7dfc97" compoundref="_a_p_i_8cpp" startline="101" endline="105">API::ConvertTopologyTojson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1a4dee478d19e085b56cf34b7f908c62f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_device" kindref="compound">Device</ref> * &gt;</type>
+        <definition>vector&lt; Device * &gt; topology::getConnectedDevices</definition>
+        <argsstring>(string netListNodeID) const</argsstring>
+        <name>getConnectedDevices</name>
+        <qualifiedname>topology::getConnectedDevices</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>netListNodeID</declname>
+        </param>
+        <briefdescription>
+<para>Get the Connected Devices object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>netListNodeID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the net list of searched devices </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector&lt;Device*&gt; the connected devices </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="79" column="12" bodyfile="topology.cpp" bodystart="50" bodyend="59"/>
+        <references refid="classtopology_1af7d6409e203045faa641db59ab9bff3d" compoundref="topology_8cpp" startline="3" endline="10">ISconnectedNetList</references>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1af7d6409e203045faa641db59ab9bff3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool topology::ISconnectedNetList</definition>
+        <argsstring>(string netListNodeID, map&lt; string, string &gt; netList) const</argsstring>
+        <name>ISconnectedNetList</name>
+        <qualifiedname>topology::ISconnectedNetList</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>netListNodeID</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt;</type>
+          <declname>netList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>netListNodeID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_device" kindref="compound">Device</ref> id you want to search for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>netList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vector of devices that search on it </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="88" column="10" bodyfile="topology.cpp" bodystart="3" bodyend="10"/>
+        <referencedby refid="classtopology_1a4dee478d19e085b56cf34b7f908c62f2" compoundref="topology_8cpp" startline="50" endline="59">getConnectedDevices</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtopology_1a934eb90831509c8fccba072640faadd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>topology::~topology</definition>
+        <argsstring>()</argsstring>
+        <name>~topology</name>
+        <qualifiedname>topology::~topology</qualifiedname>
+        <briefdescription>
+<para>Destroy the topology object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topology.h" line="93" column="5" bodyfile="topology.cpp" bodystart="61" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>this class hold the topologies which is vector of Devices and its unique id </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topology.h" line="22" column="1" bodyfile="topology.h" bodystart="23" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classtopology_1af6357a380e09ca6055e8b2acf40c55e5" prot="private" virt="non-virtual"><scope>topology</scope><name>Devices</name></member>
+      <member refid="classtopology_1a4dee478d19e085b56cf34b7f908c62f2" prot="public" virt="non-virtual"><scope>topology</scope><name>getConnectedDevices</name></member>
+      <member refid="classtopology_1ab5b9447eb6f07912222e3e47e92dd1b7" prot="public" virt="non-virtual"><scope>topology</scope><name>getDevices</name></member>
+      <member refid="classtopology_1a3a23246593d167560e4c06c5c3c6b37c" prot="public" virt="non-virtual"><scope>topology</scope><name>getID</name></member>
+      <member refid="classtopology_1a51731a610a4d93ddbef3d4cc0473aa93" prot="private" virt="non-virtual"><scope>topology</scope><name>id</name></member>
+      <member refid="classtopology_1af7d6409e203045faa641db59ab9bff3d" prot="public" virt="non-virtual"><scope>topology</scope><name>ISconnectedNetList</name></member>
+      <member refid="classtopology_1a6487d3c2947949bae349e1e439079770" prot="public" virt="non-virtual"><scope>topology</scope><name>setDevices</name></member>
+      <member refid="classtopology_1aba9f5a8e65d516e6f8d601319d327549" prot="public" virt="non-virtual"><scope>topology</scope><name>setId</name></member>
+      <member refid="classtopology_1a9504e806b619e1d37b04b92dec69fa36" prot="public" virt="non-virtual"><scope>topology</scope><name>topology</name></member>
+      <member refid="classtopology_1af8cd4056287a7ab3ad86f54cac3d550e" prot="public" virt="non-virtual"><scope>topology</scope><name>topology</name></member>
+      <member refid="classtopology_1a934eb90831509c8fccba072640faadd5" prot="public" virt="non-virtual"><scope>topology</scope><name>~topology</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

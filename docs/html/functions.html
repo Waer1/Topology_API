@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -91,10 +82,10 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>API()&#160;:&#160;<a class="el" href="class_a_p_i.html#adb63c7166868fb7d32cd11d4a457701c">API</a></li>
+<li>api&#160;:&#160;<a class="el" href="class_controller.html#aa7a121a4b7ddd99b4cbd96f253653fdc">Controller</a></li>
 </ul>
 
 
@@ -114,7 +105,14 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
 <li>defaulval&#160;:&#160;<a class="el" href="class_device.html#a45e1856076d6698be39f3f7772491767">Device</a></li>
+<li>Deletetopology()&#160;:&#160;<a class="el" href="class_controller.html#adf9b256aecabb18e3dc722105998f3bc">Controller</a></li>
+<li>deleteTopology()&#160;:&#160;<a class="el" href="class_controller.html#abe6dbac253f5f3d44541d6e635be2f11">Controller</a></li>
 <li>Device()&#160;:&#160;<a class="el" href="class_device.html#a9c17625480f49ed3306cb1f43dfad6f0">Device</a></li>
+</ul>
+
+
+<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>findTopology()&#160;:&#160;<a class="el" href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc">Controller</a></li>
 </ul>
 
 
@@ -125,26 +123,24 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>get_min()&#160;:&#160;<a class="el" href="class_device.html#a84b6c9c4b8cf7505c1e2441b16562661">Device</a></li>
 <li>get_netList()&#160;:&#160;<a class="el" href="class_device.html#a1d200a41b1a0b802997f984d50d543ef">Device</a></li>
 <li>get_type()&#160;:&#160;<a class="el" href="class_device.html#a2ac3ac9ed7a0de9f5f59ad5441eb1373">Device</a></li>
+<li>getchoice()&#160;:&#160;<a class="el" href="class_controller.html#ab77a2425bc94722025e5865957af063c">Controller</a></li>
 <li>getConnectedDevices()&#160;:&#160;<a class="el" href="classtopology.html#a4dee478d19e085b56cf34b7f908c62f2">topology</a></li>
 <li>getDevices()&#160;:&#160;<a class="el" href="classtopology.html#ab5b9447eb6f07912222e3e47e92dd1b7">topology</a></li>
 <li>getDrain()&#160;:&#160;<a class="el" href="class_three_terminal.html#a226bd66e422d7b684e8356d0fe0d4319">ThreeTerminal</a></li>
 <li>getGate()&#160;:&#160;<a class="el" href="class_three_terminal.html#a83a7250805f5f98790476d5bfa9959b3">ThreeTerminal</a></li>
 <li>getID()&#160;:&#160;<a class="el" href="classtopology.html#a3a23246593d167560e4c06c5c3c6b37c">topology</a></li>
+<li>getInputJsonFileName()&#160;:&#160;<a class="el" href="class_controller.html#a76502e61551a693b9d4a9a847e73623f">Controller</a></li>
+<li>getOutputJsonFileName()&#160;:&#160;<a class="el" href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53">Controller</a></li>
 <li>getSrc()&#160;:&#160;<a class="el" href="class_three_terminal.html#a2fa826ec663f34e21242a22069b385ea">ThreeTerminal</a></li>
 <li>getT1()&#160;:&#160;<a class="el" href="class_two_terminal.html#a5a0eae3771f18083952c6c2f2e5d9285">TwoTerminal</a></li>
 <li>getT2()&#160;:&#160;<a class="el" href="class_two_terminal.html#a5a81030fb4fc3baa13831d21ce10c909">TwoTerminal</a></li>
+<li>getToplogyID()&#160;:&#160;<a class="el" href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03">Controller</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
 <li>id&#160;:&#160;<a class="el" href="class_device.html#a157555eda7bcf277b286458011604dd7">Device</a></li>
 <li>ISconnectedNetList()&#160;:&#160;<a class="el" href="classtopology.html#af7d6409e203045faa641db59ab9bff3d">topology</a></li>
-</ul>
-
-
-<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>max&#160;:&#160;<a class="el" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">Device</a></li>
-<li>min&#160;:&#160;<a class="el" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">Device</a></li>
 </ul>
 
 
@@ -160,8 +156,15 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </ul>
 
 
+<h3><a id="index_q" name="index_q"></a>- q -</h3><ul>
+<li>Querytopologies()&#160;:&#160;<a class="el" href="class_controller.html#a13800919d9ecca6ab25f6877082f46db">Controller</a></li>
+<li>QueryWhichDevicesIn()&#160;:&#160;<a class="el" href="class_controller.html#a0da792bea03fa3ed866889d3683e2b94">Controller</a></li>
+</ul>
+
+
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
 <li>ReadJson()&#160;:&#160;<a class="el" href="class_a_p_i.html#a0f97fcfa25c89c4aa9747b73016c30b4">API</a></li>
+<li>readJson()&#160;:&#160;<a class="el" href="class_controller.html#af1ca88ffc1cbe7125c82d9e376998442">Controller</a></li>
 <li>Resistance()&#160;:&#160;<a class="el" href="class_resistance.html#aeb7f9dd37b087a2f15803c10eb5946c8">Resistance</a></li>
 </ul>
 
@@ -187,23 +190,29 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
 <li>ThreeTerminal()&#160;:&#160;<a class="el" href="class_three_terminal.html#a551a49e99976179b6f1889480bb2b7c6">ThreeTerminal</a></li>
 <li>topology()&#160;:&#160;<a class="el" href="classtopology.html#a9504e806b619e1d37b04b92dec69fa36">topology</a></li>
+<li>TopologyList&#160;:&#160;<a class="el" href="class_controller.html#a2a35135e847d2598fc987bc05be5be2a">Controller</a></li>
 <li>TwoTerminal()&#160;:&#160;<a class="el" href="class_two_terminal.html#a6a333713174328fa4cd9340ae25dc3c6">TwoTerminal</a></li>
 <li>type&#160;:&#160;<a class="el" href="class_device.html#aecd8da12c9d5e6d70fbabca34e005c2f">Device</a></li>
 </ul>
 
 
+<h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
+<li>valid()&#160;:&#160;<a class="el" href="class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf">Controller</a></li>
+</ul>
+
+
 <h3><a id="index_w" name="index_w"></a>- w -</h3><ul>
+<li>whichConnected()&#160;:&#160;<a class="el" href="class_controller.html#a0e5c8c9370138962661f3c9d9aeabca7">Controller</a></li>
+<li>WriteJson()&#160;:&#160;<a class="el" href="class_controller.html#a7744237c0146b480844fc39192ef43c2">Controller</a></li>
 <li>writeToJSON()&#160;:&#160;<a class="el" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0">API</a></li>
 </ul>
 
 
 <h3><a id="index__7E" name="index__7E"></a>- ~ -</h3><ul>
 <li>~API()&#160;:&#160;<a class="el" href="class_a_p_i.html#a583ec65b542b44e4b7013f5fc830fdcd">API</a></li>
-<li>~Device()&#160;:&#160;<a class="el" href="class_device.html#a9dabc419c8d8df3a686c33ce042bc99a">Device</a></li>
 <li>~Nmos()&#160;:&#160;<a class="el" href="class_nmos.html#ac5fbbc5920499e56e2335e002b18a199">Nmos</a></li>
 <li>~Pmos()&#160;:&#160;<a class="el" href="class_pmos.html#a9eeac2d5e12c5fe0d4a2e9ad2fb4fd02">Pmos</a></li>
 <li>~Resistance()&#160;:&#160;<a class="el" href="class_resistance.html#ae078c593097ad200762b95b4aaee22ec">Resistance</a></li>
-<li>~ThreeTerminal()&#160;:&#160;<a class="el" href="class_three_terminal.html#a41f8e495abe54ac8e077e4190b7cf1f9">ThreeTerminal</a></li>
 <li>~topology()&#160;:&#160;<a class="el" href="classtopology.html#a934eb90831509c8fccba072640faadd5">topology</a></li>
 </ul>
 </div><!-- contents -->

@@ -2,58 +2,29 @@
 \mbox{\hyperlink{_controller_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
-\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_p_i_8h}{API.h}}"{}}}
-\DoxyCodeLine{17 }
-\DoxyCodeLine{18 \textcolor{keyword}{using namespace }std;}
-\DoxyCodeLine{19 }
-\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_controller}{Controller}}}
-\DoxyCodeLine{25 \{}
-\DoxyCodeLine{26 \textcolor{keyword}{public}:}
-\DoxyCodeLine{27 }
-\DoxyCodeLine{32     \mbox{\hyperlink{class_controller_a95c56822d667e94b031451729ce069a9}{Controller}}();}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_abd7e2ce75590beb0f1258ec56666ba02}{startprogram}}();}
-\DoxyCodeLine{35 }
-\DoxyCodeLine{36 \textcolor{keyword}{private}:}
-\DoxyCodeLine{37 }
-\DoxyCodeLine{42     \mbox{\hyperlink{class_a_p_i}{API}} api;}
-\DoxyCodeLine{43     }
-\DoxyCodeLine{44 }
-\DoxyCodeLine{45 }
-\DoxyCodeLine{50     vector<topology *>TopologyList; \textcolor{comment}{// act as memory}}
-\DoxyCodeLine{51 }
-\DoxyCodeLine{52     \textcolor{comment}{// get which service user want}}
-\DoxyCodeLine{53 }
-\DoxyCodeLine{60     \textcolor{keywordtype}{string} getchoice();}
-\DoxyCodeLine{61 }
-\DoxyCodeLine{70     \textcolor{keywordtype}{bool} valid(\textcolor{keywordtype}{string} choice);}
-\DoxyCodeLine{71 }
-\DoxyCodeLine{78     \textcolor{keywordtype}{int} getToplogyID();}
-\DoxyCodeLine{79 }
-\DoxyCodeLine{80     \textcolor{comment}{// }}
-\DoxyCodeLine{87 \textcolor{comment}{}    \textcolor{keywordtype}{string} getInputJsonFileName();}
-\DoxyCodeLine{88 }
-\DoxyCodeLine{89 }
-\DoxyCodeLine{90     \textcolor{comment}{// }}
-\DoxyCodeLine{97 \textcolor{comment}{}    \textcolor{keywordtype}{int} findTopology(\textcolor{keywordtype}{string} topologyID) \textcolor{keyword}{const};}
-\DoxyCodeLine{98 }
-\DoxyCodeLine{103     \textcolor{keywordtype}{void} readJson();}
-\DoxyCodeLine{104 }
-\DoxyCodeLine{109     \textcolor{keywordtype}{void} WriteJson();}
-\DoxyCodeLine{110 }
-\DoxyCodeLine{117     pair<string, int> getOutputJsonFileName();}
-\DoxyCodeLine{118 }
-\DoxyCodeLine{124     \textcolor{keywordtype}{void} Querytopologies();}
-\DoxyCodeLine{125 }
-\DoxyCodeLine{130     \textcolor{keywordtype}{void} Deletetopology();}
-\DoxyCodeLine{138     \textcolor{keywordtype}{bool} deleteTopology(\textcolor{keywordtype}{int} index);}
-\DoxyCodeLine{139 }
-\DoxyCodeLine{140     \textcolor{comment}{//.}}
-\DoxyCodeLine{145 \textcolor{comment}{}    \textcolor{keywordtype}{void} QueryWhichDevicesIn();}
-\DoxyCodeLine{146 }
-\DoxyCodeLine{151     \textcolor{keywordtype}{void} whichConnected();}
-\DoxyCodeLine{152 }
-\DoxyCodeLine{153 \};}
-\DoxyCodeLine{154 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_p_i_8h}{API.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_controller}{Controller}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_controller_a95c56822d667e94b031451729ce069a9}{Controller}}();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_abd7e2ce75590beb0f1258ec56666ba02}{startprogram}}();}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_a_p_i}{API}} \mbox{\hyperlink{class_controller_aa7a121a4b7ddd99b4cbd96f253653fdc}{api}};}
+\DoxyCodeLine{43     vector<topology *>\mbox{\hyperlink{class_controller_a2a35135e847d2598fc987bc05be5be2a}{TopologyList}}; \textcolor{comment}{// act as memory}}
+\DoxyCodeLine{50 \textcolor{comment}{}    \textcolor{keywordtype}{string} \mbox{\hyperlink{class_controller_ab77a2425bc94722025e5865957af063c}{getchoice}}();}
+\DoxyCodeLine{59     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_controller_ab4279de6a80b1fd160a0ce531caa13cf}{valid}}(\textcolor{keywordtype}{string} choice);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_controller_a7752ed6b27da2f0aed8e474caf422a03}{getToplogyID}}();}
+\DoxyCodeLine{73     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_controller_a76502e61551a693b9d4a9a847e73623f}{getInputJsonFileName}}();}
+\DoxyCodeLine{80     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_controller_ada742049b8312fe6aa2c13852d902bdc}{findTopology}}(\textcolor{keywordtype}{string} topologyID) \textcolor{keyword}{const};}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_af1ca88ffc1cbe7125c82d9e376998442}{readJson}}();}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_a7744237c0146b480844fc39192ef43c2}{WriteJson}}();}
+\DoxyCodeLine{97     pair<string, int> \mbox{\hyperlink{class_controller_a2f7b56a88638318d5cfdc9816e9bab53}{getOutputJsonFileName}}();}
+\DoxyCodeLine{103     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_a13800919d9ecca6ab25f6877082f46db}{Querytopologies}}();}
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_adf9b256aecabb18e3dc722105998f3bc}{Deletetopology}}();}
+\DoxyCodeLine{116     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_controller_abe6dbac253f5f3d44541d6e635be2f11}{deleteTopology}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{121     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_a0da792bea03fa3ed866889d3683e2b94}{QueryWhichDevicesIn}}();}
+\DoxyCodeLine{126     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_controller_a0e5c8c9370138962661f3c9d9aeabca7}{whichConnected}}();}
+\DoxyCodeLine{127 \};}
+\DoxyCodeLine{128 }
 
 \end{DoxyCode}

@@ -1,6 +1,8 @@
 <map id="API::ConvertDeviceToJson" name="API::ConvertDeviceToJson">
-<area shape="rect" id="node1" title="function convert device object into json onject" alt="" coords="640,5,813,32"/>
-<area shape="rect" id="node2" href="$class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="412,5,592,32"/>
-<area shape="rect" id="node3" href="$class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" id="node4" href="$class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node1" title="function convert device object into json onject" alt="" coords="1037,5,1211,32"/>
+<area shape="rect" id="node2" href="$class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="809,5,989,32"/>
+<area shape="rect" id="node3" href="$class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" id="node4" href="$class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" id="node5" href="$class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" id="node6" href="$class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>

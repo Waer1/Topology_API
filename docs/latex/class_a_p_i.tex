@@ -12,62 +12,42 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_a_p_i_adb63c7166868fb7d32cd11d4a457701c}{API}} ()
-\item 
 \mbox{\hyperlink{classtopology}{topology}} $\ast$ \mbox{\hyperlink{class_a_p_i_a0f97fcfa25c89c4aa9747b73016c30b4}{Read\+Json}} (string File\+Name)
 \begin{DoxyCompactList}\small\item\em function used to create object from json file and check its empty or not and return pointer no null if object empty \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classtopology}{topology}} $\ast$ \mbox{\hyperlink{class_a_p_i_adda7ba5369ee876f8c0ca8a355575235}{create\+Topology}} (\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} json\+Object)
+\mbox{\hyperlink{classtopology}{topology}} $\ast$ \mbox{\hyperlink{class_a_p_i_adda7ba5369ee876f8c0ca8a355575235}{create\+Topology}} (json json\+Object)
 \begin{DoxyCompactList}\small\item\em Create a Topology object from json object passed to it by devide it to smaller task , each task create one list. \end{DoxyCompactList}\item 
-vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \mbox{\hyperlink{class_a_p_i_a0a62e19f264ac3a8af2a9acd30bf02f9}{create\+List\+Of\+Devices}} (\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} json\+Object)
+vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \mbox{\hyperlink{class_a_p_i_a0a62e19f264ac3a8af2a9acd30bf02f9}{create\+List\+Of\+Devices}} (json json\+Object)
 \begin{DoxyCompactList}\small\item\em Create a List Of Devices object, by looping throught the lists exist in file and give each device to procude it. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_a5ca1e600b977a5c40e1614a1db03e929}{create\+Device}} (const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&Device\+Json)
+\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_a5ca1e600b977a5c40e1614a1db03e929}{create\+Device}} (const json \&Device\+Json)
 \begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_device}{Device}} object given from create\+List\+Of\+Devices by detect \mbox{\hyperlink{class_device}{Device}} type and all suitanle function for it\textquotesingle{}s creation. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_a5992c29887197f77d9734de0bf19fe66}{create\+Nmos}} (const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&Device\+Json)
+\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_a5992c29887197f77d9734de0bf19fe66}{create\+Nmos}} (const json \&Device\+Json)
 \begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_nmos}{Nmos}} object , called if the device type is \mbox{\hyperlink{class_nmos}{Nmos}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_ab9103247deae2c7bc5b5e4026186aa92}{create\+Pmos}} (const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&Device\+Json)
+\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_ab9103247deae2c7bc5b5e4026186aa92}{create\+Pmos}} (const json \&Device\+Json)
 \begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_nmos}{Nmos}} object , called if the device type is \mbox{\hyperlink{class_pmos}{Pmos}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_abc509958a1b6399930d535f1ec7a80bd}{create\+Resistor}} (const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&Device\+Json)
+\mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_a_p_i_abc509958a1b6399930d535f1ec7a80bd}{create\+Resistor}} (const json \&Device\+Json)
 \begin{DoxyCompactList}\small\item\em Create a Resistor object , called if the device type is Resistor. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_a_p_i_ae3bae133372ce4d900e2bc6f51807fd0}{write\+To\+JSON}} (string filename, const \mbox{\hyperlink{classtopology}{topology}} $\ast$Topology)
 \begin{DoxyCompactList}\small\item\em function used to convert topology in memory to json file in a given json file name \end{DoxyCompactList}\item 
-\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_a_p_i_a7f4a57de2252eabfdc856490fa7dfc97}{Convert\+Topology\+Tojson}} (const \mbox{\hyperlink{classtopology}{topology}} $\ast$topo)
+json \mbox{\hyperlink{class_a_p_i_a7f4a57de2252eabfdc856490fa7dfc97}{Convert\+Topology\+Tojson}} (const \mbox{\hyperlink{classtopology}{topology}} $\ast$topo)
 \begin{DoxyCompactList}\small\item\em convert the topology object to json object by divide it into smaller tasks. each task is convert \mbox{\hyperlink{class_device}{Device}} to separte json object \end{DoxyCompactList}\item 
-\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_a_p_i_a0d5eec05898031c392aa4395778c7d4d}{Convert\+Devices\+To\+Json}} (const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&Devices)
+json \mbox{\hyperlink{class_a_p_i_a0d5eec05898031c392aa4395778c7d4d}{Convert\+Devices\+To\+Json}} (const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&Devices)
 \begin{DoxyCompactList}\small\item\em function usedto separte all devices in given topology into json files per device \end{DoxyCompactList}\item 
-\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_a_p_i_ac651532f8ec00c6cc1d810e9b130d79a}{Convert\+Device\+To\+Json}} (\mbox{\hyperlink{class_device}{Device}} $\ast$comp)
+json \mbox{\hyperlink{class_a_p_i_ac651532f8ec00c6cc1d810e9b130d79a}{Convert\+Device\+To\+Json}} (\mbox{\hyperlink{class_device}{Device}} $\ast$comp)
 \begin{DoxyCompactList}\small\item\em function convert device object into json onject \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_a_p_i_a583ec65b542b44e4b7013f5fc830fdcd}{$\sim$\+API}} ()
+\mbox{\Hypertarget{class_a_p_i_a583ec65b542b44e4b7013f5fc830fdcd}\label{class_a_p_i_a583ec65b542b44e4b7013f5fc830fdcd}} 
+{\bfseries $\sim$\+API} ()
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_a_p_i}{API}} object when end. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 \mbox{\hyperlink{class_a_p_i}{API}} is the class use to treat with json in write json file or read from json files. 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_a_p_i_adb63c7166868fb7d32cd11d4a457701c}\label{class_a_p_i_adb63c7166868fb7d32cd11d4a457701c}} 
-\index{API@{API}!API@{API}}
-\index{API@{API}!API@{API}}
-\doxysubsubsection{\texorpdfstring{API()}{API()}}
-{\footnotesize\ttfamily API\+::\+API (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_a_p_i_a583ec65b542b44e4b7013f5fc830fdcd}\label{class_a_p_i_a583ec65b542b44e4b7013f5fc830fdcd}} 
-\index{API@{API}!````~API@{$\sim$API}}
-\index{````~API@{$\sim$API}!API@{API}}
-\doxysubsubsection{\texorpdfstring{$\sim$API()}{~API()}}
-{\footnotesize\ttfamily API\+::$\sim$\+API (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Destroy the \mbox{\hyperlink{class_a_p_i}{API}} object when end. 
-
-
-
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_a_p_i_a0d5eec05898031c392aa4395778c7d4d}\label{class_a_p_i_a0d5eec05898031c392aa4395778c7d4d}} 
 \index{API@{API}!ConvertDevicesToJson@{ConvertDevicesToJson}}
 \index{ConvertDevicesToJson@{ConvertDevicesToJson}!API@{API}}
 \doxysubsubsection{\texorpdfstring{ConvertDevicesToJson()}{ConvertDevicesToJson()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} API\+::\+Convert\+Devices\+To\+Json (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&}]{Devices }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily json API\+::\+Convert\+Devices\+To\+Json (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ \&}]{Devices }\end{DoxyParamCaption})}
 
 
 
@@ -82,14 +62,16 @@ function usedto separte all devices in given topology into json files per device
 \begin{DoxyReturn}{Returns}
 json json file to the list of deviecs converted 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_a_p_i_a0d5eec05898031c392aa4395778c7d4d_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -100,7 +82,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{API@{API}!ConvertDeviceToJson@{ConvertDeviceToJson}}
 \index{ConvertDeviceToJson@{ConvertDeviceToJson}!API@{API}}
 \doxysubsubsection{\texorpdfstring{ConvertDeviceToJson()}{ConvertDeviceToJson()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} API\+::\+Convert\+Device\+To\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_device}{Device}} $\ast$}]{comp }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily json API\+::\+Convert\+Device\+To\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_device}{Device}} $\ast$}]{comp }\end{DoxyParamCaption})}
 
 
 
@@ -114,14 +96,16 @@ function convert device object into json onject
 \begin{DoxyReturn}{Returns}
 json json file of that device 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=346pt]{class_a_p_i_ac651532f8ec00c6cc1d810e9b130d79a_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -132,7 +116,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{API@{API}!ConvertTopologyTojson@{ConvertTopologyTojson}}
 \index{ConvertTopologyTojson@{ConvertTopologyTojson}!API@{API}}
 \doxysubsubsection{\texorpdfstring{ConvertTopologyTojson()}{ConvertTopologyTojson()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} API\+::\+Convert\+Topology\+Tojson (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtopology}{topology}} $\ast$}]{topo }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily json API\+::\+Convert\+Topology\+Tojson (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtopology}{topology}} $\ast$}]{topo }\end{DoxyParamCaption})}
 
 
 
@@ -146,25 +130,27 @@ convert the topology object to json object by divide it into smaller tasks. each
 \begin{DoxyReturn}{Returns}
 json 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_a_p_i_a7f4a57de2252eabfdc856490fa7dfc97_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=349pt]{class_a_p_i_a7f4a57de2252eabfdc856490fa7dfc97_icgraph}
+\includegraphics[width=350pt]{class_a_p_i_a7f4a57de2252eabfdc856490fa7dfc97_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_a_p_i_a5ca1e600b977a5c40e1614a1db03e929}\label{class_a_p_i_a5ca1e600b977a5c40e1614a1db03e929}} 
 \index{API@{API}!createDevice@{createDevice}}
 \index{createDevice@{createDevice}!API@{API}}
 \doxysubsubsection{\texorpdfstring{createDevice()}{createDevice()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Device (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{Device\+Json }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Device (\begin{DoxyParamCaption}\item[{const json \&}]{Device\+Json }\end{DoxyParamCaption})}
 
 
 
@@ -178,14 +164,16 @@ Create a \mbox{\hyperlink{class_device}{Device}} object given from create\+List\
 \begin{DoxyReturn}{Returns}
 Device$\ast$ pointer to \mbox{\hyperlink{class_device}{Device}} object 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=311pt]{class_a_p_i_a5ca1e600b977a5c40e1614a1db03e929_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -196,7 +184,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{API@{API}!createListOfDevices@{createListOfDevices}}
 \index{createListOfDevices@{createListOfDevices}!API@{API}}
 \doxysubsubsection{\texorpdfstring{createListOfDevices()}{createListOfDevices()}}
-{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ API\+::create\+List\+Of\+Devices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}}]{json\+Object }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_device}{Device}} $\ast$ $>$ API\+::create\+List\+Of\+Devices (\begin{DoxyParamCaption}\item[{json}]{json\+Object }\end{DoxyParamCaption})}
 
 
 
@@ -210,14 +198,16 @@ Create a List Of Devices object, by looping throught the lists exist in file and
 \begin{DoxyReturn}{Returns}
 vector$<$\+Device$\ast$$>$ vector of pointers of devices in list 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_a_p_i_a0a62e19f264ac3a8af2a9acd30bf02f9_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -228,7 +218,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{API@{API}!createNmos@{createNmos}}
 \index{createNmos@{createNmos}!API@{API}}
 \doxysubsubsection{\texorpdfstring{createNmos()}{createNmos()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Nmos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{Device\+Json }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Nmos (\begin{DoxyParamCaption}\item[{const json \&}]{Device\+Json }\end{DoxyParamCaption})}
 
 
 
@@ -242,7 +232,8 @@ Create a \mbox{\hyperlink{class_nmos}{Nmos}} object , called if the device type 
 \begin{DoxyReturn}{Returns}
 Device$\ast$ pointer to \mbox{\hyperlink{class_device}{Device}} object 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -253,7 +244,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{API@{API}!createPmos@{createPmos}}
 \index{createPmos@{createPmos}!API@{API}}
 \doxysubsubsection{\texorpdfstring{createPmos()}{createPmos()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Pmos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{Device\+Json }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Pmos (\begin{DoxyParamCaption}\item[{const json \&}]{Device\+Json }\end{DoxyParamCaption})}
 
 
 
@@ -267,7 +258,8 @@ Create a \mbox{\hyperlink{class_nmos}{Nmos}} object , called if the device type 
 \begin{DoxyReturn}{Returns}
 Device$\ast$ pointer to \mbox{\hyperlink{class_device}{Device}} object 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -278,7 +270,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{API@{API}!createResistor@{createResistor}}
 \index{createResistor@{createResistor}!API@{API}}
 \doxysubsubsection{\texorpdfstring{createResistor()}{createResistor()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Resistor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \&}]{Device\+Json }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ API\+::create\+Resistor (\begin{DoxyParamCaption}\item[{const json \&}]{Device\+Json }\end{DoxyParamCaption})}
 
 
 
@@ -292,7 +284,8 @@ Create a Resistor object , called if the device type is Resistor.
 \begin{DoxyReturn}{Returns}
 Device$\ast$ pointer to \mbox{\hyperlink{class_device}{Device}} object 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -303,7 +296,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{API@{API}!createTopology@{createTopology}}
 \index{createTopology@{createTopology}!API@{API}}
 \doxysubsubsection{\texorpdfstring{createTopology()}{createTopology()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classtopology}{topology}} $\ast$ API\+::create\+Topology (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}}]{json\+Object }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtopology}{topology}} $\ast$ API\+::create\+Topology (\begin{DoxyParamCaption}\item[{json}]{json\+Object }\end{DoxyParamCaption})}
 
 
 
@@ -317,18 +310,20 @@ Create a Topology object from json object passed to it by devide it to smaller t
 \begin{DoxyReturn}{Returns}
 topology $\ast$ the topology object formed from json file (filename) and adding its id 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_a_p_i_adda7ba5369ee876f8c0ca8a355575235_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=301pt]{class_a_p_i_adda7ba5369ee876f8c0ca8a355575235_icgraph}
+\includegraphics[width=350pt]{class_a_p_i_adda7ba5369ee876f8c0ca8a355575235_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_a_p_i_a0f97fcfa25c89c4aa9747b73016c30b4}\label{class_a_p_i_a0f97fcfa25c89c4aa9747b73016c30b4}} 
@@ -349,11 +344,20 @@ function used to create object from json file and check its empty or not and ret
 \begin{DoxyReturn}{Returns}
 topology $\ast$ the topology object formed from json file (filename) 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_a_p_i_a0f97fcfa25c89c4aa9747b73016c30b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_i_a0f97fcfa25c89c4aa9747b73016c30b4_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_a_p_i_ae3bae133372ce4d900e2bc6f51807fd0}\label{class_a_p_i_ae3bae133372ce4d900e2bc6f51807fd0}} 
@@ -378,10 +382,19 @@ true is every thing done correctly
 
 false if throw any exepection from reading file or write on it 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_a_p_i_ae3bae133372ce4d900e2bc6f51807fd0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_i_ae3bae133372ce4d900e2bc6f51807fd0_icgraph}
 \end{center}
 \end{figure}

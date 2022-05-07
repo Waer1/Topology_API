@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_resistance" kind="class" language="C++" prot="public">
+    <compoundname>Resistance</compoundname>
+    <basecompoundref refid="class_two_terminal" prot="public" virt="non-virtual">TwoTerminal</basecompoundref>
+    <includes refid="_resistance_8h" local="no">Resistance.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_resistance_1aeb7f9dd37b087a2f15803c10eb5946c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Resistance::Resistance</definition>
+        <argsstring>(string id, map&lt; string, string &gt; netList, float def, float max, float min)</argsstring>
+        <name>Resistance</name>
+        <qualifiedname>Resistance::Resistance</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt;</type>
+          <declname>netList</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_resistance" kindref="compound">Resistance</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of that object passed to higher class </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>netList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of connected componentto this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>def</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>min valude from this device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resistance.h" line="30" column="5" bodyfile="Resistance.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" compoundref="_device_8cpp" startline="44" endline="47">Device::set_type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Resistance::Print_Device</definition>
+        <argsstring>()</argsstring>
+        <name>Print_Device</name>
+        <qualifiedname>Resistance::Print_Device</qualifiedname>
+        <reimplements refid="class_device_1a8941e81633c72f60a504c18492268696">Print_Device</reimplements>
+        <briefdescription>
+<para>print the specific device info </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resistance.h" line="35" column="18" bodyfile="Resistance.cpp" bodystart="8" bodyend="14"/>
+        <references refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" compoundref="_device_8cpp" startline="49" endline="52">Device::get_type</references>
+        <references refid="class_device_1a8941e81633c72f60a504c18492268696" compoundref="_device_8cpp" startline="74" endline="77">Device::Print_Device</references>
+      </memberdef>
+      <memberdef kind="function" id="class_resistance_1ae078c593097ad200762b95b4aaee22ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Resistance::~Resistance</definition>
+        <argsstring>()</argsstring>
+        <name>~Resistance</name>
+        <qualifiedname>Resistance::~Resistance</qualifiedname>
+        <briefdescription>
+<para>Destroy the <ref refid="class_resistance" kindref="compound">Resistance</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Resistance.h" line="40" column="5" bodyfile="Resistance.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_resistance" kindref="compound">Resistance</ref> is there Two terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Device</label>
+        <link refid="class_device"/>
+      </node>
+      <node id="1">
+        <label>Resistance</label>
+        <link refid="class_resistance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TwoTerminal</label>
+        <link refid="class_two_terminal"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Device</label>
+        <link refid="class_device"/>
+      </node>
+      <node id="1">
+        <label>Resistance</label>
+        <link refid="class_resistance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TwoTerminal</label>
+        <link refid="class_two_terminal"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Resistance.h" line="17" column="1" bodyfile="Resistance.h" bodystart="19" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_device_1a45e1856076d6698be39f3f7772491767" prot="protected" virt="non-virtual"><scope>Resistance</scope><name>defaulval</name></member>
+      <member refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" prot="public" virt="non-virtual"><scope>Resistance</scope><name>Device</name></member>
+      <member refid="class_device_1a64ba12dcc5f4267486c5d545d04dcf68" prot="public" virt="non-virtual"><scope>Resistance</scope><name>Device</name></member>
+      <member refid="class_device_1a2c3041835f84c73c86149976f2c6f565" prot="public" virt="non-virtual"><scope>Resistance</scope><name>get_Default</name></member>
+      <member refid="class_device_1acada68ab3f642242deb479ae553daae7" prot="public" virt="non-virtual"><scope>Resistance</scope><name>get_id</name></member>
+      <member refid="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" prot="public" virt="non-virtual"><scope>Resistance</scope><name>get_max</name></member>
+      <member refid="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" prot="public" virt="non-virtual"><scope>Resistance</scope><name>get_min</name></member>
+      <member refid="class_device_1a1d200a41b1a0b802997f984d50d543ef" prot="public" virt="non-virtual"><scope>Resistance</scope><name>get_netList</name></member>
+      <member refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" prot="public" virt="non-virtual"><scope>Resistance</scope><name>get_type</name></member>
+      <member refid="class_two_terminal_1a5a0eae3771f18083952c6c2f2e5d9285" prot="public" virt="non-virtual"><scope>Resistance</scope><name>getT1</name></member>
+      <member refid="class_two_terminal_1a5a81030fb4fc3baa13831d21ce10c909" prot="public" virt="non-virtual"><scope>Resistance</scope><name>getT2</name></member>
+      <member refid="class_device_1a157555eda7bcf277b286458011604dd7" prot="protected" virt="non-virtual"><scope>Resistance</scope><name>id</name></member>
+      <member refid="class_device_1ac1a539b53f299c43ea749cfdaa91376f" prot="protected" virt="non-virtual"><scope>Resistance</scope><name>max</name></member>
+      <member refid="class_device_1a1f0ac3ac3dc31ba764bedd52492d7a9d" prot="protected" virt="non-virtual"><scope>Resistance</scope><name>min</name></member>
+      <member refid="class_device_1a8d5b746dfca41668c1736728cb76030a" prot="protected" virt="non-virtual"><scope>Resistance</scope><name>netList</name></member>
+      <member refid="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9" prot="public" virt="virtual"><scope>Resistance</scope><name>Print_Device</name></member>
+      <member refid="class_resistance_1aeb7f9dd37b087a2f15803c10eb5946c8" prot="public" virt="non-virtual"><scope>Resistance</scope><name>Resistance</name></member>
+      <member refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" prot="public" virt="non-virtual"><scope>Resistance</scope><name>set_Default</name></member>
+      <member refid="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" prot="public" virt="non-virtual"><scope>Resistance</scope><name>set_Max</name></member>
+      <member refid="class_device_1ad74f349907b01a87ace4ea100f3b50e6" prot="public" virt="non-virtual"><scope>Resistance</scope><name>set_Min</name></member>
+      <member refid="class_device_1a143d5ae3424066aef14c824422683108" prot="public" virt="non-virtual"><scope>Resistance</scope><name>set_netList</name></member>
+      <member refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" prot="public" virt="non-virtual"><scope>Resistance</scope><name>set_type</name></member>
+      <member refid="class_device_1a440522d88e792af168cdc517b85c31a9" prot="public" virt="non-virtual"><scope>Resistance</scope><name>setID</name></member>
+      <member refid="class_two_terminal_1ab8787a445e6978e9404a0edfa78aaa36" prot="public" virt="non-virtual"><scope>Resistance</scope><name>setT1</name></member>
+      <member refid="class_two_terminal_1a0ce4592b8aae9ca307fe5a6c6f0ecf1b" prot="public" virt="non-virtual"><scope>Resistance</scope><name>setT2</name></member>
+      <member refid="class_two_terminal_1a6a333713174328fa4cd9340ae25dc3c6" prot="public" virt="non-virtual"><scope>Resistance</scope><name>TwoTerminal</name></member>
+      <member refid="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" prot="protected" virt="non-virtual"><scope>Resistance</scope><name>type</name></member>
+      <member refid="class_device_1a9dabc419c8d8df3a686c33ce042bc99a" prot="public" virt="non-virtual"><scope>Resistance</scope><name>~Device</name></member>
+      <member refid="class_resistance_1ae078c593097ad200762b95b4aaee22ec" prot="public" virt="non-virtual"><scope>Resistance</scope><name>~Resistance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

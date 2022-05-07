@@ -10,36 +10,35 @@
 \DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}json.hpp"{}}}
 \DoxyCodeLine{21 }
 \DoxyCodeLine{22 }
-\DoxyCodeLine{23 \textcolor{keyword}{using }\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} = \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{nlohmann::json}};}
+\DoxyCodeLine{23 \textcolor{keyword}{using }json = nlohmann::json;}
 \DoxyCodeLine{24 }
 \DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{class_a_p_i}{API}}}
 \DoxyCodeLine{30 \{}
-\DoxyCodeLine{31 \textcolor{keyword}{private}:}
-\DoxyCodeLine{32 \textcolor{keyword}{public}:}
-\DoxyCodeLine{33     \mbox{\hyperlink{class_a_p_i_adb63c7166868fb7d32cd11d4a457701c}{API}}();}
-\DoxyCodeLine{34     }
-\DoxyCodeLine{41     \mbox{\hyperlink{classtopology}{topology}}* \mbox{\hyperlink{class_a_p_i_a0f97fcfa25c89c4aa9747b73016c30b4}{ReadJson}}(\textcolor{keywordtype}{string} FileName);}
-\DoxyCodeLine{42 }
-\DoxyCodeLine{49     \mbox{\hyperlink{classtopology}{topology}}* \mbox{\hyperlink{class_a_p_i_adda7ba5369ee876f8c0ca8a355575235}{createTopology}}(\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} jsonObject);}
-\DoxyCodeLine{50 }
-\DoxyCodeLine{57     vector<Device*> \mbox{\hyperlink{class_a_p_i_a0a62e19f264ac3a8af2a9acd30bf02f9}{createListOfDevices}}(\mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} jsonObject);}
-\DoxyCodeLine{58 }
-\DoxyCodeLine{65     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_a5ca1e600b977a5c40e1614a1db03e929}{createDevice}}(\textcolor{keyword}{const} \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\& DeviceJson);}
-\DoxyCodeLine{66 }
-\DoxyCodeLine{73     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_a5992c29887197f77d9734de0bf19fe66}{createNmos}}(\textcolor{keyword}{const} \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\& DeviceJson);}
-\DoxyCodeLine{74 }
-\DoxyCodeLine{81     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_ab9103247deae2c7bc5b5e4026186aa92}{createPmos}}(\textcolor{keyword}{const} \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\& DeviceJson);}
-\DoxyCodeLine{82 }
-\DoxyCodeLine{89     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_abc509958a1b6399930d535f1ec7a80bd}{createResistor}}(\textcolor{keyword}{const} \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}}\& DeviceJson);}
-\DoxyCodeLine{90 }
-\DoxyCodeLine{99     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_p_i_ae3bae133372ce4d900e2bc6f51807fd0}{writeToJSON}}(\textcolor{keywordtype}{string} filename, \textcolor{keyword}{const} \mbox{\hyperlink{classtopology}{topology}}* Topology);}
-\DoxyCodeLine{100 }
-\DoxyCodeLine{108     \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_a_p_i_a7f4a57de2252eabfdc856490fa7dfc97}{ConvertTopologyTojson}}(\textcolor{keyword}{const} \mbox{\hyperlink{classtopology}{topology}}* topo);}
-\DoxyCodeLine{115     \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_a_p_i_a0d5eec05898031c392aa4395778c7d4d}{ConvertDevicesToJson}}(\textcolor{keyword}{const} vector<Device*>\& Devices);}
-\DoxyCodeLine{116 }
-\DoxyCodeLine{123     \mbox{\hyperlink{_a_p_i_8h_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{class_a_p_i_ac651532f8ec00c6cc1d810e9b130d79a}{ConvertDeviceToJson}}(\mbox{\hyperlink{class_device}{Device}}* comp);}
-\DoxyCodeLine{124 }
-\DoxyCodeLine{129     \mbox{\hyperlink{class_a_p_i_a583ec65b542b44e4b7013f5fc830fdcd}{\string~API}}();}
-\DoxyCodeLine{130 \};}
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_a_p_i}{API}}();}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{40     \mbox{\hyperlink{classtopology}{topology}}* \mbox{\hyperlink{class_a_p_i_a0f97fcfa25c89c4aa9747b73016c30b4}{ReadJson}}(\textcolor{keywordtype}{string} FileName);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{48     \mbox{\hyperlink{classtopology}{topology}}* \mbox{\hyperlink{class_a_p_i_adda7ba5369ee876f8c0ca8a355575235}{createTopology}}(json jsonObject);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{56     vector<Device*> \mbox{\hyperlink{class_a_p_i_a0a62e19f264ac3a8af2a9acd30bf02f9}{createListOfDevices}}(json jsonObject);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{64     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_a5ca1e600b977a5c40e1614a1db03e929}{createDevice}}(\textcolor{keyword}{const} json\& DeviceJson);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{72     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_a5992c29887197f77d9734de0bf19fe66}{createNmos}}(\textcolor{keyword}{const} json\& DeviceJson);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{80     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_ab9103247deae2c7bc5b5e4026186aa92}{createPmos}}(\textcolor{keyword}{const} json\& DeviceJson);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{88     \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_a_p_i_abc509958a1b6399930d535f1ec7a80bd}{createResistor}}(\textcolor{keyword}{const} json\& DeviceJson);}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{98     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_a_p_i_ae3bae133372ce4d900e2bc6f51807fd0}{writeToJSON}}(\textcolor{keywordtype}{string} filename, \textcolor{keyword}{const} \mbox{\hyperlink{classtopology}{topology}}* Topology);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{107     json \mbox{\hyperlink{class_a_p_i_a7f4a57de2252eabfdc856490fa7dfc97}{ConvertTopologyTojson}}(\textcolor{keyword}{const} \mbox{\hyperlink{classtopology}{topology}}* topo);}
+\DoxyCodeLine{114     json \mbox{\hyperlink{class_a_p_i_a0d5eec05898031c392aa4395778c7d4d}{ConvertDevicesToJson}}(\textcolor{keyword}{const} vector<Device*>\& Devices);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{122     json \mbox{\hyperlink{class_a_p_i_ac651532f8ec00c6cc1d810e9b130d79a}{ConvertDeviceToJson}}(\mbox{\hyperlink{class_device}{Device}}* comp);}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{128     \mbox{\hyperlink{class_a_p_i_a583ec65b542b44e4b7013f5fc830fdcd}{\string~API}}();}
+\DoxyCodeLine{129 \};}
 
 \end{DoxyCode}

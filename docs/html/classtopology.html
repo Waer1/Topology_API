@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -128,8 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4dee478d19e085b56cf34b7f908c62f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d6409e203045faa641db59ab9bff3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtopology.html#af7d6409e203045faa641db59ab9bff3d">ISconnectedNetList</a> (string netListNodeID, map&lt; string, string &gt; netList) const</td></tr>
 <tr class="separator:af7d6409e203045faa641db59ab9bff3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934eb90831509c8fccba072640faadd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtopology.html#a934eb90831509c8fccba072640faadd5">~topology</a> ()</td></tr>
-<tr class="memdesc:a934eb90831509c8fccba072640faadd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the topology object.  <a href="classtopology.html#a934eb90831509c8fccba072640faadd5">More...</a><br /></td></tr>
+<tr class="memitem:a934eb90831509c8fccba072640faadd5"><td class="memItemLeft" align="right" valign="top"><a id="a934eb90831509c8fccba072640faadd5" name="a934eb90831509c8fccba072640faadd5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~topology</b> ()</td></tr>
+<tr class="memdesc:a934eb90831509c8fccba072640faadd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the topology object. <br /></td></tr>
 <tr class="separator:a934eb90831509c8fccba072640faadd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -207,25 +199,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a934eb90831509c8fccba072640faadd5" name="a934eb90831509c8fccba072640faadd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a934eb90831509c8fccba072640faadd5">&#9670;&nbsp;</a></span>~topology()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">topology::~topology </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy the topology object. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4dee478d19e085b56cf34b7f908c62f2" name="a4dee478d19e085b56cf34b7f908c62f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dee478d19e085b56cf34b7f908c62f2">&#9670;&nbsp;</a></span>getConnectedDevices()</h2>
@@ -285,9 +258,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classtopology_ab5b9447eb6f07912222e3e47e92dd1b7_icgraph.png" border="0" usemap="#aclasstopology_ab5b9447eb6f07912222e3e47e92dd1b7_icgraph" alt=""/></div>
 <map name="aclasstopology_ab5b9447eb6f07912222e3e47e92dd1b7_icgraph" id="aclasstopology_ab5b9447eb6f07912222e3e47e92dd1b7_icgraph">
-<area shape="rect" title="Get the Devices object." alt="" coords="412,5,555,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
+<area shape="rect" title="Get the Devices object." alt="" coords="809,5,952,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>
 </div>
 
@@ -315,9 +290,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classtopology_a3a23246593d167560e4c06c5c3c6b37c_icgraph.png" border="0" usemap="#aclasstopology_a3a23246593d167560e4c06c5c3c6b37c_icgraph" alt=""/></div>
 <map name="aclasstopology_a3a23246593d167560e4c06c5c3c6b37c_icgraph" id="aclasstopology_a3a23246593d167560e4c06c5c3c6b37c_icgraph">
-<area shape="rect" title="getID object" alt="" coords="412,5,521,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
+<area shape="rect" title="getID object" alt="" coords="809,5,919,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>
 </div>
 

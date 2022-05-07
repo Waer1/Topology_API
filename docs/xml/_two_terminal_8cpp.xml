@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_two_terminal_8cpp" kind="file" language="C++">
+    <compoundname>TwoTerminal.cpp</compoundname>
+    <includes refid="_two_terminal_8h" local="yes">TwoTerminal.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TwoTerminal.cpp</label>
+        <link refid="_two_terminal_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_two_terminal_8h" kindref="compound">TwoTerminal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_two_terminal_1a6a333713174328fa4cd9340ae25dc3c6" refkind="member"><highlight class="normal"><ref refid="class_two_terminal_1a6a333713174328fa4cd9340ae25dc3c6" kindref="member">TwoTerminal::TwoTerminal</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>string&gt;<sp/>netList,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>defalutval,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min):<ref refid="class_device" kindref="compound">Device</ref>(id,netList,<sp/>defalutval,max<sp/>,<sp/>min<sp/>)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_two_terminal_1a5a0eae3771f18083952c6c2f2e5d9285" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a5a0eae3771f18083952c6c2f2e5d9285" kindref="member">TwoTerminal::getT1</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;t1&quot;</highlight><highlight class="normal">];;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_two_terminal_1a5a81030fb4fc3baa13831d21ce10c909" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a5a81030fb4fc3baa13831d21ce10c909" kindref="member">TwoTerminal::getT2</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;t2&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_two_terminal_1ab8787a445e6978e9404a0edfa78aaa36" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1ab8787a445e6978e9404a0edfa78aaa36" kindref="member">TwoTerminal::setT1</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>t1)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;t1&quot;</highlight><highlight class="normal">]<sp/>=<sp/>t1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_two_terminal_1a0ce4592b8aae9ca307fe5a6c6f0ecf1b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_terminal_1a0ce4592b8aae9ca307fe5a6c6f0ecf1b" kindref="member">TwoTerminal::setT2</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>t2)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kindref="member">netList</ref>[</highlight><highlight class="stringliteral">&quot;t2&quot;</highlight><highlight class="normal">]<sp/>=<sp/>t2;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="TwoTerminal.cpp"/>
+  </compounddef>
+</doxygen>

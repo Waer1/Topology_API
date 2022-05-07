@@ -28,7 +28,6 @@ using json = nlohmann::json;
  */
 class API
 {
-private:
 public:
 	API();
 	

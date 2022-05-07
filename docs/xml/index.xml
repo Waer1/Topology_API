@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.4" xml:lang="en-US">
+  <compound refid="class_a_p_i" kind="class"><name>API</name>
+    <member refid="class_a_p_i_1adb63c7166868fb7d32cd11d4a457701c" kind="function"><name>API</name></member>
+    <member refid="class_a_p_i_1a0f97fcfa25c89c4aa9747b73016c30b4" kind="function"><name>ReadJson</name></member>
+    <member refid="class_a_p_i_1adda7ba5369ee876f8c0ca8a355575235" kind="function"><name>createTopology</name></member>
+    <member refid="class_a_p_i_1a0a62e19f264ac3a8af2a9acd30bf02f9" kind="function"><name>createListOfDevices</name></member>
+    <member refid="class_a_p_i_1a5ca1e600b977a5c40e1614a1db03e929" kind="function"><name>createDevice</name></member>
+    <member refid="class_a_p_i_1a5992c29887197f77d9734de0bf19fe66" kind="function"><name>createNmos</name></member>
+    <member refid="class_a_p_i_1ab9103247deae2c7bc5b5e4026186aa92" kind="function"><name>createPmos</name></member>
+    <member refid="class_a_p_i_1abc509958a1b6399930d535f1ec7a80bd" kind="function"><name>createResistor</name></member>
+    <member refid="class_a_p_i_1ae3bae133372ce4d900e2bc6f51807fd0" kind="function"><name>writeToJSON</name></member>
+    <member refid="class_a_p_i_1a7f4a57de2252eabfdc856490fa7dfc97" kind="function"><name>ConvertTopologyTojson</name></member>
+    <member refid="class_a_p_i_1a0d5eec05898031c392aa4395778c7d4d" kind="function"><name>ConvertDevicesToJson</name></member>
+    <member refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" kind="function"><name>ConvertDeviceToJson</name></member>
+    <member refid="class_a_p_i_1a583ec65b542b44e4b7013f5fc830fdcd" kind="function"><name>~API</name></member>
+  </compound>
+  <compound refid="class_controller" kind="class"><name>Controller</name>
+    <member refid="class_controller_1aa7a121a4b7ddd99b4cbd96f253653fdc" kind="variable"><name>api</name></member>
+    <member refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" kind="variable"><name>TopologyList</name></member>
+    <member refid="class_controller_1a95c56822d667e94b031451729ce069a9" kind="function"><name>Controller</name></member>
+    <member refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" kind="function"><name>startprogram</name></member>
+    <member refid="class_controller_1ab77a2425bc94722025e5865957af063c" kind="function"><name>getchoice</name></member>
+    <member refid="class_controller_1ab4279de6a80b1fd160a0ce531caa13cf" kind="function"><name>valid</name></member>
+    <member refid="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" kind="function"><name>getToplogyID</name></member>
+    <member refid="class_controller_1a76502e61551a693b9d4a9a847e73623f" kind="function"><name>getInputJsonFileName</name></member>
+    <member refid="class_controller_1ada742049b8312fe6aa2c13852d902bdc" kind="function"><name>findTopology</name></member>
+    <member refid="class_controller_1af1ca88ffc1cbe7125c82d9e376998442" kind="function"><name>readJson</name></member>
+    <member refid="class_controller_1a7744237c0146b480844fc39192ef43c2" kind="function"><name>WriteJson</name></member>
+    <member refid="class_controller_1a2f7b56a88638318d5cfdc9816e9bab53" kind="function"><name>getOutputJsonFileName</name></member>
+    <member refid="class_controller_1a13800919d9ecca6ab25f6877082f46db" kind="function"><name>Querytopologies</name></member>
+    <member refid="class_controller_1adf9b256aecabb18e3dc722105998f3bc" kind="function"><name>Deletetopology</name></member>
+    <member refid="class_controller_1abe6dbac253f5f3d44541d6e635be2f11" kind="function"><name>deleteTopology</name></member>
+    <member refid="class_controller_1a0da792bea03fa3ed866889d3683e2b94" kind="function"><name>QueryWhichDevicesIn</name></member>
+    <member refid="class_controller_1a0e5c8c9370138962661f3c9d9aeabca7" kind="function"><name>whichConnected</name></member>
+  </compound>
+  <compound refid="class_device" kind="class"><name>Device</name>
+    <member refid="class_device_1a157555eda7bcf277b286458011604dd7" kind="variable"><name>id</name></member>
+    <member refid="class_device_1a8d5b746dfca41668c1736728cb76030a" kind="variable"><name>netList</name></member>
+    <member refid="class_device_1a45e1856076d6698be39f3f7772491767" kind="variable"><name>defaulval</name></member>
+    <member refid="class_device_1ac1a539b53f299c43ea749cfdaa91376f" kind="variable"><name>max</name></member>
+    <member refid="class_device_1a1f0ac3ac3dc31ba764bedd52492d7a9d" kind="variable"><name>min</name></member>
+    <member refid="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" kind="variable"><name>type</name></member>
+    <member refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" kind="function"><name>Device</name></member>
+    <member refid="class_device_1a64ba12dcc5f4267486c5d545d04dcf68" kind="function"><name>Device</name></member>
+    <member refid="class_device_1a440522d88e792af168cdc517b85c31a9" kind="function"><name>setID</name></member>
+    <member refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" kind="function"><name>set_Default</name></member>
+    <member refid="class_device_1a143d5ae3424066aef14c824422683108" kind="function"><name>set_netList</name></member>
+    <member refid="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" kind="function"><name>set_Max</name></member>
+    <member refid="class_device_1ad74f349907b01a87ace4ea100f3b50e6" kind="function"><name>set_Min</name></member>
+    <member refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" kind="function"><name>set_type</name></member>
+    <member refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" kind="function"><name>get_type</name></member>
+    <member refid="class_device_1a2c3041835f84c73c86149976f2c6f565" kind="function"><name>get_Default</name></member>
+    <member refid="class_device_1a1d200a41b1a0b802997f984d50d543ef" kind="function"><name>get_netList</name></member>
+    <member refid="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" kind="function"><name>get_max</name></member>
+    <member refid="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" kind="function"><name>get_min</name></member>
+    <member refid="class_device_1acada68ab3f642242deb479ae553daae7" kind="function"><name>get_id</name></member>
+    <member refid="class_device_1a8941e81633c72f60a504c18492268696" kind="function"><name>Print_Device</name></member>
+    <member refid="class_device_1a9dabc419c8d8df3a686c33ce042bc99a" kind="function"><name>~Device</name></member>
+  </compound>
+  <compound refid="class_nmos" kind="class"><name>Nmos</name>
+    <member refid="class_nmos_1a17d7ad73ddabb9048cd4b11e3e8182a0" kind="function"><name>Nmos</name></member>
+    <member refid="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f" kind="function"><name>Print_Device</name></member>
+    <member refid="class_nmos_1ac5fbbc5920499e56e2335e002b18a199" kind="function"><name>~Nmos</name></member>
+  </compound>
+  <compound refid="class_pmos" kind="class"><name>Pmos</name>
+    <member refid="class_pmos_1af9a43de10dd50f00ba5cfe8f6c33e9c0" kind="function"><name>Pmos</name></member>
+    <member refid="class_pmos_1ac4556d82c0d759e7465c572c394e12cd" kind="function"><name>Print_Device</name></member>
+    <member refid="class_pmos_1a9eeac2d5e12c5fe0d4a2e9ad2fb4fd02" kind="function"><name>~Pmos</name></member>
+  </compound>
+  <compound refid="class_resistance" kind="class"><name>Resistance</name>
+    <member refid="class_resistance_1aeb7f9dd37b087a2f15803c10eb5946c8" kind="function"><name>Resistance</name></member>
+    <member refid="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9" kind="function"><name>Print_Device</name></member>
+    <member refid="class_resistance_1ae078c593097ad200762b95b4aaee22ec" kind="function"><name>~Resistance</name></member>
+  </compound>
+  <compound refid="class_three_terminal" kind="class"><name>ThreeTerminal</name>
+    <member refid="class_three_terminal_1a551a49e99976179b6f1889480bb2b7c6" kind="function"><name>ThreeTerminal</name></member>
+    <member refid="class_three_terminal_1a2fa826ec663f34e21242a22069b385ea" kind="function"><name>getSrc</name></member>
+    <member refid="class_three_terminal_1a226bd66e422d7b684e8356d0fe0d4319" kind="function"><name>getDrain</name></member>
+    <member refid="class_three_terminal_1a83a7250805f5f98790476d5bfa9959b3" kind="function"><name>getGate</name></member>
+    <member refid="class_three_terminal_1a0d1b525ce67cd51bf800dc219b8beffb" kind="function"><name>setSrc</name></member>
+    <member refid="class_three_terminal_1aa1818205b0508cb4d294180122b3e6d1" kind="function"><name>setGate</name></member>
+    <member refid="class_three_terminal_1a3504d9bb3840c9ecfb0fc97ae871bfe0" kind="function"><name>setDrain</name></member>
+    <member refid="class_three_terminal_1a41f8e495abe54ac8e077e4190b7cf1f9" kind="function"><name>~ThreeTerminal</name></member>
+  </compound>
+  <compound refid="classtopology" kind="class"><name>topology</name>
+    <member refid="classtopology_1a51731a610a4d93ddbef3d4cc0473aa93" kind="variable"><name>id</name></member>
+    <member refid="classtopology_1af6357a380e09ca6055e8b2acf40c55e5" kind="variable"><name>Devices</name></member>
+    <member refid="classtopology_1a9504e806b619e1d37b04b92dec69fa36" kind="function"><name>topology</name></member>
+    <member refid="classtopology_1af8cd4056287a7ab3ad86f54cac3d550e" kind="function"><name>topology</name></member>
+    <member refid="classtopology_1a6487d3c2947949bae349e1e439079770" kind="function"><name>setDevices</name></member>
+    <member refid="classtopology_1aba9f5a8e65d516e6f8d601319d327549" kind="function"><name>setId</name></member>
+    <member refid="classtopology_1a3a23246593d167560e4c06c5c3c6b37c" kind="function"><name>getID</name></member>
+    <member refid="classtopology_1ab5b9447eb6f07912222e3e47e92dd1b7" kind="function"><name>getDevices</name></member>
+    <member refid="classtopology_1a4dee478d19e085b56cf34b7f908c62f2" kind="function"><name>getConnectedDevices</name></member>
+    <member refid="classtopology_1af7d6409e203045faa641db59ab9bff3d" kind="function"><name>ISconnectedNetList</name></member>
+    <member refid="classtopology_1a934eb90831509c8fccba072640faadd5" kind="function"><name>~topology</name></member>
+  </compound>
+  <compound refid="class_two_terminal" kind="class"><name>TwoTerminal</name>
+    <member refid="class_two_terminal_1a6a333713174328fa4cd9340ae25dc3c6" kind="function"><name>TwoTerminal</name></member>
+    <member refid="class_two_terminal_1a5a0eae3771f18083952c6c2f2e5d9285" kind="function"><name>getT1</name></member>
+    <member refid="class_two_terminal_1a5a81030fb4fc3baa13831d21ce10c909" kind="function"><name>getT2</name></member>
+    <member refid="class_two_terminal_1ab8787a445e6978e9404a0edfa78aaa36" kind="function"><name>setT1</name></member>
+    <member refid="class_two_terminal_1a0ce4592b8aae9ca307fe5a6c6f0ecf1b" kind="function"><name>setT2</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_a_p_i_8cpp" kind="file"><name>API.cpp</name>
+  </compound>
+  <compound refid="_a_p_i_8h" kind="file"><name>API.h</name>
+    <member refid="_a_p_i_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
+  <compound refid="_controller_8cpp" kind="file"><name>Controller.cpp</name>
+  </compound>
+  <compound refid="_controller_8h" kind="file"><name>Controller.h</name>
+  </compound>
+  <compound refid="_device_8cpp" kind="file"><name>Device.cpp</name>
+  </compound>
+  <compound refid="_device_8h" kind="file"><name>Device.h</name>
+  </compound>
+  <compound refid="_nmos_8cpp" kind="file"><name>Nmos.cpp</name>
+  </compound>
+  <compound refid="_nmos_8h" kind="file"><name>Nmos.h</name>
+  </compound>
+  <compound refid="_pmos_8cpp" kind="file"><name>Pmos.cpp</name>
+  </compound>
+  <compound refid="_pmos_8h" kind="file"><name>Pmos.h</name>
+  </compound>
+  <compound refid="_resistance_8cpp" kind="file"><name>Resistance.cpp</name>
+  </compound>
+  <compound refid="_resistance_8h" kind="file"><name>Resistance.h</name>
+  </compound>
+  <compound refid="_three_terminal_8cpp" kind="file"><name>ThreeTerminal.cpp</name>
+  </compound>
+  <compound refid="_three_terminal_8h" kind="file"><name>ThreeTerminal.h</name>
+  </compound>
+  <compound refid="topology_8cpp" kind="file"><name>topology.cpp</name>
+  </compound>
+  <compound refid="topology_8h" kind="file"><name>topology.h</name>
+  </compound>
+  <compound refid="_topology___a_p_i_8cpp" kind="file"><name>Topology_API.cpp</name>
+    <member refid="_topology___a_p_i_8cpp_1a7f75fb6369b9be4e70fb1f7563c01467" kind="define"><name>Waer</name></member>
+    <member refid="_topology___a_p_i_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_two_terminal_8cpp" kind="file"><name>TwoTerminal.cpp</name>
+  </compound>
+  <compound refid="_two_terminal_8h" kind="file"><name>TwoTerminal.h</name>
+  </compound>
+</doxygenindex>

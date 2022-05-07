@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_a_p_i_8h" kind="file" language="C++">
+    <compoundname>API.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">iomanip</includes>
+    <includes refid="topology_8h" local="yes">topology.h</includes>
+    <includes local="yes">json.hpp</includes>
+    <includedby refid="_a_p_i_8cpp" local="yes">API.cpp</includedby>
+    <includedby refid="_controller_8h" local="yes">Controller.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>API.h</label>
+        <link refid="_a_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Nmos.h</label>
+        <link refid="_nmos_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Pmos.h</label>
+        <link refid="_pmos_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Resistance.h</label>
+        <link refid="_resistance_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ThreeTerminal.h</label>
+        <link refid="_three_terminal_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>iomanip</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>json.hpp</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>API.h</label>
+        <link refid="_a_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Controller.h</label>
+        <link refid="_controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Topology_API.cpp</label>
+        <link refid="_topology___a_p_i_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_a_p_i" prot="public">API</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_a_p_i_8h_1ab701e3ac61a85b337ec5c1abaad6742d" prot="public" static="no">
+        <type>nlohmann::json</type>
+        <definition>using json =  nlohmann::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="API.h" line="23" column="1" bodyfile="API.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_a_p_i" kindref="compound">API</ref> is the class use to treat with json in write json file or read from json files -reading the json files and convert it to onject from <ref refid="class_device" kindref="compound">Device</ref> type and store it on memory. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Yousef Alwaer (<ulink url="mailto:elwaeryousef@gmail.com">elwaeryousef@gmail.com</ulink>)<itemizedlist>
+<listitem><para>output topologies stored in memory to json files to files user detect that file</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-05-06</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="topology_8h" kindref="compound">topology.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">json<sp/>=<sp/>nlohmann::json;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_a_p_i" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_a_p_i" kindref="compound">API</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_p_i" kindref="compound">API</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtopology" kindref="compound">topology</ref>*<sp/><ref refid="class_a_p_i_1a0f97fcfa25c89c4aa9747b73016c30b4" kindref="member">ReadJson</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FileName);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtopology" kindref="compound">topology</ref>*<sp/><ref refid="class_a_p_i_1adda7ba5369ee876f8c0ca8a355575235" kindref="member">createTopology</ref>(json<sp/>jsonObject);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Device*&gt;<sp/><ref refid="class_a_p_i_1a0a62e19f264ac3a8af2a9acd30bf02f9" kindref="member">createListOfDevices</ref>(json<sp/>jsonObject);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1a5ca1e600b977a5c40e1614a1db03e929" kindref="member">createDevice</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1a5992c29887197f77d9734de0bf19fe66" kindref="member">createNmos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1ab9103247deae2c7bc5b5e4026186aa92" kindref="member">createPmos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1abc509958a1b6399930d535f1ec7a80bd" kindref="member">createResistor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_p_i_1ae3bae133372ce4d900e2bc6f51807fd0" kindref="member">writeToJSON</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtopology" kindref="compound">topology</ref>*<sp/>Topology);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>json<sp/><ref refid="class_a_p_i_1a7f4a57de2252eabfdc856490fa7dfc97" kindref="member">ConvertTopologyTojson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtopology" kindref="compound">topology</ref>*<sp/>topo);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>json<sp/><ref refid="class_a_p_i_1a0d5eec05898031c392aa4395778c7d4d" kindref="member">ConvertDevicesToJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Device*&gt;&amp;<sp/>Devices);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>json<sp/><ref refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" kindref="member">ConvertDeviceToJson</ref>(<ref refid="class_device" kindref="compound">Device</ref>*<sp/>comp);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_p_i_1a583ec65b542b44e4b7013f5fc830fdcd" kindref="member">~API</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="API.h"/>
+  </compounddef>
+</doxygen>

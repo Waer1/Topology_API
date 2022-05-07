@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['json_0',['json',['../_a_p_i_8h.html#ab701e3ac61a85b337ec5c1abaad6742d',1,'API.h']]]
+  ['id_0',['id',['../class_device.html#a157555eda7bcf277b286458011604dd7',1,'Device']]],
+  ['isconnectednetlist_1',['ISconnectedNetList',['../classtopology.html#af7d6409e203045faa641db59ab9bff3d',1,'topology']]]
 ];

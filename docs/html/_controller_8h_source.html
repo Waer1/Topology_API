@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -95,64 +86,50 @@ $(document).ready(function(){initNavTree('_controller_8h_source.html',''); initR
 </div><!--header-->
 <div class="contents">
 <a href="_controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_a_p_i_8h.html">API.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_controller.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="class_controller.html">Controller</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="class_controller.html#a95c56822d667e94b031451729ce069a9">Controller</a>();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02">startprogram</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_a_p_i.html">API</a> api;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    vector&lt;topology *&gt;TopologyList; <span class="comment">// act as memory</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// get which service user want</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">string</span> getchoice();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">bool</span> valid(<span class="keywordtype">string</span> choice);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span> getToplogyID();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// </span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"></span>    <span class="keywordtype">string</span> getInputJsonFileName();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// </span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"></span>    <span class="keywordtype">int</span> findTopology(<span class="keywordtype">string</span> topologyID) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> readJson();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> WriteJson();</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    pair&lt;string, int&gt; getOutputJsonFileName();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> Querytopologies();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> Deletetopology();</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordtype">bool</span> deleteTopology(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="comment">//.</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"></span>    <span class="keywordtype">void</span> QueryWhichDevicesIn();</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordtype">void</span> whichConnected();</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_a_p_i_8h.html">API.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_controller.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="class_controller.html">Controller</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_controller.html#a95c56822d667e94b031451729ce069a9">Controller</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02">startprogram</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_controller.html#aa7a121a4b7ddd99b4cbd96f253653fdc">   38</a></span>    <a class="code hl_class" href="class_a_p_i.html">API</a> <a class="code hl_variable" href="class_controller.html#aa7a121a4b7ddd99b4cbd96f253653fdc">api</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_controller.html#a2a35135e847d2598fc987bc05be5be2a">   43</a></span>    vector&lt;topology *&gt;<a class="code hl_variable" href="class_controller.html#a2a35135e847d2598fc987bc05be5be2a">TopologyList</a>; <span class="comment">// act as memory</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_controller.html#ab77a2425bc94722025e5865957af063c">getchoice</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf">valid</a>(<span class="keywordtype">string</span> choice);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03">getToplogyID</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_controller.html#a76502e61551a693b9d4a9a847e73623f">getInputJsonFileName</a>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc">findTopology</a>(<span class="keywordtype">string</span> topologyID) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#af1ca88ffc1cbe7125c82d9e376998442">readJson</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#a7744237c0146b480844fc39192ef43c2">WriteJson</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    pair&lt;string, int&gt; <a class="code hl_function" href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53">getOutputJsonFileName</a>();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#a13800919d9ecca6ab25f6877082f46db">Querytopologies</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#adf9b256aecabb18e3dc722105998f3bc">Deletetopology</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_controller.html#abe6dbac253f5f3d44541d6e635be2f11">deleteTopology</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#a0da792bea03fa3ed866889d3683e2b94">QueryWhichDevicesIn</a>();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_controller.html#a0e5c8c9370138962661f3c9d9aeabca7">whichConnected</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>};</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="ttc" id="a_a_p_i_8h_html"><div class="ttname"><a href="_a_p_i_8h.html">API.h</a></div><div class="ttdoc">API is the class use to treat with json in write json file or read from json files -reading the json ...</div></div>
 <div class="ttc" id="aclass_a_p_i_html"><div class="ttname"><a href="class_a_p_i.html">API</a></div><div class="ttdoc">API is the class use to treat with json in write json file or read from json files.</div><div class="ttdef"><b>Definition:</b> API.h:30</div></div>
-<div class="ttc" id="aclass_controller_html"><div class="ttname"><a href="class_controller.html">Controller</a></div><div class="ttdoc">controller class which have all flow control function of the program</div><div class="ttdef"><b>Definition:</b> Controller.h:25</div></div>
+<div class="ttc" id="aclass_controller_html"><div class="ttname"><a href="class_controller.html">Controller</a></div><div class="ttdoc">controller class which have all flow control function of the program</div><div class="ttdef"><b>Definition:</b> Controller.h:22</div></div>
+<div class="ttc" id="aclass_controller_html_a0da792bea03fa3ed866889d3683e2b94"><div class="ttname"><a href="class_controller.html#a0da792bea03fa3ed866889d3683e2b94">Controller::QueryWhichDevicesIn</a></div><div class="ttdeci">void QueryWhichDevicesIn()</div><div class="ttdoc">printout the devices connected in some topologies Query about which devices are in a given topology</div><div class="ttdef"><b>Definition:</b> Controller.cpp:104</div></div>
+<div class="ttc" id="aclass_controller_html_a0e5c8c9370138962661f3c9d9aeabca7"><div class="ttname"><a href="class_controller.html#a0e5c8c9370138962661f3c9d9aeabca7">Controller::whichConnected</a></div><div class="ttdeci">void whichConnected()</div><div class="ttdoc">Query about which devices are connected to a given netlist node in a given topology.</div><div class="ttdef"><b>Definition:</b> Controller.cpp:117</div></div>
+<div class="ttc" id="aclass_controller_html_a13800919d9ecca6ab25f6877082f46db"><div class="ttname"><a href="class_controller.html#a13800919d9ecca6ab25f6877082f46db">Controller::Querytopologies</a></div><div class="ttdeci">void Querytopologies()</div><div class="ttdoc">Query about which topologies are currently in the memory printing all topologyes id from memory.</div><div class="ttdef"><b>Definition:</b> Controller.cpp:92</div></div>
+<div class="ttc" id="aclass_controller_html_a2a35135e847d2598fc987bc05be5be2a"><div class="ttname"><a href="class_controller.html#a2a35135e847d2598fc987bc05be5be2a">Controller::TopologyList</a></div><div class="ttdeci">vector&lt; topology * &gt; TopologyList</div><div class="ttdoc">TopologyList act as memory of the device while hold the converted json files from reading.</div><div class="ttdef"><b>Definition:</b> Controller.h:43</div></div>
+<div class="ttc" id="aclass_controller_html_a2f7b56a88638318d5cfdc9816e9bab53"><div class="ttname"><a href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53">Controller::getOutputJsonFileName</a></div><div class="ttdeci">pair&lt; string, int &gt; getOutputJsonFileName()</div><div class="ttdoc">Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio...</div><div class="ttdef"><b>Definition:</b> Controller.cpp:64</div></div>
+<div class="ttc" id="aclass_controller_html_a76502e61551a693b9d4a9a847e73623f"><div class="ttname"><a href="class_controller.html#a76502e61551a693b9d4a9a847e73623f">Controller::getInputJsonFileName</a></div><div class="ttdeci">string getInputJsonFileName()</div><div class="ttdoc">get json file name from user and validate on it by chick its alreay created or not and user doent ent...</div><div class="ttdef"><b>Definition:</b> Controller.cpp:30</div></div>
+<div class="ttc" id="aclass_controller_html_a7744237c0146b480844fc39192ef43c2"><div class="ttname"><a href="class_controller.html#a7744237c0146b480844fc39192ef43c2">Controller::WriteJson</a></div><div class="ttdeci">void WriteJson()</div><div class="ttdoc">Write a given topology from the memory to a JSON file by calling api.write with the input name and th...</div><div class="ttdef"><b>Definition:</b> Controller.cpp:82</div></div>
+<div class="ttc" id="aclass_controller_html_a7752ed6b27da2f0aed8e474caf422a03"><div class="ttname"><a href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03">Controller::getToplogyID</a></div><div class="ttdeci">int getToplogyID()</div><div class="ttdoc">Get the get Toplogy ID from user and check if exist or not by calling other function that iterate thr...</div><div class="ttdef"><b>Definition:</b> Controller.cpp:48</div></div>
 <div class="ttc" id="aclass_controller_html_a95c56822d667e94b031451729ce069a9"><div class="ttname"><a href="class_controller.html#a95c56822d667e94b031451729ce069a9">Controller::Controller</a></div><div class="ttdeci">Controller()</div><div class="ttdoc">start the main program</div><div class="ttdef"><b>Definition:</b> Controller.cpp:132</div></div>
-<div class="ttc" id="aclass_controller_html_abd7e2ce75590beb0f1258ec56666ba02"><div class="ttname"><a href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02">Controller::startprogram</a></div><div class="ttdeci">void startprogram()</div><div class="ttdef"><b>Definition:</b> Controller.cpp:136</div></div>
+<div class="ttc" id="aclass_controller_html_aa7a121a4b7ddd99b4cbd96f253653fdc"><div class="ttname"><a href="class_controller.html#aa7a121a4b7ddd99b4cbd96f253653fdc">Controller::api</a></div><div class="ttdeci">API api</div><div class="ttdoc">object from abi class to call it function when need treat with in/out json files</div><div class="ttdef"><b>Definition:</b> Controller.h:38</div></div>
+<div class="ttc" id="aclass_controller_html_ab4279de6a80b1fd160a0ce531caa13cf"><div class="ttname"><a href="class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf">Controller::valid</a></div><div class="ttdeci">bool valid(string choice)</div><div class="ttdoc">function to check the validation of user input if inout between 0 and 7 its correct else output wrong...</div><div class="ttdef"><b>Definition:</b> Controller.cpp:177</div></div>
+<div class="ttc" id="aclass_controller_html_ab77a2425bc94722025e5865957af063c"><div class="ttname"><a href="class_controller.html#ab77a2425bc94722025e5865957af063c">Controller::getchoice</a></div><div class="ttdeci">string getchoice()</div><div class="ttdoc">function to get the user choice and validate on input</div><div class="ttdef"><b>Definition:</b> Controller.cpp:156</div></div>
+<div class="ttc" id="aclass_controller_html_abd7e2ce75590beb0f1258ec56666ba02"><div class="ttname"><a href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02">Controller::startprogram</a></div><div class="ttdeci">void startprogram()</div><div class="ttdoc">the start function of the program</div><div class="ttdef"><b>Definition:</b> Controller.cpp:136</div></div>
+<div class="ttc" id="aclass_controller_html_abe6dbac253f5f3d44541d6e635be2f11"><div class="ttname"><a href="class_controller.html#abe6dbac253f5f3d44541d6e635be2f11">Controller::deleteTopology</a></div><div class="ttdeci">bool deleteTopology(int index)</div><div class="ttdoc">delete specific location in topologylist</div><div class="ttdef"><b>Definition:</b> Controller.cpp:9</div></div>
+<div class="ttc" id="aclass_controller_html_ada742049b8312fe6aa2c13852d902bdc"><div class="ttname"><a href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc">Controller::findTopology</a></div><div class="ttdeci">int findTopology(string topologyID) const</div><div class="ttdoc">general purose function to get topology index in memory</div><div class="ttdef"><b>Definition:</b> Controller.cpp:23</div></div>
+<div class="ttc" id="aclass_controller_html_adf9b256aecabb18e3dc722105998f3bc"><div class="ttname"><a href="class_controller.html#adf9b256aecabb18e3dc722105998f3bc">Controller::Deletetopology</a></div><div class="ttdeci">void Deletetopology()</div><div class="ttdoc">Delete a given topology from memory after take the topology name from user and validate on it.</div><div class="ttdef"><b>Definition:</b> Controller.cpp:98</div></div>
+<div class="ttc" id="aclass_controller_html_af1ca88ffc1cbe7125c82d9e376998442"><div class="ttname"><a href="class_controller.html#af1ca88ffc1cbe7125c82d9e376998442">Controller::readJson</a></div><div class="ttdeci">void readJson()</div><div class="ttdoc">Read a topology from a given JSON file and store it in the memory. by calling api....</div><div class="ttdef"><b>Definition:</b> Controller.cpp:68</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

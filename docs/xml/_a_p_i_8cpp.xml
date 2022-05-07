@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_a_p_i_8cpp" kind="file" language="C++">
+    <compoundname>API.cpp</compoundname>
+    <includes refid="_a_p_i_8h" local="yes">API.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>API.cpp</label>
+        <link refid="_a_p_i_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>API.h</label>
+        <link refid="_a_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Nmos.h</label>
+        <link refid="_nmos_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Pmos.h</label>
+        <link refid="_pmos_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Resistance.h</label>
+        <link refid="_resistance_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ThreeTerminal.h</label>
+        <link refid="_three_terminal_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>iomanip</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>json.hpp</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_p_i_8h" kindref="compound">API.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">API::API()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_a_p_i_1a0f97fcfa25c89c4aa9747b73016c30b4" refkind="member"><highlight class="normal"><ref refid="classtopology" kindref="compound">topology</ref><sp/>*<sp/><ref refid="class_a_p_i_1a0f97fcfa25c89c4aa9747b73016c30b4" kindref="member">API::ReadJson</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FileName)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>file(FileName);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json<sp/>jsonObject<sp/>=<sp/>json::parse(file);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jsonObject.empty())</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_p_i_1adda7ba5369ee876f8c0ca8a355575235" kindref="member">createTopology</ref>(jsonObject);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>err)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>err;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_a_p_i_1adda7ba5369ee876f8c0ca8a355575235" refkind="member"><highlight class="normal"><ref refid="classtopology" kindref="compound">topology</ref>*<sp/><ref refid="class_a_p_i_1adda7ba5369ee876f8c0ca8a355575235" kindref="member">API::createTopology</ref>(json<sp/>jsonObject)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>jsonObject[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Device*&gt;<sp/>components<sp/>=<sp/><ref refid="class_a_p_i_1a0a62e19f264ac3a8af2a9acd30bf02f9" kindref="member">createListOfDevices</ref>(jsonObject);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtopology" kindref="compound">topology</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>components);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_a_p_i_1a0a62e19f264ac3a8af2a9acd30bf02f9" refkind="member"><highlight class="normal">vector&lt;Device*&gt;<sp/><ref refid="class_a_p_i_1a0a62e19f264ac3a8af2a9acd30bf02f9" kindref="member">API::createListOfDevices</ref>(json<sp/>jsonObject)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Device*&gt;<sp/>Devices;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>jsonObject[</highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal">].size();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Devices.push_back(<ref refid="class_a_p_i_1a5ca1e600b977a5c40e1614a1db03e929" kindref="member">createDevice</ref>(jsonObject[</highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal">][i]));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Devices;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_a_p_i_1a5ca1e600b977a5c40e1614a1db03e929" refkind="member"><highlight class="normal"><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1a5ca1e600b977a5c40e1614a1db03e929" kindref="member">API::createDevice</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;resistor&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_p_i_1abc509958a1b6399930d535f1ec7a80bd" kindref="member">createResistor</ref>(DeviceJson);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;nmos&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_p_i_1a5992c29887197f77d9734de0bf19fe66" kindref="member">createNmos</ref>(DeviceJson);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_p_i_1ab9103247deae2c7bc5b5e4026186aa92" kindref="member">createPmos</ref>(DeviceJson);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50" refid="class_a_p_i_1abc509958a1b6399930d535f1ec7a80bd" refkind="member"><highlight class="normal"><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1abc509958a1b6399930d535f1ec7a80bd" kindref="member">API::createResistor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/>max,<sp/>def;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>min<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;resistance&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>max<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;resistance&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;resistance&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_resistance" kindref="compound">Resistance</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">],<sp/>def,<sp/>max,<sp/>min);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_a_p_i_1a5992c29887197f77d9734de0bf19fe66" refkind="member"><highlight class="normal"><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1a5992c29887197f77d9734de0bf19fe66" kindref="member">API::createNmos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/>max,<sp/>def;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>min<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>max<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_nmos" kindref="compound">Nmos</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">],<sp/>def,<sp/>max,<sp/><sp/>min<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_a_p_i_1ab9103247deae2c7bc5b5e4026186aa92" refkind="member"><highlight class="normal"><ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_a_p_i_1ab9103247deae2c7bc5b5e4026186aa92" kindref="member">API::createPmos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json&amp;<sp/>DeviceJson)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/>max,<sp/>def;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>min<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>max<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>=<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_pmos" kindref="compound">Pmos</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>DeviceJson[</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">],<sp/>def,<sp/>max,<sp/>min);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="class_a_p_i_1ae3bae133372ce4d900e2bc6f51807fd0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_p_i_1ae3bae133372ce4d900e2bc6f51807fd0" kindref="member">API::writeToJSON</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtopology" kindref="compound">topology</ref>*<sp/>Topology)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofstream<sp/>file(filename);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file.is_open())<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Error:<sp/>opening<sp/>the<sp/>file<sp/>failed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json<sp/>jsonFile<sp/>=<sp/><ref refid="class_a_p_i_1a7f4a57de2252eabfdc856490fa7dfc97" kindref="member">ConvertTopologyTojson</ref>(Topology);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file<sp/>&lt;&lt;<sp/>setw(4)<sp/>&lt;&lt;<sp/>jsonFile<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::exception&amp;)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_a_p_i_1a7f4a57de2252eabfdc856490fa7dfc97" refkind="member"><highlight class="normal">json<sp/><ref refid="class_a_p_i_1a7f4a57de2252eabfdc856490fa7dfc97" kindref="member">API::ConvertTopologyTojson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtopology" kindref="compound">topology</ref>*<sp/>topo)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>json<sp/>jsonFile;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonFile<sp/>=<sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/>topo-&gt;<ref refid="classtopology_1a3a23246593d167560e4c06c5c3c6b37c" kindref="member">getID</ref>()},<sp/><ref refid="class_a_p_i_1a0d5eec05898031c392aa4395778c7d4d" kindref="member">ConvertDevicesToJson</ref>(topo-&gt;<ref refid="classtopology_1ab5b9447eb6f07912222e3e47e92dd1b7" kindref="member">getDevices</ref>())<sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>jsonFile;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_a_p_i_1a0d5eec05898031c392aa4395778c7d4d" refkind="member"><highlight class="normal">json<sp/><ref refid="class_a_p_i_1a0d5eec05898031c392aa4395778c7d4d" kindref="member">API::ConvertDevicesToJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Device*&gt;&amp;<sp/>Devices)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>json<sp/>jsonFile;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;json&gt;<sp/>jsonDevices;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="class_device" kindref="compound">Device</ref>*<sp/>comp<sp/>:<sp/>Devices)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonDevices.push_back(<ref refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" kindref="member">ConvertDeviceToJson</ref>(comp));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonFile<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal">,<sp/>jsonDevices<sp/>};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>jsonFile;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" refkind="member"><highlight class="normal">json<sp/><ref refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" kindref="member">API::ConvertDeviceToJson</ref>(<ref refid="class_device" kindref="compound">Device</ref>*<sp/><ref refid="class_device" kindref="compound">Device</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>json<sp/>jsonFile;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>devValue;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>type<sp/>=<sp/><ref refid="class_device" kindref="compound">Device</ref>-&gt;<ref refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" kindref="member">get_type</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;resistor&quot;</highlight><highlight class="normal">)<sp/>devValue<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;resistance&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;nmos&quot;</highlight><highlight class="normal"><sp/>||<sp/>type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;pmos&quot;</highlight><highlight class="normal">)<sp/>devValue<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>json<sp/>values<sp/>=<sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_device" kindref="compound">Device</ref>-&gt;<ref refid="class_device_1a2c3041835f84c73c86149976f2c6f565" kindref="member">get_Default</ref>()},<sp/>{</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_device" kindref="compound">Device</ref>-&gt;<ref refid="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" kindref="member">get_min</ref>()},<sp/>{</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_device" kindref="compound">Device</ref>-&gt;<ref refid="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" kindref="member">get_max</ref>()}<sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonFile<sp/>=<sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">,<sp/>type},<sp/>{</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_device" kindref="compound">Device</ref>-&gt;<ref refid="class_device_1acada68ab3f642242deb479ae553daae7" kindref="member">get_id</ref>()},<sp/>{devValue,<sp/>values},<sp/>{</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_device" kindref="compound">Device</ref>-&gt;<ref refid="class_device_1a1d200a41b1a0b802997f984d50d543ef" kindref="member">get_netList</ref>()}<sp/>};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>jsonFile;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_a_p_i_1a583ec65b542b44e4b7013f5fc830fdcd" refkind="member"><highlight class="normal"><ref refid="class_a_p_i_1a583ec65b542b44e4b7013f5fc830fdcd" kindref="member">API::~API</ref>()</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="API.cpp"/>
+  </compounddef>
+</doxygen>

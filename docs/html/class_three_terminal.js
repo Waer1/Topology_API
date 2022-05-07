@@ -1,7 +1,6 @@
 var class_three_terminal =
 [
     [ "ThreeTerminal", "class_three_terminal.html#a551a49e99976179b6f1889480bb2b7c6", null ],
-    [ "~ThreeTerminal", "class_three_terminal.html#a41f8e495abe54ac8e077e4190b7cf1f9", null ],
     [ "getDrain", "class_three_terminal.html#a226bd66e422d7b684e8356d0fe0d4319", null ],
     [ "getGate", "class_three_terminal.html#a83a7250805f5f98790476d5bfa9959b3", null ],
     [ "getSrc", "class_three_terminal.html#a2fa826ec663f34e21242a22069b385ea", null ],

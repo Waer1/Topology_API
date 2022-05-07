@@ -1,6 +1,5 @@
 var class_a_p_i =
 [
-    [ "API", "class_a_p_i.html#adb63c7166868fb7d32cd11d4a457701c", null ],
     [ "~API", "class_a_p_i.html#a583ec65b542b44e4b7013f5fc830fdcd", null ],
     [ "ConvertDevicesToJson", "class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d", null ],
     [ "ConvertDeviceToJson", "class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a", null ],

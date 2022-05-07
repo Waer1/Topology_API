@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -100,7 +91,7 @@ $(document).ready(function(){initNavTree('_three_terminal_8h_source.html',''); i
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span> <a class="code hl_class" href="class_device.html">Device</a></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="class_three_terminal.html#a551a49e99976179b6f1889480bb2b7c6">ThreeTerminal</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>, map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>, <span class="keywordtype">float</span> defalutval, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="class_three_terminal.html#a551a49e99976179b6f1889480bb2b7c6">ThreeTerminal</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>, map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>, <span class="keywordtype">float</span> defalutval, <span class="keywordtype">float</span> max, <span class="keywordtype">float</span> min);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_three_terminal.html#a2fa826ec663f34e21242a22069b385ea">getSrc</a>();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_three_terminal.html#a226bd66e422d7b684e8356d0fe0d4319">getDrain</a>();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_three_terminal.html#a83a7250805f5f98790476d5bfa9959b3">getGate</a>();</div>
@@ -108,21 +99,18 @@ $(document).ready(function(){initNavTree('_three_terminal_8h_source.html',''); i
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_three_terminal.html#aa1818205b0508cb4d294180122b3e6d1">setGate</a>(<span class="keywordtype">string</span> gate);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_three_terminal.html#a3504d9bb3840c9ecfb0fc97ae871bfe0">setDrain</a>(<span class="keywordtype">string</span> drain);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_function" href="class_three_terminal.html#a41f8e495abe54ac8e077e4190b7cf1f9">~ThreeTerminal</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_class" href="class_three_terminal.html">~ThreeTerminal</a>();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div><div class="ttdoc">main class of the All componnet or all devices used in this program with virual print to print each t...</div></div>
 <div class="ttc" id="aclass_device_html"><div class="ttname"><a href="class_device.html">Device</a></div><div class="ttdoc">main class of the All componnet or all devices used in this program with</div><div class="ttdef"><b>Definition:</b> Device.h:28</div></div>
-<div class="ttc" id="aclass_device_html_a1f0ac3ac3dc31ba764bedd52492d7a9d"><div class="ttname"><a href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">Device::min</a></div><div class="ttdeci">float min</div><div class="ttdef"><b>Definition:</b> Device.h:45</div></div>
 <div class="ttc" id="aclass_device_html_a8d5b746dfca41668c1736728cb76030a"><div class="ttname"><a href="class_device.html#a8d5b746dfca41668c1736728cb76030a">Device::netList</a></div><div class="ttdeci">map&lt; string, string &gt; netList</div><div class="ttdoc">map contain devices connected to this device 3 terminals or 2 terminals</div><div class="ttdef"><b>Definition:</b> Device.h:39</div></div>
-<div class="ttc" id="aclass_device_html_ac1a539b53f299c43ea749cfdaa91376f"><div class="ttname"><a href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">Device::max</a></div><div class="ttdeci">float max</div><div class="ttdef"><b>Definition:</b> Device.h:45</div></div>
 <div class="ttc" id="aclass_three_terminal_html"><div class="ttname"><a href="class_three_terminal.html">ThreeTerminal</a></div><div class="ttdoc">inheritance class from Device that contain all devices with three terminal</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.h:19</div></div>
 <div class="ttc" id="aclass_three_terminal_html_a0d1b525ce67cd51bf800dc219b8beffb"><div class="ttname"><a href="class_three_terminal.html#a0d1b525ce67cd51bf800dc219b8beffb">ThreeTerminal::setSrc</a></div><div class="ttdeci">void setSrc(string src)</div><div class="ttdoc">Set the Src of the three terminal Device.</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:11</div></div>
 <div class="ttc" id="aclass_three_terminal_html_a226bd66e422d7b684e8356d0fe0d4319"><div class="ttname"><a href="class_three_terminal.html#a226bd66e422d7b684e8356d0fe0d4319">ThreeTerminal::getDrain</a></div><div class="ttdeci">string getDrain()</div><div class="ttdoc">Get the Drain of the three terminal Device.</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:9</div></div>
 <div class="ttc" id="aclass_three_terminal_html_a2fa826ec663f34e21242a22069b385ea"><div class="ttname"><a href="class_three_terminal.html#a2fa826ec663f34e21242a22069b385ea">ThreeTerminal::getSrc</a></div><div class="ttdeci">string getSrc()</div><div class="ttdoc">Get src of the three terminal Device.</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:5</div></div>
 <div class="ttc" id="aclass_three_terminal_html_a3504d9bb3840c9ecfb0fc97ae871bfe0"><div class="ttname"><a href="class_three_terminal.html#a3504d9bb3840c9ecfb0fc97ae871bfe0">ThreeTerminal::setDrain</a></div><div class="ttdeci">void setDrain(string drain)</div><div class="ttdoc">Set the Drain of the three terminal Device.</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:13</div></div>
-<div class="ttc" id="aclass_three_terminal_html_a41f8e495abe54ac8e077e4190b7cf1f9"><div class="ttname"><a href="class_three_terminal.html#a41f8e495abe54ac8e077e4190b7cf1f9">ThreeTerminal::~ThreeTerminal</a></div><div class="ttdeci">~ThreeTerminal()</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:17</div></div>
 <div class="ttc" id="aclass_three_terminal_html_a551a49e99976179b6f1889480bb2b7c6"><div class="ttname"><a href="class_three_terminal.html#a551a49e99976179b6f1889480bb2b7c6">ThreeTerminal::ThreeTerminal</a></div><div class="ttdeci">ThreeTerminal(string id, map&lt; string, string &gt; netList, float defalutval, float max, float min)</div><div class="ttdoc">Construct a new Three Terminal object.</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:3</div></div>
 <div class="ttc" id="aclass_three_terminal_html_a83a7250805f5f98790476d5bfa9959b3"><div class="ttname"><a href="class_three_terminal.html#a83a7250805f5f98790476d5bfa9959b3">ThreeTerminal::getGate</a></div><div class="ttdeci">string getGate()</div><div class="ttdoc">Get the Gate of the three terminal Device.</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:7</div></div>
 <div class="ttc" id="aclass_three_terminal_html_aa1818205b0508cb4d294180122b3e6d1"><div class="ttname"><a href="class_three_terminal.html#aa1818205b0508cb4d294180122b3e6d1">ThreeTerminal::setGate</a></div><div class="ttdeci">void setGate(string gate)</div><div class="ttdoc">Set the Gate of the three terminal Device.</div><div class="ttdef"><b>Definition:</b> ThreeTerminal.cpp:15</div></div>

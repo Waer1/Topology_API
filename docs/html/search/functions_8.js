@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readjson_0',['ReadJson',['../class_a_p_i.html#a0f97fcfa25c89c4aa9747b73016c30b4',1,'API']]],
-  ['resistance_1',['Resistance',['../class_resistance.html#aeb7f9dd37b087a2f15803c10eb5946c8',1,'Resistance']]]
+  ['querytopologies_0',['Querytopologies',['../class_controller.html#a13800919d9ecca6ab25f6877082f46db',1,'Controller']]],
+  ['querywhichdevicesin_1',['QueryWhichDevicesIn',['../class_controller.html#a0da792bea03fa3ed866889d3683e2b94',1,'Controller']]]
 ];

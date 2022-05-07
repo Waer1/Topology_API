@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_nmos" kind="class" language="C++" prot="public">
+    <compoundname>Nmos</compoundname>
+    <basecompoundref refid="class_three_terminal" prot="public" virt="non-virtual">ThreeTerminal</basecompoundref>
+    <includes refid="_nmos_8h" local="no">Nmos.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_nmos_1a17d7ad73ddabb9048cd4b11e3e8182a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Nmos::Nmos</definition>
+        <argsstring>(string typ, map&lt; string, string &gt; netList, float def, float max, float min)</argsstring>
+        <name>Nmos</name>
+        <qualifiedname>Nmos::Nmos</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>typ</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt;</type>
+          <declname>netList</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_nmos" kindref="compound">Nmos</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of that object passed to higher class </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>netList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of connected componentto this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>def</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>min valude from this device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nmos.h" line="30" column="5" bodyfile="Nmos.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" compoundref="_device_8cpp" startline="44" endline="47">Device::set_type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Nmos::Print_Device</definition>
+        <argsstring>()</argsstring>
+        <name>Print_Device</name>
+        <qualifiedname>Nmos::Print_Device</qualifiedname>
+        <reimplements refid="class_device_1a8941e81633c72f60a504c18492268696">Print_Device</reimplements>
+        <briefdescription>
+<para>print the specific device info </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nmos.h" line="35" column="18" bodyfile="Nmos.cpp" bodystart="8" bodyend="13"/>
+        <references refid="class_device_1acada68ab3f642242deb479ae553daae7" compoundref="_device_8cpp" startline="79" endline="82">Device::get_id</references>
+        <references refid="class_device_1a8941e81633c72f60a504c18492268696" compoundref="_device_8cpp" startline="74" endline="77">Device::Print_Device</references>
+      </memberdef>
+      <memberdef kind="function" id="class_nmos_1ac5fbbc5920499e56e2335e002b18a199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Nmos::~Nmos</definition>
+        <argsstring>()</argsstring>
+        <name>~Nmos</name>
+        <qualifiedname>Nmos::~Nmos</qualifiedname>
+        <briefdescription>
+<para>Destroy the <ref refid="class_nmos" kindref="compound">Nmos</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nmos.h" line="40" column="5" bodyfile="Nmos.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_nmos" kindref="compound">Nmos</ref> is there Three terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Device</label>
+        <link refid="class_device"/>
+      </node>
+      <node id="1">
+        <label>Nmos</label>
+        <link refid="class_nmos"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Device</label>
+        <link refid="class_device"/>
+      </node>
+      <node id="1">
+        <label>Nmos</label>
+        <link refid="class_nmos"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Nmos.h" line="18" column="1" bodyfile="Nmos.h" bodystart="19" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_device_1a45e1856076d6698be39f3f7772491767" prot="protected" virt="non-virtual"><scope>Nmos</scope><name>defaulval</name></member>
+      <member refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" prot="public" virt="non-virtual"><scope>Nmos</scope><name>Device</name></member>
+      <member refid="class_device_1a64ba12dcc5f4267486c5d545d04dcf68" prot="public" virt="non-virtual"><scope>Nmos</scope><name>Device</name></member>
+      <member refid="class_device_1a2c3041835f84c73c86149976f2c6f565" prot="public" virt="non-virtual"><scope>Nmos</scope><name>get_Default</name></member>
+      <member refid="class_device_1acada68ab3f642242deb479ae553daae7" prot="public" virt="non-virtual"><scope>Nmos</scope><name>get_id</name></member>
+      <member refid="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" prot="public" virt="non-virtual"><scope>Nmos</scope><name>get_max</name></member>
+      <member refid="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" prot="public" virt="non-virtual"><scope>Nmos</scope><name>get_min</name></member>
+      <member refid="class_device_1a1d200a41b1a0b802997f984d50d543ef" prot="public" virt="non-virtual"><scope>Nmos</scope><name>get_netList</name></member>
+      <member refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" prot="public" virt="non-virtual"><scope>Nmos</scope><name>get_type</name></member>
+      <member refid="class_three_terminal_1a226bd66e422d7b684e8356d0fe0d4319" prot="public" virt="non-virtual"><scope>Nmos</scope><name>getDrain</name></member>
+      <member refid="class_three_terminal_1a83a7250805f5f98790476d5bfa9959b3" prot="public" virt="non-virtual"><scope>Nmos</scope><name>getGate</name></member>
+      <member refid="class_three_terminal_1a2fa826ec663f34e21242a22069b385ea" prot="public" virt="non-virtual"><scope>Nmos</scope><name>getSrc</name></member>
+      <member refid="class_device_1a157555eda7bcf277b286458011604dd7" prot="protected" virt="non-virtual"><scope>Nmos</scope><name>id</name></member>
+      <member refid="class_device_1ac1a539b53f299c43ea749cfdaa91376f" prot="protected" virt="non-virtual"><scope>Nmos</scope><name>max</name></member>
+      <member refid="class_device_1a1f0ac3ac3dc31ba764bedd52492d7a9d" prot="protected" virt="non-virtual"><scope>Nmos</scope><name>min</name></member>
+      <member refid="class_device_1a8d5b746dfca41668c1736728cb76030a" prot="protected" virt="non-virtual"><scope>Nmos</scope><name>netList</name></member>
+      <member refid="class_nmos_1a17d7ad73ddabb9048cd4b11e3e8182a0" prot="public" virt="non-virtual"><scope>Nmos</scope><name>Nmos</name></member>
+      <member refid="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f" prot="public" virt="virtual"><scope>Nmos</scope><name>Print_Device</name></member>
+      <member refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" prot="public" virt="non-virtual"><scope>Nmos</scope><name>set_Default</name></member>
+      <member refid="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" prot="public" virt="non-virtual"><scope>Nmos</scope><name>set_Max</name></member>
+      <member refid="class_device_1ad74f349907b01a87ace4ea100f3b50e6" prot="public" virt="non-virtual"><scope>Nmos</scope><name>set_Min</name></member>
+      <member refid="class_device_1a143d5ae3424066aef14c824422683108" prot="public" virt="non-virtual"><scope>Nmos</scope><name>set_netList</name></member>
+      <member refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" prot="public" virt="non-virtual"><scope>Nmos</scope><name>set_type</name></member>
+      <member refid="class_three_terminal_1a3504d9bb3840c9ecfb0fc97ae871bfe0" prot="public" virt="non-virtual"><scope>Nmos</scope><name>setDrain</name></member>
+      <member refid="class_three_terminal_1aa1818205b0508cb4d294180122b3e6d1" prot="public" virt="non-virtual"><scope>Nmos</scope><name>setGate</name></member>
+      <member refid="class_device_1a440522d88e792af168cdc517b85c31a9" prot="public" virt="non-virtual"><scope>Nmos</scope><name>setID</name></member>
+      <member refid="class_three_terminal_1a0d1b525ce67cd51bf800dc219b8beffb" prot="public" virt="non-virtual"><scope>Nmos</scope><name>setSrc</name></member>
+      <member refid="class_three_terminal_1a551a49e99976179b6f1889480bb2b7c6" prot="public" virt="non-virtual"><scope>Nmos</scope><name>ThreeTerminal</name></member>
+      <member refid="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" prot="protected" virt="non-virtual"><scope>Nmos</scope><name>type</name></member>
+      <member refid="class_device_1a9dabc419c8d8df3a686c33ce042bc99a" prot="public" virt="non-virtual"><scope>Nmos</scope><name>~Device</name></member>
+      <member refid="class_nmos_1ac5fbbc5920499e56e2335e002b18a199" prot="public" virt="non-virtual"><scope>Nmos</scope><name>~Nmos</name></member>
+      <member refid="class_three_terminal_1a41f8e495abe54ac8e077e4190b7cf1f9" prot="public" virt="non-virtual"><scope>Nmos</scope><name>~ThreeTerminal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

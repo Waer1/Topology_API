@@ -1,0 +1,5 @@
+<map id="Controller::getOutputJsonFileName" name="Controller::getOutputJsonFileName">
+<area shape="rect" id="node1" title="Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio..." alt="" coords="403,5,572,47"/>
+<area shape="rect" id="node2" href="$class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,13,355,39"/>
+<area shape="rect" id="node3" href="$class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,13,164,39"/>
+</map>

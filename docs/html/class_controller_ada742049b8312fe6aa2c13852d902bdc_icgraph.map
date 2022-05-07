@@ -1,0 +1,10 @@
+<map id="Controller::findTopology" name="Controller::findTopology">
+<area shape="rect" id="node1" title="general purose function to get topology index in memory" alt="" coords="899,93,1056,120"/>
+<area shape="rect" id="node2" href="$class_controller.html#a7752ed6b27da2f0aed8e474caf422a03" title="Get the get Toplogy ID from user and check if exist or not by calling other function that iterate thr..." alt="" coords="691,93,851,120"/>
+<area shape="rect" id="node3" href="$class_controller.html#adf9b256aecabb18e3dc722105998f3bc" title="Delete a given topology from memory after take the topology name from user and validate on it." alt="" coords="472,5,643,32"/>
+<area shape="rect" id="node5" href="$class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53" title="Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio..." alt="" coords="473,57,642,98"/>
+<area shape="rect" id="node7" href="$class_controller.html#a0da792bea03fa3ed866889d3683e2b94" title="printout the devices connected in some topologies Query about which devices are in a given topology" alt="" coords="212,117,424,144"/>
+<area shape="rect" id="node8" href="$class_controller.html#a0e5c8c9370138962661f3c9d9aeabca7" title="Query about which devices are connected to a given netlist node in a given topology." alt="" coords="228,169,408,196"/>
+<area shape="rect" id="node4" href="$class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,92,164,119"/>
+<area shape="rect" id="node6" href="$class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="247,65,389,92"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Controller" name="Controller">
+<area shape="rect" id="node1" title="controller class which have all flow control function of the program" alt="" coords="5,95,83,121"/>
+<area shape="rect" id="node2" href="$class_a_p_i.html" title="API is the class use to treat with json in write json file or read from json files." alt="" coords="23,5,65,32"/>
+</map>

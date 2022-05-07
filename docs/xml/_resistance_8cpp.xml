@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_resistance_8cpp" kind="file" language="C++">
+    <compoundname>Resistance.cpp</compoundname>
+    <includes refid="_resistance_8h" local="yes">Resistance.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Resistance.cpp</label>
+        <link refid="_resistance_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Resistance.h</label>
+        <link refid="_resistance_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TwoTerminal.h</label>
+        <link refid="_two_terminal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_resistance_8h" kindref="compound">Resistance.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_resistance_1aeb7f9dd37b087a2f15803c10eb5946c8" refkind="member"><highlight class="normal"><ref refid="class_resistance_1aeb7f9dd37b087a2f15803c10eb5946c8" kindref="member">Resistance::Resistance</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>map&lt;string,<sp/>string&gt;<sp/>netList,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>def,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min)<sp/>:<ref refid="class_two_terminal" kindref="compound">TwoTerminal</ref>(id,<sp/>netList,<sp/>def,<sp/>max,<sp/>min)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" kindref="member">set_type</ref>(</highlight><highlight class="stringliteral">&quot;Resistance&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9" kindref="member">Resistance::Print_Device</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Resistance<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" kindref="member">get_type</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device_1a8941e81633c72f60a504c18492268696" kindref="member">Device::Print_Device</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_resistance_1ae078c593097ad200762b95b4aaee22ec" refkind="member"><highlight class="normal"><ref refid="class_resistance_1ae078c593097ad200762b95b4aaee22ec" kindref="member">Resistance::~Resistance</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Resistance.cpp"/>
+  </compounddef>
+</doxygen>

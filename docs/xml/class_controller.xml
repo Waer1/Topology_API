@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_controller" kind="class" language="C++" prot="public">
+    <compoundname>Controller</compoundname>
+    <includes refid="_controller_8h" local="no">Controller.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_controller_1aa7a121a4b7ddd99b4cbd96f253653fdc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_a_p_i" kindref="compound">API</ref></type>
+        <definition>API Controller::api</definition>
+        <argsstring></argsstring>
+        <name>api</name>
+        <qualifiedname>Controller::api</qualifiedname>
+        <briefdescription>
+<para>object from abi class to call it function when need treat with in/out json files </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="38" column="5" bodyfile="Controller.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_controller_1af1ca88ffc1cbe7125c82d9e376998442" compoundref="_controller_8cpp" startline="68" endline="80">readJson</referencedby>
+        <referencedby refid="class_controller_1a7744237c0146b480844fc39192ef43c2" compoundref="_controller_8cpp" startline="82" endline="90">WriteJson</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a2a35135e847d2598fc987bc05be5be2a" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classtopology" kindref="compound">topology</ref> * &gt;</type>
+        <definition>vector&lt;topology *&gt; Controller::TopologyList</definition>
+        <argsstring></argsstring>
+        <name>TopologyList</name>
+        <qualifiedname>Controller::TopologyList</qualifiedname>
+        <briefdescription>
+<para>TopologyList act as memory of the device while hold the converted json files from reading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="43" column="7" bodyfile="Controller.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_controller_1abe6dbac253f5f3d44541d6e635be2f11" compoundref="_controller_8cpp" startline="9" endline="21">deleteTopology</referencedby>
+        <referencedby refid="class_controller_1ada742049b8312fe6aa2c13852d902bdc" compoundref="_controller_8cpp" startline="23" endline="28">findTopology</referencedby>
+        <referencedby refid="class_controller_1a13800919d9ecca6ab25f6877082f46db" compoundref="_controller_8cpp" startline="92" endline="96">Querytopologies</referencedby>
+        <referencedby refid="class_controller_1a0da792bea03fa3ed866889d3683e2b94" compoundref="_controller_8cpp" startline="104" endline="114">QueryWhichDevicesIn</referencedby>
+        <referencedby refid="class_controller_1af1ca88ffc1cbe7125c82d9e376998442" compoundref="_controller_8cpp" startline="68" endline="80">readJson</referencedby>
+        <referencedby refid="class_controller_1a0e5c8c9370138962661f3c9d9aeabca7" compoundref="_controller_8cpp" startline="117" endline="130">whichConnected</referencedby>
+        <referencedby refid="class_controller_1a7744237c0146b480844fc39192ef43c2" compoundref="_controller_8cpp" startline="82" endline="90">WriteJson</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controller_1a95c56822d667e94b031451729ce069a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::Controller</definition>
+        <argsstring>()</argsstring>
+        <name>Controller</name>
+        <qualifiedname>Controller::Controller</qualifiedname>
+        <briefdescription>
+<para>start the main program </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="28" column="1" bodyfile="Controller.cpp" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::startprogram</definition>
+        <argsstring>()</argsstring>
+        <name>startprogram</name>
+        <qualifiedname>Controller::startprogram</qualifiedname>
+        <briefdescription>
+<para>the start function of the program </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="33" column="6" bodyfile="Controller.cpp" bodystart="136" bodyend="154"/>
+        <references refid="class_controller_1adf9b256aecabb18e3dc722105998f3bc" compoundref="_controller_8cpp" startline="98" endline="102">Deletetopology</references>
+        <references refid="class_controller_1ab77a2425bc94722025e5865957af063c" compoundref="_controller_8cpp" startline="156" endline="175">getchoice</references>
+        <references refid="class_controller_1a13800919d9ecca6ab25f6877082f46db" compoundref="_controller_8cpp" startline="92" endline="96">Querytopologies</references>
+        <references refid="class_controller_1a0da792bea03fa3ed866889d3683e2b94" compoundref="_controller_8cpp" startline="104" endline="114">QueryWhichDevicesIn</references>
+        <references refid="class_controller_1af1ca88ffc1cbe7125c82d9e376998442" compoundref="_controller_8cpp" startline="68" endline="80">readJson</references>
+        <references refid="class_controller_1a0e5c8c9370138962661f3c9d9aeabca7" compoundref="_controller_8cpp" startline="117" endline="130">whichConnected</references>
+        <references refid="class_controller_1a7744237c0146b480844fc39192ef43c2" compoundref="_controller_8cpp" startline="82" endline="90">WriteJson</references>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ab77a2425bc94722025e5865957af063c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Controller::getchoice</definition>
+        <argsstring>()</argsstring>
+        <name>getchoice</name>
+        <qualifiedname>Controller::getchoice</qualifiedname>
+        <briefdescription>
+<para>function to get the user choice and validate on input </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>its make it stick in while loop till chose correct choice</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="return"><para>string correct user choice </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="50" column="8" bodyfile="Controller.cpp" bodystart="156" bodyend="175"/>
+        <references refid="class_controller_1ab4279de6a80b1fd160a0ce531caa13cf" compoundref="_controller_8cpp" startline="177" endline="182">valid</references>
+        <referencedby refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" compoundref="_controller_8cpp" startline="136" endline="154">startprogram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ab4279de6a80b1fd160a0ce531caa13cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Controller::valid</definition>
+        <argsstring>(string choice)</argsstring>
+        <name>valid</name>
+        <qualifiedname>Controller::valid</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+<para>function to check the validation of user input if inout between 0 and 7 its correct else output wrong msg and request rfom user other valid input </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>choice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input from user </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if valid coice </para>
+</simplesect>
+<simplesect kind="return"><para>false if invalid choice </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="59" column="6" bodyfile="Controller.cpp" bodystart="177" bodyend="182"/>
+        <referencedby refid="class_controller_1ab77a2425bc94722025e5865957af063c" compoundref="_controller_8cpp" startline="156" endline="175">getchoice</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Controller::getToplogyID</definition>
+        <argsstring>()</argsstring>
+        <name>getToplogyID</name>
+        <qualifiedname>Controller::getToplogyID</qualifiedname>
+        <briefdescription>
+<para>Get the get Toplogy ID from user and check if exist or not by calling other function that iterate throw the tobology list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int if found will return i (index of the topology) if not found will return -1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="66" column="5" bodyfile="Controller.cpp" bodystart="48" bodyend="62"/>
+        <references refid="class_controller_1ada742049b8312fe6aa2c13852d902bdc" compoundref="_controller_8cpp" startline="23" endline="28">findTopology</references>
+        <referencedby refid="class_controller_1adf9b256aecabb18e3dc722105998f3bc" compoundref="_controller_8cpp" startline="98" endline="102">Deletetopology</referencedby>
+        <referencedby refid="class_controller_1a2f7b56a88638318d5cfdc9816e9bab53" compoundref="_controller_8cpp" startline="64" endline="66">getOutputJsonFileName</referencedby>
+        <referencedby refid="class_controller_1a0da792bea03fa3ed866889d3683e2b94" compoundref="_controller_8cpp" startline="104" endline="114">QueryWhichDevicesIn</referencedby>
+        <referencedby refid="class_controller_1a0e5c8c9370138962661f3c9d9aeabca7" compoundref="_controller_8cpp" startline="117" endline="130">whichConnected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a76502e61551a693b9d4a9a847e73623f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>std::string Controller::getInputJsonFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getInputJsonFileName</name>
+        <qualifiedname>Controller::getInputJsonFileName</qualifiedname>
+        <briefdescription>
+<para>get json file name from user and validate on it by chick its alreay created or not and user doent enter empty ot non json file </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string the file name.json </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="73" column="8" bodyfile="Controller.cpp" bodystart="30" bodyend="46"/>
+        <referencedby refid="class_controller_1a2f7b56a88638318d5cfdc9816e9bab53" compoundref="_controller_8cpp" startline="64" endline="66">getOutputJsonFileName</referencedby>
+        <referencedby refid="class_controller_1af1ca88ffc1cbe7125c82d9e376998442" compoundref="_controller_8cpp" startline="68" endline="80">readJson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ada742049b8312fe6aa2c13852d902bdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Controller::findTopology</definition>
+        <argsstring>(string topologyID) const</argsstring>
+        <name>findTopology</name>
+        <qualifiedname>Controller::findTopology</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>topologyID</declname>
+        </param>
+        <briefdescription>
+<para>general purose function to get topology index in memory </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topologyID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string is of searched topology </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int if found will return i (index of the topology) if not found will return -1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="80" column="5" bodyfile="Controller.cpp" bodystart="23" bodyend="28"/>
+        <references refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" compoundref="_controller_8h" startline="43">TopologyList</references>
+        <referencedby refid="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" compoundref="_controller_8cpp" startline="48" endline="62">getToplogyID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1af1ca88ffc1cbe7125c82d9e376998442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::readJson</definition>
+        <argsstring>()</argsstring>
+        <name>readJson</name>
+        <qualifiedname>Controller::readJson</qualifiedname>
+        <briefdescription>
+<para>Read a topology from a given JSON file and store it in the memory. by calling api.readjson with the input name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="85" column="6" bodyfile="Controller.cpp" bodystart="68" bodyend="80"/>
+        <references refid="class_controller_1aa7a121a4b7ddd99b4cbd96f253653fdc" compoundref="_controller_8h" startline="38">api</references>
+        <references refid="class_controller_1a76502e61551a693b9d4a9a847e73623f" compoundref="_controller_8cpp" startline="30" endline="46">getInputJsonFileName</references>
+        <references refid="class_a_p_i_1a0f97fcfa25c89c4aa9747b73016c30b4" compoundref="_a_p_i_8cpp" startline="7" endline="21">API::ReadJson</references>
+        <references refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" compoundref="_controller_8h" startline="43">TopologyList</references>
+        <referencedby refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" compoundref="_controller_8cpp" startline="136" endline="154">startprogram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a7744237c0146b480844fc39192ef43c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::WriteJson</definition>
+        <argsstring>()</argsstring>
+        <name>WriteJson</name>
+        <qualifiedname>Controller::WriteJson</qualifiedname>
+        <briefdescription>
+<para>Write a given topology from the memory to a JSON file by calling api.write with the input name and the topology. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="90" column="6" bodyfile="Controller.cpp" bodystart="82" bodyend="90"/>
+        <references refid="class_controller_1aa7a121a4b7ddd99b4cbd96f253653fdc" compoundref="_controller_8h" startline="38">api</references>
+        <references refid="class_controller_1a2f7b56a88638318d5cfdc9816e9bab53" compoundref="_controller_8cpp" startline="64" endline="66">getOutputJsonFileName</references>
+        <references refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" compoundref="_controller_8h" startline="43">TopologyList</references>
+        <references refid="class_a_p_i_1ae3bae133372ce4d900e2bc6f51807fd0" compoundref="_a_p_i_8cpp" startline="80" endline="98">API::writeToJSON</references>
+        <referencedby refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" compoundref="_controller_8cpp" startline="136" endline="154">startprogram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a2f7b56a88638318d5cfdc9816e9bab53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pair&lt; string, int &gt;</type>
+        <definition>pair&lt; string, int &gt; Controller::getOutputJsonFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getOutputJsonFileName</name>
+        <qualifiedname>Controller::getOutputJsonFileName</qualifiedname>
+        <briefdescription>
+<para>Get the Output Json File Name object simple functionget the file name and topolgy id by ohter function and return a pair of them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>pair&lt;string, int&gt; &lt;filename , topologyID&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="97" column="6" bodyfile="Controller.cpp" bodystart="64" bodyend="66"/>
+        <references refid="class_controller_1a76502e61551a693b9d4a9a847e73623f" compoundref="_controller_8cpp" startline="30" endline="46">getInputJsonFileName</references>
+        <references refid="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" compoundref="_controller_8cpp" startline="48" endline="62">getToplogyID</references>
+        <referencedby refid="class_controller_1a7744237c0146b480844fc39192ef43c2" compoundref="_controller_8cpp" startline="82" endline="90">WriteJson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a13800919d9ecca6ab25f6877082f46db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::Querytopologies</definition>
+        <argsstring>()</argsstring>
+        <name>Querytopologies</name>
+        <qualifiedname>Controller::Querytopologies</qualifiedname>
+        <briefdescription>
+<para>Query about which topologies are currently in the memory printing all topologyes id from memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="103" column="6" bodyfile="Controller.cpp" bodystart="92" bodyend="96"/>
+        <references refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" compoundref="_controller_8h" startline="43">TopologyList</references>
+        <referencedby refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" compoundref="_controller_8cpp" startline="136" endline="154">startprogram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1adf9b256aecabb18e3dc722105998f3bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::Deletetopology</definition>
+        <argsstring>()</argsstring>
+        <name>Deletetopology</name>
+        <qualifiedname>Controller::Deletetopology</qualifiedname>
+        <briefdescription>
+<para>Delete a given topology from memory after take the topology name from user and validate on it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="108" column="6" bodyfile="Controller.cpp" bodystart="98" bodyend="102"/>
+        <references refid="class_controller_1abe6dbac253f5f3d44541d6e635be2f11" compoundref="_controller_8cpp" startline="9" endline="21">deleteTopology</references>
+        <references refid="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" compoundref="_controller_8cpp" startline="48" endline="62">getToplogyID</references>
+        <referencedby refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" compoundref="_controller_8cpp" startline="136" endline="154">startprogram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1abe6dbac253f5f3d44541d6e635be2f11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Controller::deleteTopology</definition>
+        <argsstring>(int index)</argsstring>
+        <name>deleteTopology</name>
+        <qualifiedname>Controller::deleteTopology</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>delete specific location in topologylist </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of deleted topology </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if deleted successfully </para>
+</simplesect>
+<simplesect kind="return"><para>false and not found or any exception </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="116" column="6" bodyfile="Controller.cpp" bodystart="9" bodyend="21"/>
+        <references refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" compoundref="_controller_8h" startline="43">TopologyList</references>
+        <referencedby refid="class_controller_1adf9b256aecabb18e3dc722105998f3bc" compoundref="_controller_8cpp" startline="98" endline="102">Deletetopology</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a0da792bea03fa3ed866889d3683e2b94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::QueryWhichDevicesIn</definition>
+        <argsstring>()</argsstring>
+        <name>QueryWhichDevicesIn</name>
+        <qualifiedname>Controller::QueryWhichDevicesIn</qualifiedname>
+        <briefdescription>
+<para>printout the devices connected in some topologies Query about which devices are in a given topology </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="121" column="6" bodyfile="Controller.cpp" bodystart="104" bodyend="114"/>
+        <references refid="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" compoundref="_controller_8cpp" startline="48" endline="62">getToplogyID</references>
+        <references refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" compoundref="_controller_8h" startline="43">TopologyList</references>
+        <referencedby refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" compoundref="_controller_8cpp" startline="136" endline="154">startprogram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a0e5c8c9370138962661f3c9d9aeabca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::whichConnected</definition>
+        <argsstring>()</argsstring>
+        <name>whichConnected</name>
+        <qualifiedname>Controller::whichConnected</qualifiedname>
+        <briefdescription>
+<para>Query about which devices are connected to a given netlist node in a given topology. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Controller.h" line="126" column="6" bodyfile="Controller.cpp" bodystart="117" bodyend="130"/>
+        <references refid="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" compoundref="_controller_8cpp" startline="48" endline="62">getToplogyID</references>
+        <references refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" compoundref="_controller_8h" startline="43">TopologyList</references>
+        <referencedby refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" compoundref="_controller_8cpp" startline="136" endline="154">startprogram</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>controller class which have all flow control function of the program </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>API</label>
+        <link refid="class_a_p_i"/>
+      </node>
+      <node id="1">
+        <label>Controller</label>
+        <link refid="class_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>api</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Controller.h" line="21" column="1" bodyfile="Controller.h" bodystart="22" bodyend="127"/>
+    <listofallmembers>
+      <member refid="class_controller_1aa7a121a4b7ddd99b4cbd96f253653fdc" prot="public" virt="non-virtual"><scope>Controller</scope><name>api</name></member>
+      <member refid="class_controller_1a95c56822d667e94b031451729ce069a9" prot="public" virt="non-virtual"><scope>Controller</scope><name>Controller</name></member>
+      <member refid="class_controller_1adf9b256aecabb18e3dc722105998f3bc" prot="public" virt="non-virtual"><scope>Controller</scope><name>Deletetopology</name></member>
+      <member refid="class_controller_1abe6dbac253f5f3d44541d6e635be2f11" prot="public" virt="non-virtual"><scope>Controller</scope><name>deleteTopology</name></member>
+      <member refid="class_controller_1ada742049b8312fe6aa2c13852d902bdc" prot="public" virt="non-virtual"><scope>Controller</scope><name>findTopology</name></member>
+      <member refid="class_controller_1ab77a2425bc94722025e5865957af063c" prot="public" virt="non-virtual"><scope>Controller</scope><name>getchoice</name></member>
+      <member refid="class_controller_1a76502e61551a693b9d4a9a847e73623f" prot="public" virt="non-virtual"><scope>Controller</scope><name>getInputJsonFileName</name></member>
+      <member refid="class_controller_1a2f7b56a88638318d5cfdc9816e9bab53" prot="public" virt="non-virtual"><scope>Controller</scope><name>getOutputJsonFileName</name></member>
+      <member refid="class_controller_1a7752ed6b27da2f0aed8e474caf422a03" prot="public" virt="non-virtual"><scope>Controller</scope><name>getToplogyID</name></member>
+      <member refid="class_controller_1a13800919d9ecca6ab25f6877082f46db" prot="public" virt="non-virtual"><scope>Controller</scope><name>Querytopologies</name></member>
+      <member refid="class_controller_1a0da792bea03fa3ed866889d3683e2b94" prot="public" virt="non-virtual"><scope>Controller</scope><name>QueryWhichDevicesIn</name></member>
+      <member refid="class_controller_1af1ca88ffc1cbe7125c82d9e376998442" prot="public" virt="non-virtual"><scope>Controller</scope><name>readJson</name></member>
+      <member refid="class_controller_1abd7e2ce75590beb0f1258ec56666ba02" prot="public" virt="non-virtual"><scope>Controller</scope><name>startprogram</name></member>
+      <member refid="class_controller_1a2a35135e847d2598fc987bc05be5be2a" prot="public" virt="non-virtual"><scope>Controller</scope><name>TopologyList</name></member>
+      <member refid="class_controller_1ab4279de6a80b1fd160a0ce531caa13cf" prot="public" virt="non-virtual"><scope>Controller</scope><name>valid</name></member>
+      <member refid="class_controller_1a0e5c8c9370138962661f3c9d9aeabca7" prot="public" virt="non-virtual"><scope>Controller</scope><name>whichConnected</name></member>
+      <member refid="class_controller_1a7744237c0146b480844fc39192ef43c2" prot="public" virt="non-virtual"><scope>Controller</scope><name>WriteJson</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

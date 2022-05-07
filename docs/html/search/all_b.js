@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['threeterminal_0',['ThreeTerminal',['../class_three_terminal.html',1,'ThreeTerminal'],['../class_three_terminal.html#a551a49e99976179b6f1889480bb2b7c6',1,'ThreeTerminal::ThreeTerminal()']]],
-  ['threeterminal_2ecpp_1',['ThreeTerminal.cpp',['../_three_terminal_8cpp.html',1,'']]],
-  ['threeterminal_2eh_2',['ThreeTerminal.h',['../_three_terminal_8h.html',1,'']]],
-  ['topology_3',['topology',['../classtopology.html',1,'topology'],['../classtopology.html#a9504e806b619e1d37b04b92dec69fa36',1,'topology::topology(string id)'],['../classtopology.html#af8cd4056287a7ab3ad86f54cac3d550e',1,'topology::topology(string id, const vector&lt; Device * &gt; &amp;Devices)']]],
-  ['topology_2ecpp_4',['topology.cpp',['../topology_8cpp.html',1,'']]],
-  ['topology_2eh_5',['topology.h',['../topology_8h.html',1,'']]],
-  ['topology_5fapi_2ecpp_6',['Topology_API.cpp',['../_topology___a_p_i_8cpp.html',1,'']]],
-  ['twoterminal_7',['TwoTerminal',['../class_two_terminal.html',1,'TwoTerminal'],['../class_two_terminal.html#a6a333713174328fa4cd9340ae25dc3c6',1,'TwoTerminal::TwoTerminal()']]],
-  ['twoterminal_2ecpp_8',['TwoTerminal.cpp',['../_two_terminal_8cpp.html',1,'']]],
-  ['twoterminal_2eh_9',['TwoTerminal.h',['../_two_terminal_8h.html',1,'']]],
-  ['type_10',['type',['../class_device.html#aecd8da12c9d5e6d70fbabca34e005c2f',1,'Device']]]
+  ['set_5fdefault_0',['set_Default',['../class_device.html#a44cd3b15f0e9a16cff36157653d6820c',1,'Device']]],
+  ['set_5fmax_1',['set_Max',['../class_device.html#aed16b99dbcd7b28d307adc668bda8dd3',1,'Device']]],
+  ['set_5fmin_2',['set_Min',['../class_device.html#ad74f349907b01a87ace4ea100f3b50e6',1,'Device']]],
+  ['set_5fnetlist_3',['set_netList',['../class_device.html#a143d5ae3424066aef14c824422683108',1,'Device']]],
+  ['set_5ftype_4',['set_type',['../class_device.html#ad2490d0be9a0bc107ceac733a07443d4',1,'Device']]],
+  ['setdevices_5',['setDevices',['../classtopology.html#a6487d3c2947949bae349e1e439079770',1,'topology']]],
+  ['setdrain_6',['setDrain',['../class_three_terminal.html#a3504d9bb3840c9ecfb0fc97ae871bfe0',1,'ThreeTerminal']]],
+  ['setgate_7',['setGate',['../class_three_terminal.html#aa1818205b0508cb4d294180122b3e6d1',1,'ThreeTerminal']]],
+  ['setid_8',['setID',['../class_device.html#a440522d88e792af168cdc517b85c31a9',1,'Device']]],
+  ['setid_9',['setId',['../classtopology.html#aba9f5a8e65d516e6f8d601319d327549',1,'topology']]],
+  ['setsrc_10',['setSrc',['../class_three_terminal.html#a0d1b525ce67cd51bf800dc219b8beffb',1,'ThreeTerminal']]],
+  ['sett1_11',['setT1',['../class_two_terminal.html#ab8787a445e6978e9404a0edfa78aaa36',1,'TwoTerminal']]],
+  ['sett2_12',['setT2',['../class_two_terminal.html#a0ce4592b8aae9ca307fe5a6c6f0ecf1b',1,'TwoTerminal']]],
+  ['startprogram_13',['startprogram',['../class_controller.html#abd7e2ce75590beb0f1258ec56666ba02',1,'Controller']]]
 ];

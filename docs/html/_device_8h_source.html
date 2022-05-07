@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -107,18 +98,18 @@ $(document).ready(function(){initNavTree('_device_8h_source.html',''); initResiz
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_device.html#a157555eda7bcf277b286458011604dd7">   34</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_device.html#a157555eda7bcf277b286458011604dd7">id</a>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">   39</a></span>    map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_device.html#a45e1856076d6698be39f3f7772491767">   45</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#a45e1856076d6698be39f3f7772491767">defaulval</a>; <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a>;<span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_device.html#a45e1856076d6698be39f3f7772491767">   45</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#a45e1856076d6698be39f3f7772491767">defaulval</a>; <span class="keywordtype">float</span> max;<span class="keywordtype">float</span> min;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_device.html#aecd8da12c9d5e6d70fbabca34e005c2f">   50</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_device.html#aecd8da12c9d5e6d70fbabca34e005c2f">type</a>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="class_device.html#a64ba12dcc5f4267486c5d545d04dcf68">Device</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span> , map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a> ,  <span class="keywordtype">float</span> def, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="class_device.html#a64ba12dcc5f4267486c5d545d04dcf68">Device</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span> , map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a> ,  <span class="keywordtype">float</span> def, <span class="keywordtype">float</span> max, <span class="keywordtype">float</span> min);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="class_device.html#a64ba12dcc5f4267486c5d545d04dcf68">Device</a>();</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#a440522d88e792af168cdc517b85c31a9">setID</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#a44cd3b15f0e9a16cff36157653d6820c">set_Default</a>(<span class="keywordtype">float</span> def);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#a143d5ae3424066aef14c824422683108">set_netList</a>(map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#aed16b99dbcd7b28d307adc668bda8dd3">set_Max</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a>);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#ad74f349907b01a87ace4ea100f3b50e6">set_Min</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#aed16b99dbcd7b28d307adc668bda8dd3">set_Max</a>(<span class="keywordtype">float</span> max);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#ad74f349907b01a87ace4ea100f3b50e6">set_Min</a>(<span class="keywordtype">float</span> min);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#ad2490d0be9a0bc107ceac733a07443d4">set_type</a>(<span class="keywordtype">string</span> name);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_device.html#a2ac3ac9ed7a0de9f5f59ad5441eb1373">get_type</a>();</div>
@@ -128,14 +119,13 @@ $(document).ready(function(){initNavTree('_device_8h_source.html',''); initResiz
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_device.html#a84b6c9c4b8cf7505c1e2441b16562661">get_min</a>();</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_device.html#acada68ab3f642242deb479ae553daae7">get_id</a>();</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_device.html#a8941e81633c72f60a504c18492268696">Print_Device</a>();</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_function" href="class_device.html#a9dabc419c8d8df3a686c33ce042bc99a">~Device</a>();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_class" href="class_device.html">~Device</a>();</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>};</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="ttc" id="aclass_device_html"><div class="ttname"><a href="class_device.html">Device</a></div><div class="ttdoc">main class of the All componnet or all devices used in this program with</div><div class="ttdef"><b>Definition:</b> Device.h:28</div></div>
 <div class="ttc" id="aclass_device_html_a143d5ae3424066aef14c824422683108"><div class="ttname"><a href="class_device.html#a143d5ae3424066aef14c824422683108">Device::set_netList</a></div><div class="ttdeci">void set_netList(map&lt; string, string &gt; netList)</div><div class="ttdoc">Set the netList object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:25</div></div>
 <div class="ttc" id="aclass_device_html_a157555eda7bcf277b286458011604dd7"><div class="ttname"><a href="class_device.html#a157555eda7bcf277b286458011604dd7">Device::id</a></div><div class="ttdeci">string id</div><div class="ttdoc">id of the device</div><div class="ttdef"><b>Definition:</b> Device.h:34</div></div>
 <div class="ttc" id="aclass_device_html_a1d200a41b1a0b802997f984d50d543ef"><div class="ttname"><a href="class_device.html#a1d200a41b1a0b802997f984d50d543ef">Device::get_netList</a></div><div class="ttdeci">map&lt; string, string &gt; get_netList()</div><div class="ttdoc">Get the netList object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:64</div></div>
-<div class="ttc" id="aclass_device_html_a1f0ac3ac3dc31ba764bedd52492d7a9d"><div class="ttname"><a href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">Device::min</a></div><div class="ttdeci">float min</div><div class="ttdef"><b>Definition:</b> Device.h:45</div></div>
 <div class="ttc" id="aclass_device_html_a2ac3ac9ed7a0de9f5f59ad5441eb1373"><div class="ttname"><a href="class_device.html#a2ac3ac9ed7a0de9f5f59ad5441eb1373">Device::get_type</a></div><div class="ttdeci">string get_type()</div><div class="ttdoc">Get the type object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:49</div></div>
 <div class="ttc" id="aclass_device_html_a2c3041835f84c73c86149976f2c6f565"><div class="ttname"><a href="class_device.html#a2c3041835f84c73c86149976f2c6f565">Device::get_Default</a></div><div class="ttdeci">float get_Default()</div><div class="ttdoc">Get the Default object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:54</div></div>
 <div class="ttc" id="aclass_device_html_a440522d88e792af168cdc517b85c31a9"><div class="ttname"><a href="class_device.html#a440522d88e792af168cdc517b85c31a9">Device::setID</a></div><div class="ttdeci">void setID(string id)</div><div class="ttdoc">set the ID of the Device</div><div class="ttdef"><b>Definition:</b> Device.cpp:30</div></div>
@@ -146,8 +136,6 @@ $(document).ready(function(){initNavTree('_device_8h_source.html',''); initResiz
 <div class="ttc" id="aclass_device_html_a84b6c9c4b8cf7505c1e2441b16562661"><div class="ttname"><a href="class_device.html#a84b6c9c4b8cf7505c1e2441b16562661">Device::get_min</a></div><div class="ttdeci">float get_min()</div><div class="ttdoc">Get the min object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:69</div></div>
 <div class="ttc" id="aclass_device_html_a8941e81633c72f60a504c18492268696"><div class="ttname"><a href="class_device.html#a8941e81633c72f60a504c18492268696">Device::Print_Device</a></div><div class="ttdeci">virtual void Print_Device()</div><div class="ttdoc">print the general device info</div><div class="ttdef"><b>Definition:</b> Device.cpp:74</div></div>
 <div class="ttc" id="aclass_device_html_a8d5b746dfca41668c1736728cb76030a"><div class="ttname"><a href="class_device.html#a8d5b746dfca41668c1736728cb76030a">Device::netList</a></div><div class="ttdeci">map&lt; string, string &gt; netList</div><div class="ttdoc">map contain devices connected to this device 3 terminals or 2 terminals</div><div class="ttdef"><b>Definition:</b> Device.h:39</div></div>
-<div class="ttc" id="aclass_device_html_a9dabc419c8d8df3a686c33ce042bc99a"><div class="ttname"><a href="class_device.html#a9dabc419c8d8df3a686c33ce042bc99a">Device::~Device</a></div><div class="ttdeci">~Device()</div><div class="ttdef"><b>Definition:</b> Device.cpp:84</div></div>
-<div class="ttc" id="aclass_device_html_ac1a539b53f299c43ea749cfdaa91376f"><div class="ttname"><a href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">Device::max</a></div><div class="ttdeci">float max</div><div class="ttdef"><b>Definition:</b> Device.h:45</div></div>
 <div class="ttc" id="aclass_device_html_acada68ab3f642242deb479ae553daae7"><div class="ttname"><a href="class_device.html#acada68ab3f642242deb479ae553daae7">Device::get_id</a></div><div class="ttdeci">string get_id()</div><div class="ttdoc">Get the id object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:79</div></div>
 <div class="ttc" id="aclass_device_html_ad2490d0be9a0bc107ceac733a07443d4"><div class="ttname"><a href="class_device.html#ad2490d0be9a0bc107ceac733a07443d4">Device::set_type</a></div><div class="ttdeci">void set_type(string name)</div><div class="ttdoc">Set the type object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:44</div></div>
 <div class="ttc" id="aclass_device_html_ad74f349907b01a87ace4ea100f3b50e6"><div class="ttname"><a href="class_device.html#ad74f349907b01a87ace4ea100f3b50e6">Device::set_Min</a></div><div class="ttdeci">void set_Min(float min)</div><div class="ttdoc">Set the Min object.</div><div class="ttdef"><b>Definition:</b> Device.cpp:39</div></div>

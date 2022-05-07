@@ -1,0 +1,4 @@
+<map id="Controller::getchoice" name="Controller::getchoice">
+<area shape="rect" id="node1" title="function to get the user choice and validate on input" alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node2" href="$class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf" title="function to check the validation of user input if inout between 0 and 7 its correct else output wrong..." alt="" coords="195,5,305,32"/>
+</map>

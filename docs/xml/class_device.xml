@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_device" kind="class" language="C++" prot="public">
+    <compoundname>Device</compoundname>
+    <derivedcompoundref refid="class_three_terminal" prot="public" virt="non-virtual">ThreeTerminal</derivedcompoundref>
+    <derivedcompoundref refid="class_two_terminal" prot="public" virt="non-virtual">TwoTerminal</derivedcompoundref>
+    <includes refid="_device_8h" local="no">Device.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_device_1a157555eda7bcf277b286458011604dd7" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Device::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Device::id</qualifiedname>
+        <briefdescription>
+<para>id of the device </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="34" column="8" bodyfile="Device.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_device_1acada68ab3f642242deb479ae553daae7" compoundref="_device_8cpp" startline="79" endline="82">get_id</referencedby>
+        <referencedby refid="class_device_1a440522d88e792af168cdc517b85c31a9" compoundref="_device_8cpp" startline="30" endline="32">setID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_device_1a8d5b746dfca41668c1736728cb76030a" prot="protected" static="no" mutable="no">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt;string, string&gt; Device::netList</definition>
+        <argsstring></argsstring>
+        <name>netList</name>
+        <qualifiedname>Device::netList</qualifiedname>
+        <briefdescription>
+<para>map contain devices connected to this device 3 terminals or 2 terminals </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="39" column="5" bodyfile="Device.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" compoundref="_device_8cpp" startline="3" endline="10">Device</referencedby>
+        <referencedby refid="class_device_1a1d200a41b1a0b802997f984d50d543ef" compoundref="_device_8cpp" startline="64" endline="67">get_netList</referencedby>
+        <referencedby refid="class_three_terminal_1a226bd66e422d7b684e8356d0fe0d4319" compoundref="_three_terminal_8cpp" startline="9" endline="9">ThreeTerminal::getDrain</referencedby>
+        <referencedby refid="class_three_terminal_1a83a7250805f5f98790476d5bfa9959b3" compoundref="_three_terminal_8cpp" startline="7" endline="7">ThreeTerminal::getGate</referencedby>
+        <referencedby refid="class_three_terminal_1a2fa826ec663f34e21242a22069b385ea" compoundref="_three_terminal_8cpp" startline="5" endline="5">ThreeTerminal::getSrc</referencedby>
+        <referencedby refid="class_two_terminal_1a5a0eae3771f18083952c6c2f2e5d9285" compoundref="_two_terminal_8cpp" startline="7" endline="10">TwoTerminal::getT1</referencedby>
+        <referencedby refid="class_two_terminal_1a5a81030fb4fc3baa13831d21ce10c909" compoundref="_two_terminal_8cpp" startline="12" endline="15">TwoTerminal::getT2</referencedby>
+        <referencedby refid="class_device_1a143d5ae3424066aef14c824422683108" compoundref="_device_8cpp" startline="25" endline="28">set_netList</referencedby>
+        <referencedby refid="class_three_terminal_1a3504d9bb3840c9ecfb0fc97ae871bfe0" compoundref="_three_terminal_8cpp" startline="13" endline="13">ThreeTerminal::setDrain</referencedby>
+        <referencedby refid="class_three_terminal_1aa1818205b0508cb4d294180122b3e6d1" compoundref="_three_terminal_8cpp" startline="15" endline="15">ThreeTerminal::setGate</referencedby>
+        <referencedby refid="class_three_terminal_1a0d1b525ce67cd51bf800dc219b8beffb" compoundref="_three_terminal_8cpp" startline="11" endline="11">ThreeTerminal::setSrc</referencedby>
+        <referencedby refid="class_two_terminal_1ab8787a445e6978e9404a0edfa78aaa36" compoundref="_two_terminal_8cpp" startline="17" endline="20">TwoTerminal::setT1</referencedby>
+        <referencedby refid="class_two_terminal_1a0ce4592b8aae9ca307fe5a6c6f0ecf1b" compoundref="_two_terminal_8cpp" startline="22" endline="25">TwoTerminal::setT2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_device_1a45e1856076d6698be39f3f7772491767" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Device::defaulval</definition>
+        <argsstring></argsstring>
+        <name>defaulval</name>
+        <qualifiedname>Device::defaulval</qualifiedname>
+        <briefdescription>
+<para>the defalt and min and max value that can be connected to component </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="45" column="7" bodyfile="Device.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_device_1a2c3041835f84c73c86149976f2c6f565" compoundref="_device_8cpp" startline="54" endline="57">get_Default</referencedby>
+        <referencedby refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" compoundref="_device_8cpp" startline="20" endline="23">set_Default</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_device_1ac1a539b53f299c43ea749cfdaa91376f" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Device::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <qualifiedname>Device::max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="45" column="23" bodyfile="Device.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_device_1a1f0ac3ac3dc31ba764bedd52492d7a9d" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Device::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <qualifiedname>Device::min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="45" column="32" bodyfile="Device.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Device::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>Device::type</qualifiedname>
+        <briefdescription>
+<para>string hold the type of the <ref refid="class_device" kindref="compound">Device</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="50" column="8" bodyfile="Device.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" compoundref="_device_8cpp" startline="49" endline="52">get_type</referencedby>
+        <referencedby refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" compoundref="_device_8cpp" startline="44" endline="47">set_type</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Device::Device</definition>
+        <argsstring>(string id, map&lt; string, string &gt; netList, float def, float max, float min)</argsstring>
+        <name>Device</name>
+        <qualifiedname>Device::Device</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt;</type>
+          <declname>netList</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>def</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_device" kindref="compound">Device</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of the device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>netList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of connected devices to the device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>def</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>min valude from this device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="62" column="1" bodyfile="Device.cpp" bodystart="3" bodyend="10"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">netList</references>
+        <references refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" compoundref="_device_8cpp" startline="20" endline="23">set_Default</references>
+        <references refid="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" compoundref="_device_8cpp" startline="34" endline="37">set_Max</references>
+        <references refid="class_device_1ad74f349907b01a87ace4ea100f3b50e6" compoundref="_device_8cpp" startline="39" endline="42">set_Min</references>
+        <references refid="class_device_1a143d5ae3424066aef14c824422683108" compoundref="_device_8cpp" startline="25" endline="28">set_netList</references>
+        <references refid="class_device_1a440522d88e792af168cdc517b85c31a9" compoundref="_device_8cpp" startline="30" endline="32">setID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a64ba12dcc5f4267486c5d545d04dcf68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Device::Device</definition>
+        <argsstring>()</argsstring>
+        <name>Device</name>
+        <qualifiedname>Device::Device</qualifiedname>
+        <briefdescription>
+<para>default Construct a new <ref refid="class_device" kindref="compound">Device</ref> object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="67" column="1" bodyfile="Device.cpp" bodystart="12" bodyend="18"/>
+        <references refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" compoundref="_device_8cpp" startline="20" endline="23">set_Default</references>
+        <references refid="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" compoundref="_device_8cpp" startline="34" endline="37">set_Max</references>
+        <references refid="class_device_1ad74f349907b01a87ace4ea100f3b50e6" compoundref="_device_8cpp" startline="39" endline="42">set_Min</references>
+        <references refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" compoundref="_device_8cpp" startline="44" endline="47">set_type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a440522d88e792af168cdc517b85c31a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Device::setID</definition>
+        <argsstring>(string id)</argsstring>
+        <name>setID</name>
+        <qualifiedname>Device::setID</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>set the ID of the <ref refid="class_device" kindref="compound">Device</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new ID of device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="73" column="6" bodyfile="Device.cpp" bodystart="30" bodyend="32"/>
+        <references refid="class_device_1a157555eda7bcf277b286458011604dd7" compoundref="_device_8h" startline="34">id</references>
+        <referencedby refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" compoundref="_device_8cpp" startline="3" endline="10">Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a44cd3b15f0e9a16cff36157653d6820c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Device::set_Default</definition>
+        <argsstring>(float def)</argsstring>
+        <name>set_Default</name>
+        <qualifiedname>Device::set_Default</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+<para>Set the Default object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>def</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new default value of device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="79" column="6" bodyfile="Device.cpp" bodystart="20" bodyend="23"/>
+        <references refid="class_device_1a45e1856076d6698be39f3f7772491767" compoundref="_device_8h" startline="45">defaulval</references>
+        <referencedby refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" compoundref="_device_8cpp" startline="3" endline="10">Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a143d5ae3424066aef14c824422683108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Device::set_netList</definition>
+        <argsstring>(map&lt; string, string &gt; netList)</argsstring>
+        <name>set_netList</name>
+        <qualifiedname>Device::set_netList</qualifiedname>
+        <param>
+          <type>map&lt; string, string &gt;</type>
+          <declname>netList</declname>
+        </param>
+        <briefdescription>
+<para>Set the netList object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>netList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new netList of device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="85" column="6" bodyfile="Device.cpp" bodystart="25" bodyend="28"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">netList</references>
+        <referencedby refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" compoundref="_device_8cpp" startline="3" endline="10">Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Device::set_Max</definition>
+        <argsstring>(float max)</argsstring>
+        <name>set_Max</name>
+        <qualifiedname>Device::set_Max</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Set the Max object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new max value of device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="91" column="6" bodyfile="Device.cpp" bodystart="34" bodyend="37"/>
+        <referencedby refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" compoundref="_device_8cpp" startline="3" endline="10">Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1ad74f349907b01a87ace4ea100f3b50e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Device::set_Min</definition>
+        <argsstring>(float min)</argsstring>
+        <name>set_Min</name>
+        <qualifiedname>Device::set_Min</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+<para>Set the Min object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new min value of device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="97" column="6" bodyfile="Device.cpp" bodystart="39" bodyend="42"/>
+        <referencedby refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" compoundref="_device_8cpp" startline="3" endline="10">Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1ad2490d0be9a0bc107ceac733a07443d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Device::set_type</definition>
+        <argsstring>(string name)</argsstring>
+        <name>set_type</name>
+        <qualifiedname>Device::set_type</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set the type object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="103" column="6" bodyfile="Device.cpp" bodystart="44" bodyend="47"/>
+        <references refid="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" compoundref="_device_8h" startline="50">type</references>
+        <referencedby refid="class_device_1a64ba12dcc5f4267486c5d545d04dcf68" compoundref="_device_8cpp" startline="12" endline="18">Device</referencedby>
+        <referencedby refid="class_nmos_1a17d7ad73ddabb9048cd4b11e3e8182a0" compoundref="_nmos_8cpp" startline="3" endline="6">Nmos::Nmos</referencedby>
+        <referencedby refid="class_pmos_1af9a43de10dd50f00ba5cfe8f6c33e9c0" compoundref="_pmos_8cpp" startline="3" endline="6">Pmos::Pmos</referencedby>
+        <referencedby refid="class_resistance_1aeb7f9dd37b087a2f15803c10eb5946c8" compoundref="_resistance_8cpp" startline="3" endline="6">Resistance::Resistance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Device::get_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_type</name>
+        <qualifiedname>Device::get_type</qualifiedname>
+        <briefdescription>
+<para>Get the type object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="110" column="8" bodyfile="Device.cpp" bodystart="49" bodyend="52"/>
+        <references refid="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" compoundref="_device_8h" startline="50">type</references>
+        <referencedby refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" compoundref="_a_p_i_8cpp" startline="119" endline="130">API::ConvertDeviceToJson</referencedby>
+        <referencedby refid="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9" compoundref="_resistance_8cpp" startline="8" endline="14">Resistance::Print_Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a2c3041835f84c73c86149976f2c6f565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Device::get_Default</definition>
+        <argsstring>()</argsstring>
+        <name>get_Default</name>
+        <qualifiedname>Device::get_Default</qualifiedname>
+        <briefdescription>
+<para>Get the Default object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="116" column="7" bodyfile="Device.cpp" bodystart="54" bodyend="57"/>
+        <references refid="class_device_1a45e1856076d6698be39f3f7772491767" compoundref="_device_8h" startline="45">defaulval</references>
+        <referencedby refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" compoundref="_a_p_i_8cpp" startline="119" endline="130">API::ConvertDeviceToJson</referencedby>
+        <referencedby refid="class_device_1a8941e81633c72f60a504c18492268696" compoundref="_device_8cpp" startline="74" endline="77">Print_Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a1d200a41b1a0b802997f984d50d543ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt; string, string &gt; Device::get_netList</definition>
+        <argsstring>()</argsstring>
+        <name>get_netList</name>
+        <qualifiedname>Device::get_netList</qualifiedname>
+        <briefdescription>
+<para>Get the netList object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>map&lt;string, string&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="122" column="5" bodyfile="Device.cpp" bodystart="64" bodyend="67"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">netList</references>
+        <referencedby refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" compoundref="_a_p_i_8cpp" startline="119" endline="130">API::ConvertDeviceToJson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Device::get_max</definition>
+        <argsstring>()</argsstring>
+        <name>get_max</name>
+        <qualifiedname>Device::get_max</qualifiedname>
+        <briefdescription>
+<para>Get the max object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="128" column="7" bodyfile="Device.cpp" bodystart="59" bodyend="62"/>
+        <referencedby refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" compoundref="_a_p_i_8cpp" startline="119" endline="130">API::ConvertDeviceToJson</referencedby>
+        <referencedby refid="class_device_1a8941e81633c72f60a504c18492268696" compoundref="_device_8cpp" startline="74" endline="77">Print_Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Device::get_min</definition>
+        <argsstring>()</argsstring>
+        <name>get_min</name>
+        <qualifiedname>Device::get_min</qualifiedname>
+        <briefdescription>
+<para>Get the min object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="134" column="7" bodyfile="Device.cpp" bodystart="69" bodyend="72"/>
+        <referencedby refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" compoundref="_a_p_i_8cpp" startline="119" endline="130">API::ConvertDeviceToJson</referencedby>
+        <referencedby refid="class_device_1a8941e81633c72f60a504c18492268696" compoundref="_device_8cpp" startline="74" endline="77">Print_Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1acada68ab3f642242deb479ae553daae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Device::get_id</definition>
+        <argsstring>()</argsstring>
+        <name>get_id</name>
+        <qualifiedname>Device::get_id</qualifiedname>
+        <briefdescription>
+<para>Get the id object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="140" column="8" bodyfile="Device.cpp" bodystart="79" bodyend="82"/>
+        <references refid="class_device_1a157555eda7bcf277b286458011604dd7" compoundref="_device_8h" startline="34">id</references>
+        <referencedby refid="class_a_p_i_1ac651532f8ec00c6cc1d810e9b130d79a" compoundref="_a_p_i_8cpp" startline="119" endline="130">API::ConvertDeviceToJson</referencedby>
+        <referencedby refid="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f" compoundref="_nmos_8cpp" startline="8" endline="13">Nmos::Print_Device</referencedby>
+        <referencedby refid="class_pmos_1ac4556d82c0d759e7465c572c394e12cd" compoundref="_pmos_8cpp" startline="8" endline="13">Pmos::Print_Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a8941e81633c72f60a504c18492268696" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Device::Print_Device</definition>
+        <argsstring>()</argsstring>
+        <name>Print_Device</name>
+        <qualifiedname>Device::Print_Device</qualifiedname>
+        <reimplementedby refid="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f">Print_Device</reimplementedby>
+        <reimplementedby refid="class_pmos_1ac4556d82c0d759e7465c572c394e12cd">Print_Device</reimplementedby>
+        <reimplementedby refid="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9">Print_Device</reimplementedby>
+        <briefdescription>
+<para>print the general device info </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="145" column="14" bodyfile="Device.cpp" bodystart="74" bodyend="77"/>
+        <references refid="class_device_1a2c3041835f84c73c86149976f2c6f565" compoundref="_device_8cpp" startline="54" endline="57">get_Default</references>
+        <references refid="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" compoundref="_device_8cpp" startline="59" endline="62">get_max</references>
+        <references refid="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" compoundref="_device_8cpp" startline="69" endline="72">get_min</references>
+        <referencedby refid="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f" compoundref="_nmos_8cpp" startline="8" endline="13">Nmos::Print_Device</referencedby>
+        <referencedby refid="class_pmos_1ac4556d82c0d759e7465c572c394e12cd" compoundref="_pmos_8cpp" startline="8" endline="13">Pmos::Print_Device</referencedby>
+        <referencedby refid="class_resistance_1a15e9dadd49a26d07c687b8c961a7fdd9" compoundref="_resistance_8cpp" startline="8" endline="14">Resistance::Print_Device</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_device_1a9dabc419c8d8df3a686c33ce042bc99a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Device::~Device</definition>
+        <argsstring>()</argsstring>
+        <name>~Device</name>
+        <qualifiedname>Device::~Device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Device.h" line="146" column="1" bodyfile="Device.cpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>main class of the All componnet or all devices used in this program with </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Device</label>
+        <link refid="class_device"/>
+      </node>
+      <node id="3">
+        <label>Nmos</label>
+        <link refid="class_nmos"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Pmos</label>
+        <link refid="class_pmos"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Resistance</label>
+        <link refid="class_resistance"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TwoTerminal</label>
+        <link refid="class_two_terminal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Device.h" line="27" column="1" bodyfile="Device.h" bodystart="28" bodyend="147"/>
+    <listofallmembers>
+      <member refid="class_device_1a45e1856076d6698be39f3f7772491767" prot="protected" virt="non-virtual"><scope>Device</scope><name>defaulval</name></member>
+      <member refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" prot="public" virt="non-virtual"><scope>Device</scope><name>Device</name></member>
+      <member refid="class_device_1a64ba12dcc5f4267486c5d545d04dcf68" prot="public" virt="non-virtual"><scope>Device</scope><name>Device</name></member>
+      <member refid="class_device_1a2c3041835f84c73c86149976f2c6f565" prot="public" virt="non-virtual"><scope>Device</scope><name>get_Default</name></member>
+      <member refid="class_device_1acada68ab3f642242deb479ae553daae7" prot="public" virt="non-virtual"><scope>Device</scope><name>get_id</name></member>
+      <member refid="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" prot="public" virt="non-virtual"><scope>Device</scope><name>get_max</name></member>
+      <member refid="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" prot="public" virt="non-virtual"><scope>Device</scope><name>get_min</name></member>
+      <member refid="class_device_1a1d200a41b1a0b802997f984d50d543ef" prot="public" virt="non-virtual"><scope>Device</scope><name>get_netList</name></member>
+      <member refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" prot="public" virt="non-virtual"><scope>Device</scope><name>get_type</name></member>
+      <member refid="class_device_1a157555eda7bcf277b286458011604dd7" prot="protected" virt="non-virtual"><scope>Device</scope><name>id</name></member>
+      <member refid="class_device_1ac1a539b53f299c43ea749cfdaa91376f" prot="protected" virt="non-virtual"><scope>Device</scope><name>max</name></member>
+      <member refid="class_device_1a1f0ac3ac3dc31ba764bedd52492d7a9d" prot="protected" virt="non-virtual"><scope>Device</scope><name>min</name></member>
+      <member refid="class_device_1a8d5b746dfca41668c1736728cb76030a" prot="protected" virt="non-virtual"><scope>Device</scope><name>netList</name></member>
+      <member refid="class_device_1a8941e81633c72f60a504c18492268696" prot="public" virt="virtual"><scope>Device</scope><name>Print_Device</name></member>
+      <member refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" prot="public" virt="non-virtual"><scope>Device</scope><name>set_Default</name></member>
+      <member refid="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" prot="public" virt="non-virtual"><scope>Device</scope><name>set_Max</name></member>
+      <member refid="class_device_1ad74f349907b01a87ace4ea100f3b50e6" prot="public" virt="non-virtual"><scope>Device</scope><name>set_Min</name></member>
+      <member refid="class_device_1a143d5ae3424066aef14c824422683108" prot="public" virt="non-virtual"><scope>Device</scope><name>set_netList</name></member>
+      <member refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" prot="public" virt="non-virtual"><scope>Device</scope><name>set_type</name></member>
+      <member refid="class_device_1a440522d88e792af168cdc517b85c31a9" prot="public" virt="non-virtual"><scope>Device</scope><name>setID</name></member>
+      <member refid="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" prot="protected" virt="non-virtual"><scope>Device</scope><name>type</name></member>
+      <member refid="class_device_1a9dabc419c8d8df3a686c33ce042bc99a" prot="public" virt="non-virtual"><scope>Device</scope><name>~Device</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

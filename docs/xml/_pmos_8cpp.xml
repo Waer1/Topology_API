@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_pmos_8cpp" kind="file" language="C++">
+    <compoundname>Pmos.cpp</compoundname>
+    <includes refid="_pmos_8h" local="yes">Pmos.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Pmos.cpp</label>
+        <link refid="_pmos_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Pmos.h</label>
+        <link refid="_pmos_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ThreeTerminal.h</label>
+        <link refid="_three_terminal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_pmos_8h" kindref="compound">Pmos.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_pmos_1af9a43de10dd50f00ba5cfe8f6c33e9c0" refkind="member"><highlight class="normal"><ref refid="class_pmos_1af9a43de10dd50f00ba5cfe8f6c33e9c0" kindref="member">Pmos::Pmos</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>typ,<sp/>map&lt;string,<sp/>string&gt;<sp/>netList,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>def,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min)<sp/>:<ref refid="class_three_terminal" kindref="compound">ThreeTerminal</ref>(typ,<sp/>netList,<sp/>def,<sp/>max,<sp/>min)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" kindref="member">set_type</ref>(</highlight><highlight class="stringliteral">&quot;Pmos&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_pmos_1ac4556d82c0d759e7465c572c394e12cd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pmos_1ac4556d82c0d759e7465c572c394e12cd" kindref="member">Pmos::Print_Device</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Pmos<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_device_1acada68ab3f642242deb479ae553daae7" kindref="member">get_id</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device_1a8941e81633c72f60a504c18492268696" kindref="member">Device::Print_Device</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_pmos_1a9eeac2d5e12c5fe0d4a2e9ad2fb4fd02" refkind="member"><highlight class="normal"><ref refid="class_pmos_1a9eeac2d5e12c5fe0d4a2e9ad2fb4fd02" kindref="member">Pmos::~Pmos</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Pmos.cpp"/>
+  </compounddef>
+</doxygen>

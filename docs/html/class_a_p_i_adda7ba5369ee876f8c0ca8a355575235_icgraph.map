@@ -1,4 +1,6 @@
 <map id="API::createTopology" name="API::createTopology">
-<area shape="rect" id="node1" title="Create a Topology object from json object passed to it by devide it to smaller task ,..." alt="" coords="161,5,300,32"/>
-<area shape="rect" id="node2" href="$class_a_p_i.html#a0f97fcfa25c89c4aa9747b73016c30b4" title="function used to create object from json file and check its empty or not and return pointer no null i..." alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node1" title="Create a Topology object from json object passed to it by devide it to smaller task ,..." alt="" coords="553,5,692,32"/>
+<area shape="rect" id="node2" href="$class_a_p_i.html#a0f97fcfa25c89c4aa9747b73016c30b4" title="function used to create object from json file and check its empty or not and return pointer no null i..." alt="" coords="397,5,505,32"/>
+<area shape="rect" id="node3" href="$class_controller.html#af1ca88ffc1cbe7125c82d9e376998442" title="Read a topology from a given JSON file and store it in the memory. by calling api...." alt="" coords="212,5,349,32"/>
+<area shape="rect" id="node4" href="$class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>

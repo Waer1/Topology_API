@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -119,11 +110,12 @@ Inheritance diagram for Device:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c17625480f49ed3306cb1f43dfad6f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a9c17625480f49ed3306cb1f43dfad6f0">Device</a> (string <a class="el" href="class_device.html#a157555eda7bcf277b286458011604dd7">id</a>, map&lt; string, string &gt; <a class="el" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>, float def, float <a class="el" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a>, float <a class="el" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a>)</td></tr>
+<tr class="memitem:a9c17625480f49ed3306cb1f43dfad6f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a9c17625480f49ed3306cb1f43dfad6f0">Device</a> (string <a class="el" href="class_device.html#a157555eda7bcf277b286458011604dd7">id</a>, map&lt; string, string &gt; <a class="el" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>, float def, float max, float min)</td></tr>
 <tr class="memdesc:a9c17625480f49ed3306cb1f43dfad6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a> object.  <a href="class_device.html#a9c17625480f49ed3306cb1f43dfad6f0">More...</a><br /></td></tr>
 <tr class="separator:a9c17625480f49ed3306cb1f43dfad6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ba12dcc5f4267486c5d545d04dcf68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a64ba12dcc5f4267486c5d545d04dcf68">Device</a> ()</td></tr>
-<tr class="memdesc:a64ba12dcc5f4267486c5d545d04dcf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">default Construct a new <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a> object  <a href="class_device.html#a64ba12dcc5f4267486c5d545d04dcf68">More...</a><br /></td></tr>
+<tr class="memitem:a64ba12dcc5f4267486c5d545d04dcf68"><td class="memItemLeft" align="right" valign="top"><a id="a64ba12dcc5f4267486c5d545d04dcf68" name="a64ba12dcc5f4267486c5d545d04dcf68"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Device</b> ()</td></tr>
+<tr class="memdesc:a64ba12dcc5f4267486c5d545d04dcf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">default Construct a new <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a> object <br /></td></tr>
 <tr class="separator:a64ba12dcc5f4267486c5d545d04dcf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a440522d88e792af168cdc517b85c31a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a440522d88e792af168cdc517b85c31a9">setID</a> (string <a class="el" href="class_device.html#a157555eda7bcf277b286458011604dd7">id</a>)</td></tr>
 <tr class="memdesc:a440522d88e792af168cdc517b85c31a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the ID of the <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a>  <a href="class_device.html#a440522d88e792af168cdc517b85c31a9">More...</a><br /></td></tr>
@@ -134,10 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a143d5ae3424066aef14c824422683108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a143d5ae3424066aef14c824422683108">set_netList</a> (map&lt; string, string &gt; <a class="el" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>)</td></tr>
 <tr class="memdesc:a143d5ae3424066aef14c824422683108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the netList object.  <a href="class_device.html#a143d5ae3424066aef14c824422683108">More...</a><br /></td></tr>
 <tr class="separator:a143d5ae3424066aef14c824422683108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed16b99dbcd7b28d307adc668bda8dd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#aed16b99dbcd7b28d307adc668bda8dd3">set_Max</a> (float <a class="el" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a>)</td></tr>
+<tr class="memitem:aed16b99dbcd7b28d307adc668bda8dd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#aed16b99dbcd7b28d307adc668bda8dd3">set_Max</a> (float max)</td></tr>
 <tr class="memdesc:aed16b99dbcd7b28d307adc668bda8dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Max object.  <a href="class_device.html#aed16b99dbcd7b28d307adc668bda8dd3">More...</a><br /></td></tr>
 <tr class="separator:aed16b99dbcd7b28d307adc668bda8dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74f349907b01a87ace4ea100f3b50e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ad74f349907b01a87ace4ea100f3b50e6">set_Min</a> (float <a class="el" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a>)</td></tr>
+<tr class="memitem:ad74f349907b01a87ace4ea100f3b50e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ad74f349907b01a87ace4ea100f3b50e6">set_Min</a> (float min)</td></tr>
 <tr class="memdesc:ad74f349907b01a87ace4ea100f3b50e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Min object.  <a href="class_device.html#ad74f349907b01a87ace4ea100f3b50e6">More...</a><br /></td></tr>
 <tr class="separator:ad74f349907b01a87ace4ea100f3b50e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2490d0be9a0bc107ceac733a07443d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ad2490d0be9a0bc107ceac733a07443d4">set_type</a> (string name)</td></tr>
@@ -164,33 +156,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8941e81633c72f60a504c18492268696"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a8941e81633c72f60a504c18492268696">Print_Device</a> ()</td></tr>
 <tr class="memdesc:a8941e81633c72f60a504c18492268696"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the general device info  <a href="class_device.html#a8941e81633c72f60a504c18492268696">More...</a><br /></td></tr>
 <tr class="separator:a8941e81633c72f60a504c18492268696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dabc419c8d8df3a686c33ce042bc99a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a9dabc419c8d8df3a686c33ce042bc99a">~Device</a> ()</td></tr>
-<tr class="separator:a9dabc419c8d8df3a686c33ce042bc99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a157555eda7bcf277b286458011604dd7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a157555eda7bcf277b286458011604dd7">id</a></td></tr>
-<tr class="memdesc:a157555eda7bcf277b286458011604dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">id of the device  <a href="class_device.html#a157555eda7bcf277b286458011604dd7">More...</a><br /></td></tr>
+<tr class="memitem:a157555eda7bcf277b286458011604dd7"><td class="memItemLeft" align="right" valign="top"><a id="a157555eda7bcf277b286458011604dd7" name="a157555eda7bcf277b286458011604dd7"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memdesc:a157555eda7bcf277b286458011604dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">id of the device <br /></td></tr>
 <tr class="separator:a157555eda7bcf277b286458011604dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d5b746dfca41668c1736728cb76030a"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a></td></tr>
-<tr class="memdesc:a8d5b746dfca41668c1736728cb76030a"><td class="mdescLeft">&#160;</td><td class="mdescRight">map contain devices connected to this device 3 terminals or 2 terminals  <a href="class_device.html#a8d5b746dfca41668c1736728cb76030a">More...</a><br /></td></tr>
+<tr class="memitem:a8d5b746dfca41668c1736728cb76030a"><td class="memItemLeft" align="right" valign="top"><a id="a8d5b746dfca41668c1736728cb76030a" name="a8d5b746dfca41668c1736728cb76030a"></a>
+map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>netList</b></td></tr>
+<tr class="memdesc:a8d5b746dfca41668c1736728cb76030a"><td class="mdescLeft">&#160;</td><td class="mdescRight">map contain devices connected to this device 3 terminals or 2 terminals <br /></td></tr>
 <tr class="separator:a8d5b746dfca41668c1736728cb76030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e1856076d6698be39f3f7772491767"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a45e1856076d6698be39f3f7772491767">defaulval</a></td></tr>
-<tr class="memdesc:a45e1856076d6698be39f3f7772491767"><td class="mdescLeft">&#160;</td><td class="mdescRight">the defalt and min and max value that can be connected to component  <a href="class_device.html#a45e1856076d6698be39f3f7772491767">More...</a><br /></td></tr>
+<tr class="memitem:a45e1856076d6698be39f3f7772491767"><td class="memItemLeft" align="right" valign="top"><a id="a45e1856076d6698be39f3f7772491767" name="a45e1856076d6698be39f3f7772491767"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>defaulval</b></td></tr>
+<tr class="memdesc:a45e1856076d6698be39f3f7772491767"><td class="mdescLeft">&#160;</td><td class="mdescRight">the defalt and min and max value that can be connected to component <br /></td></tr>
 <tr class="separator:a45e1856076d6698be39f3f7772491767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1a539b53f299c43ea749cfdaa91376f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a></td></tr>
+<tr class="memitem:ac1a539b53f299c43ea749cfdaa91376f"><td class="memItemLeft" align="right" valign="top"><a id="ac1a539b53f299c43ea749cfdaa91376f" name="ac1a539b53f299c43ea749cfdaa91376f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>max</b></td></tr>
 <tr class="separator:ac1a539b53f299c43ea749cfdaa91376f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f0ac3ac3dc31ba764bedd52492d7a9d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a></td></tr>
+<tr class="memitem:a1f0ac3ac3dc31ba764bedd52492d7a9d"><td class="memItemLeft" align="right" valign="top"><a id="a1f0ac3ac3dc31ba764bedd52492d7a9d" name="a1f0ac3ac3dc31ba764bedd52492d7a9d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>min</b></td></tr>
 <tr class="separator:a1f0ac3ac3dc31ba764bedd52492d7a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd8da12c9d5e6d70fbabca34e005c2f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device.html#aecd8da12c9d5e6d70fbabca34e005c2f">type</a></td></tr>
-<tr class="memdesc:aecd8da12c9d5e6d70fbabca34e005c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">string hold the type of the <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a>  <a href="class_device.html#aecd8da12c9d5e6d70fbabca34e005c2f">More...</a><br /></td></tr>
+<tr class="memitem:aecd8da12c9d5e6d70fbabca34e005c2f"><td class="memItemLeft" align="right" valign="top"><a id="aecd8da12c9d5e6d70fbabca34e005c2f" name="aecd8da12c9d5e6d70fbabca34e005c2f"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memdesc:aecd8da12c9d5e6d70fbabca34e005c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">string hold the type of the <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a> <br /></td></tr>
 <tr class="separator:aecd8da12c9d5e6d70fbabca34e005c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >main class of the All componnet or all devices used in this program with </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9c17625480f49ed3306cb1f43dfad6f0" name="a9c17625480f49ed3306cb1f43dfad6f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c17625480f49ed3306cb1f43dfad6f0">&#9670;&nbsp;</a></span>Device() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c17625480f49ed3306cb1f43dfad6f0">&#9670;&nbsp;</a></span>Device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,54 +256,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a64ba12dcc5f4267486c5d545d04dcf68" name="a64ba12dcc5f4267486c5d545d04dcf68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64ba12dcc5f4267486c5d545d04dcf68">&#9670;&nbsp;</a></span>Device() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Device::Device </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>default Construct a new <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a> object </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_device_a64ba12dcc5f4267486c5d545d04dcf68_cgraph.png" border="0" usemap="#aclass_device_a64ba12dcc5f4267486c5d545d04dcf68_cgraph" alt=""/></div>
-<map name="aclass_device_a64ba12dcc5f4267486c5d545d04dcf68_cgraph" id="aclass_device_a64ba12dcc5f4267486c5d545d04dcf68_cgraph">
-<area shape="rect" title="default Construct a new Device object" alt="" coords="5,81,112,108"/>
-<area shape="rect" href="class_device.html#a44cd3b15f0e9a16cff36157653d6820c" title="Set the Default object." alt="" coords="160,5,293,32"/>
-<area shape="rect" href="class_device.html#aed16b99dbcd7b28d307adc668bda8dd3" title="Set the Max object." alt="" coords="167,56,286,83"/>
-<area shape="rect" href="class_device.html#ad74f349907b01a87ace4ea100f3b50e6" title="Set the Min object." alt="" coords="169,107,284,133"/>
-<area shape="rect" href="class_device.html#ad2490d0be9a0bc107ceac733a07443d4" title="Set the type object." alt="" coords="167,157,286,184"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a9dabc419c8d8df3a686c33ce042bc99a" name="a9dabc419c8d8df3a686c33ce042bc99a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dabc419c8d8df3a686c33ce042bc99a">&#9670;&nbsp;</a></span>~Device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Device::~Device </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2c3041835f84c73c86149976f2c6f565" name="a2c3041835f84c73c86149976f2c6f565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c3041835f84c73c86149976f2c6f565">&#9670;&nbsp;</a></span>get_Default()</h2>
@@ -331,15 +279,17 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_device_a2c3041835f84c73c86149976f2c6f565_icgraph.png" border="0" usemap="#aclass_device_a2c3041835f84c73c86149976f2c6f565_icgraph" alt=""/></div>
 <map name="aclass_device_a2c3041835f84c73c86149976f2c6f565_icgraph" id="aclass_device_a2c3041835f84c73c86149976f2c6f565_icgraph">
-<area shape="rect" title="Get the Default object." alt="" coords="861,56,995,83"/>
-<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="640,19,813,45"/>
-<area shape="rect" href="class_device.html#a8941e81633c72f60a504c18492268696" title="print the general device info" alt="" coords="657,81,797,108"/>
-<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="412,5,592,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
-<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="434,56,570,83"/>
-<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="434,107,570,133"/>
-<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="419,157,585,184"/>
+<area shape="rect" title="Get the Default object." alt="" coords="1259,56,1392,83"/>
+<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="1037,19,1211,45"/>
+<area shape="rect" href="class_device.html#a8941e81633c72f60a504c18492268696" title="print the general device info" alt="" coords="1054,81,1194,108"/>
+<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="809,5,989,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="831,56,967,83"/>
+<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="831,107,967,133"/>
+<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="816,157,983,184"/>
 </map>
 </div>
 
@@ -367,13 +317,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_device_acada68ab3f642242deb479ae553daae7_icgraph.png" border="0" usemap="#aclass_device_acada68ab3f642242deb479ae553daae7_icgraph" alt=""/></div>
 <map name="aclass_device_acada68ab3f642242deb479ae553daae7_icgraph" id="aclass_device_acada68ab3f642242deb479ae553daae7_icgraph">
-<area shape="rect" title="Get the id object." alt="" coords="861,56,964,83"/>
-<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="640,5,813,32"/>
-<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="659,56,795,83"/>
-<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="659,107,795,133"/>
-<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="412,5,592,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
+<area shape="rect" title="Get the id object." alt="" coords="1259,56,1361,83"/>
+<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="1037,5,1211,32"/>
+<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="1056,56,1192,83"/>
+<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="1056,107,1192,133"/>
+<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="809,5,989,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>
 </div>
 
@@ -401,15 +353,17 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_device_a751b026eebbf5cb268dc0e3aa7f145d7_icgraph.png" border="0" usemap="#aclass_device_a751b026eebbf5cb268dc0e3aa7f145d7_icgraph" alt=""/></div>
 <map name="aclass_device_a751b026eebbf5cb268dc0e3aa7f145d7_icgraph" id="aclass_device_a751b026eebbf5cb268dc0e3aa7f145d7_icgraph">
-<area shape="rect" title="Get the max object." alt="" coords="861,56,980,83"/>
-<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="640,19,813,45"/>
-<area shape="rect" href="class_device.html#a8941e81633c72f60a504c18492268696" title="print the general device info" alt="" coords="657,81,797,108"/>
-<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="412,5,592,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
-<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="434,56,570,83"/>
-<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="434,107,570,133"/>
-<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="419,157,585,184"/>
+<area shape="rect" title="Get the max object." alt="" coords="1259,56,1377,83"/>
+<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="1037,19,1211,45"/>
+<area shape="rect" href="class_device.html#a8941e81633c72f60a504c18492268696" title="print the general device info" alt="" coords="1054,81,1194,108"/>
+<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="809,5,989,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="831,56,967,83"/>
+<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="831,107,967,133"/>
+<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="816,157,983,184"/>
 </map>
 </div>
 
@@ -437,15 +391,17 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_device_a84b6c9c4b8cf7505c1e2441b16562661_icgraph.png" border="0" usemap="#aclass_device_a84b6c9c4b8cf7505c1e2441b16562661_icgraph" alt=""/></div>
 <map name="aclass_device_a84b6c9c4b8cf7505c1e2441b16562661_icgraph" id="aclass_device_a84b6c9c4b8cf7505c1e2441b16562661_icgraph">
-<area shape="rect" title="Get the min object." alt="" coords="861,56,976,83"/>
-<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="640,19,813,45"/>
-<area shape="rect" href="class_device.html#a8941e81633c72f60a504c18492268696" title="print the general device info" alt="" coords="657,81,797,108"/>
-<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="412,5,592,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
-<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="434,56,570,83"/>
-<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="434,107,570,133"/>
-<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="419,157,585,184"/>
+<area shape="rect" title="Get the min object." alt="" coords="1259,56,1373,83"/>
+<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="1037,19,1211,45"/>
+<area shape="rect" href="class_device.html#a8941e81633c72f60a504c18492268696" title="print the general device info" alt="" coords="1054,81,1194,108"/>
+<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="809,5,989,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="class_nmos.html#a5ea1b8155fde8f80fb8aa989ade3402f" title="print the specific device info" alt="" coords="831,56,967,83"/>
+<area shape="rect" href="class_pmos.html#ac4556d82c0d759e7465c572c394e12cd" title="print the specific device info" alt="" coords="831,107,967,133"/>
+<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="816,157,983,184"/>
 </map>
 </div>
 
@@ -473,11 +429,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_device_a1d200a41b1a0b802997f984d50d543ef_icgraph.png" border="0" usemap="#aclass_device_a1d200a41b1a0b802997f984d50d543ef_icgraph" alt=""/></div>
 <map name="aclass_device_a1d200a41b1a0b802997f984d50d543ef_icgraph" id="aclass_device_a1d200a41b1a0b802997f984d50d543ef_icgraph">
-<area shape="rect" title="Get the netList object." alt="" coords="861,5,993,32"/>
-<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="640,5,813,32"/>
-<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="412,5,592,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
+<area shape="rect" title="Get the netList object." alt="" coords="1259,5,1391,32"/>
+<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="1037,5,1211,32"/>
+<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="809,5,989,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>
 </div>
 
@@ -505,12 +463,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_device_a2ac3ac9ed7a0de9f5f59ad5441eb1373_icgraph.png" border="0" usemap="#aclass_device_a2ac3ac9ed7a0de9f5f59ad5441eb1373_icgraph" alt=""/></div>
 <map name="aclass_device_a2ac3ac9ed7a0de9f5f59ad5441eb1373_icgraph" id="aclass_device_a2ac3ac9ed7a0de9f5f59ad5441eb1373_icgraph">
-<area shape="rect" title="Get the type object." alt="" coords="861,31,980,57"/>
-<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="640,5,813,32"/>
-<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="643,56,810,83"/>
-<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="412,5,592,32"/>
-<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
+<area shape="rect" title="Get the type object." alt="" coords="1259,31,1377,57"/>
+<area shape="rect" href="class_a_p_i.html#ac651532f8ec00c6cc1d810e9b130d79a" title="function convert device object into json onject" alt="" coords="1037,5,1211,32"/>
+<area shape="rect" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9" title="print the specific device info" alt="" coords="1041,56,1207,83"/>
+<area shape="rect" href="class_a_p_i.html#a0d5eec05898031c392aa4395778c7d4d" title="function usedto separte all devices in given topology into json files per device" alt="" coords="809,5,989,32"/>
+<area shape="rect" href="class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" href="class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>
 </div>
 
@@ -777,147 +737,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="class_device.html#a9c17625480f49ed3306cb1f43dfad6f0" title="Construct a new Device object." alt="" coords="5,5,112,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a45e1856076d6698be39f3f7772491767" name="a45e1856076d6698be39f3f7772491767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e1856076d6698be39f3f7772491767">&#9670;&nbsp;</a></span>defaulval</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Device::defaulval</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the defalt and min and max value that can be connected to component </p>
-
-</div>
-</div>
-<a id="a157555eda7bcf277b286458011604dd7" name="a157555eda7bcf277b286458011604dd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157555eda7bcf277b286458011604dd7">&#9670;&nbsp;</a></span>id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Device::id</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>id of the device </p>
-
-</div>
-</div>
-<a id="ac1a539b53f299c43ea749cfdaa91376f" name="ac1a539b53f299c43ea749cfdaa91376f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1a539b53f299c43ea749cfdaa91376f">&#9670;&nbsp;</a></span>max</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Device::max</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1f0ac3ac3dc31ba764bedd52492d7a9d" name="a1f0ac3ac3dc31ba764bedd52492d7a9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f0ac3ac3dc31ba764bedd52492d7a9d">&#9670;&nbsp;</a></span>min</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Device::min</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8d5b746dfca41668c1736728cb76030a" name="a8d5b746dfca41668c1736728cb76030a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d5b746dfca41668c1736728cb76030a">&#9670;&nbsp;</a></span>netList</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">map&lt;string, string&gt; Device::netList</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>map contain devices connected to this device 3 terminals or 2 terminals </p>
-
-</div>
-</div>
-<a id="aecd8da12c9d5e6d70fbabca34e005c2f" name="aecd8da12c9d5e6d70fbabca34e005c2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecd8da12c9d5e6d70fbabca34e005c2f">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Device::type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>string hold the type of the <a class="el" href="class_device.html" title="main class of the All componnet or all devices used in this program with">Device</a> </p>
 
 </div>
 </div>

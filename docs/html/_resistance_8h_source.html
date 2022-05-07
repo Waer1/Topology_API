@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -100,16 +91,14 @@ $(document).ready(function(){initNavTree('_resistance_8h_source.html',''); initR
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span> <a class="code hl_class" href="class_two_terminal.html">TwoTerminal</a></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="class_resistance.html#aeb7f9dd37b087a2f15803c10eb5946c8">Resistance</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>, map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>, <span class="keywordtype">float</span> def, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">max</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">min</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="class_resistance.html#aeb7f9dd37b087a2f15803c10eb5946c8">Resistance</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>, map&lt;string, string&gt; <a class="code hl_variable" href="class_device.html#a8d5b746dfca41668c1736728cb76030a">netList</a>, <span class="keywordtype">float</span> def, <span class="keywordtype">float</span> max, <span class="keywordtype">float</span> min);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9">Print_Device</a>();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="class_resistance.html#ae078c593097ad200762b95b4aaee22ec">~Resistance</a>();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="ttc" id="a_two_terminal_8h_html"><div class="ttname"><a href="_two_terminal_8h.html">TwoTerminal.h</a></div><div class="ttdoc">inheritance class from Device that contain all devices with TWo terminal</div></div>
-<div class="ttc" id="aclass_device_html_a1f0ac3ac3dc31ba764bedd52492d7a9d"><div class="ttname"><a href="class_device.html#a1f0ac3ac3dc31ba764bedd52492d7a9d">Device::min</a></div><div class="ttdeci">float min</div><div class="ttdef"><b>Definition:</b> Device.h:45</div></div>
 <div class="ttc" id="aclass_device_html_a8d5b746dfca41668c1736728cb76030a"><div class="ttname"><a href="class_device.html#a8d5b746dfca41668c1736728cb76030a">Device::netList</a></div><div class="ttdeci">map&lt; string, string &gt; netList</div><div class="ttdoc">map contain devices connected to this device 3 terminals or 2 terminals</div><div class="ttdef"><b>Definition:</b> Device.h:39</div></div>
-<div class="ttc" id="aclass_device_html_ac1a539b53f299c43ea749cfdaa91376f"><div class="ttname"><a href="class_device.html#ac1a539b53f299c43ea749cfdaa91376f">Device::max</a></div><div class="ttdeci">float max</div><div class="ttdef"><b>Definition:</b> Device.h:45</div></div>
 <div class="ttc" id="aclass_resistance_html"><div class="ttname"><a href="class_resistance.html">Resistance</a></div><div class="ttdoc">Resistance is there Two terminal Device.</div><div class="ttdef"><b>Definition:</b> Resistance.h:19</div></div>
 <div class="ttc" id="aclass_resistance_html_a15e9dadd49a26d07c687b8c961a7fdd9"><div class="ttname"><a href="class_resistance.html#a15e9dadd49a26d07c687b8c961a7fdd9">Resistance::Print_Device</a></div><div class="ttdeci">virtual void Print_Device()</div><div class="ttdoc">print the specific device info</div><div class="ttdef"><b>Definition:</b> Resistance.cpp:8</div></div>
 <div class="ttc" id="aclass_resistance_html_ae078c593097ad200762b95b4aaee22ec"><div class="ttname"><a href="class_resistance.html#ae078c593097ad200762b95b4aaee22ec">Resistance::~Resistance</a></div><div class="ttdeci">~Resistance()</div><div class="ttdoc">Destroy the Resistance object.</div><div class="ttdef"><b>Definition:</b> Resistance.cpp:16</div></div>

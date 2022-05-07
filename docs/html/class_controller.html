@@ -16,11 +16,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -33,21 +28,6 @@
    <div id="projectname">Topology_API
    </div>
   </td>
-    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.svg"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -59,6 +39,17 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -93,6 +84,7 @@ $(document).ready(function(){initNavTree('class_controller.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_controller-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Controller Class Reference</div></div>
 </div><!--header-->
@@ -102,59 +94,358 @@ $(document).ready(function(){initNavTree('class_controller.html',''); initResiza
  <a href="class_controller.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_controller_8h_source.html">Controller.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Controller:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller__coll__graph.png" border="0" usemap="#a_controller_coll__map" alt="Collaboration graph"/></div>
+<map name="a_controller_coll__map" id="a_controller_coll__map">
+<area shape="rect" title="controller class which have all flow control function of the program" alt="" coords="5,95,83,121"/>
+<area shape="rect" href="class_a_p_i.html" title="API is the class use to treat with json in write json file or read from json files." alt="" coords="23,5,65,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a95c56822d667e94b031451729ce069a9">Controller</a> ()</td></tr>
-<tr class="memdesc:a95c56822d667e94b031451729ce069a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">start the main program  <a href="class_controller.html#a95c56822d667e94b031451729ce069a9">More...</a><br /></td></tr>
+<tr class="memitem:a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top"><a id="a95c56822d667e94b031451729ce069a9" name="a95c56822d667e94b031451729ce069a9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Controller</b> ()</td></tr>
+<tr class="memdesc:a95c56822d667e94b031451729ce069a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">start the main program <br /></td></tr>
 <tr class="separator:a95c56822d667e94b031451729ce069a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd7e2ce75590beb0f1258ec56666ba02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02">startprogram</a> ()</td></tr>
+<tr class="memitem:abd7e2ce75590beb0f1258ec56666ba02"><td class="memItemLeft" align="right" valign="top"><a id="abd7e2ce75590beb0f1258ec56666ba02" name="abd7e2ce75590beb0f1258ec56666ba02"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startprogram</b> ()</td></tr>
+<tr class="memdesc:abd7e2ce75590beb0f1258ec56666ba02"><td class="mdescLeft">&#160;</td><td class="mdescRight">the start function of the program <br /></td></tr>
 <tr class="separator:abd7e2ce75590beb0f1258ec56666ba02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab77a2425bc94722025e5865957af063c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ab77a2425bc94722025e5865957af063c">getchoice</a> ()</td></tr>
+<tr class="memdesc:ab77a2425bc94722025e5865957af063c"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to get the user choice and validate on input  <a href="class_controller.html#ab77a2425bc94722025e5865957af063c">More...</a><br /></td></tr>
+<tr class="separator:ab77a2425bc94722025e5865957af063c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4279de6a80b1fd160a0ce531caa13cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf">valid</a> (string choice)</td></tr>
+<tr class="memdesc:ab4279de6a80b1fd160a0ce531caa13cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to check the validation of user input if inout between 0 and 7 its correct else output wrong msg and request rfom user other valid input  <a href="class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf">More...</a><br /></td></tr>
+<tr class="separator:ab4279de6a80b1fd160a0ce531caa13cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7752ed6b27da2f0aed8e474caf422a03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03">getToplogyID</a> ()</td></tr>
+<tr class="memdesc:a7752ed6b27da2f0aed8e474caf422a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the get Toplogy ID from user and check if exist or not by calling other function that iterate throw the tobology list.  <a href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03">More...</a><br /></td></tr>
+<tr class="separator:a7752ed6b27da2f0aed8e474caf422a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76502e61551a693b9d4a9a847e73623f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a76502e61551a693b9d4a9a847e73623f">getInputJsonFileName</a> ()</td></tr>
+<tr class="memdesc:a76502e61551a693b9d4a9a847e73623f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get json file name from user and validate on it by chick its alreay created or not and user doent enter empty ot non json file  <a href="class_controller.html#a76502e61551a693b9d4a9a847e73623f">More...</a><br /></td></tr>
+<tr class="separator:a76502e61551a693b9d4a9a847e73623f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada742049b8312fe6aa2c13852d902bdc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc">findTopology</a> (string topologyID) const</td></tr>
+<tr class="memdesc:ada742049b8312fe6aa2c13852d902bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">general purose function to get topology index in memory  <a href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc">More...</a><br /></td></tr>
+<tr class="separator:ada742049b8312fe6aa2c13852d902bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ca88ffc1cbe7125c82d9e376998442"><td class="memItemLeft" align="right" valign="top"><a id="af1ca88ffc1cbe7125c82d9e376998442" name="af1ca88ffc1cbe7125c82d9e376998442"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readJson</b> ()</td></tr>
+<tr class="memdesc:af1ca88ffc1cbe7125c82d9e376998442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a topology from a given JSON file and store it in the memory. by calling api.readjson with the input name. <br /></td></tr>
+<tr class="separator:af1ca88ffc1cbe7125c82d9e376998442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7744237c0146b480844fc39192ef43c2"><td class="memItemLeft" align="right" valign="top"><a id="a7744237c0146b480844fc39192ef43c2" name="a7744237c0146b480844fc39192ef43c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteJson</b> ()</td></tr>
+<tr class="memdesc:a7744237c0146b480844fc39192ef43c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a given topology from the memory to a JSON file by calling api.write with the input name and the topology. <br /></td></tr>
+<tr class="separator:a7744237c0146b480844fc39192ef43c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7b56a88638318d5cfdc9816e9bab53"><td class="memItemLeft" align="right" valign="top">pair&lt; string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53">getOutputJsonFileName</a> ()</td></tr>
+<tr class="memdesc:a2f7b56a88638318d5cfdc9816e9bab53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Output Json File Name object simple functionget the file name and topolgy id by ohter function and return a pair of them.  <a href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53">More...</a><br /></td></tr>
+<tr class="separator:a2f7b56a88638318d5cfdc9816e9bab53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13800919d9ecca6ab25f6877082f46db"><td class="memItemLeft" align="right" valign="top"><a id="a13800919d9ecca6ab25f6877082f46db" name="a13800919d9ecca6ab25f6877082f46db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Querytopologies</b> ()</td></tr>
+<tr class="memdesc:a13800919d9ecca6ab25f6877082f46db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query about which topologies are currently in the memory printing all topologyes id from memory. <br /></td></tr>
+<tr class="separator:a13800919d9ecca6ab25f6877082f46db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9b256aecabb18e3dc722105998f3bc"><td class="memItemLeft" align="right" valign="top"><a id="adf9b256aecabb18e3dc722105998f3bc" name="adf9b256aecabb18e3dc722105998f3bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deletetopology</b> ()</td></tr>
+<tr class="memdesc:adf9b256aecabb18e3dc722105998f3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a given topology from memory after take the topology name from user and validate on it. <br /></td></tr>
+<tr class="separator:adf9b256aecabb18e3dc722105998f3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6dbac253f5f3d44541d6e635be2f11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#abe6dbac253f5f3d44541d6e635be2f11">deleteTopology</a> (int index)</td></tr>
+<tr class="memdesc:abe6dbac253f5f3d44541d6e635be2f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete specific location in topologylist  <a href="class_controller.html#abe6dbac253f5f3d44541d6e635be2f11">More...</a><br /></td></tr>
+<tr class="separator:abe6dbac253f5f3d44541d6e635be2f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da792bea03fa3ed866889d3683e2b94"><td class="memItemLeft" align="right" valign="top"><a id="a0da792bea03fa3ed866889d3683e2b94" name="a0da792bea03fa3ed866889d3683e2b94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryWhichDevicesIn</b> ()</td></tr>
+<tr class="memdesc:a0da792bea03fa3ed866889d3683e2b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">printout the devices connected in some topologies Query about which devices are in a given topology <br /></td></tr>
+<tr class="separator:a0da792bea03fa3ed866889d3683e2b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5c8c9370138962661f3c9d9aeabca7"><td class="memItemLeft" align="right" valign="top"><a id="a0e5c8c9370138962661f3c9d9aeabca7" name="a0e5c8c9370138962661f3c9d9aeabca7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>whichConnected</b> ()</td></tr>
+<tr class="memdesc:a0e5c8c9370138962661f3c9d9aeabca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query about which devices are connected to a given netlist node in a given topology. <br /></td></tr>
+<tr class="separator:a0e5c8c9370138962661f3c9d9aeabca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aa7a121a4b7ddd99b4cbd96f253653fdc"><td class="memItemLeft" align="right" valign="top"><a id="aa7a121a4b7ddd99b4cbd96f253653fdc" name="aa7a121a4b7ddd99b4cbd96f253653fdc"></a>
+<a class="el" href="class_a_p_i.html">API</a>&#160;</td><td class="memItemRight" valign="bottom"><b>api</b></td></tr>
+<tr class="memdesc:aa7a121a4b7ddd99b4cbd96f253653fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">object from abi class to call it function when need treat with in/out json files <br /></td></tr>
+<tr class="separator:aa7a121a4b7ddd99b4cbd96f253653fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a35135e847d2598fc987bc05be5be2a"><td class="memItemLeft" align="right" valign="top"><a id="a2a35135e847d2598fc987bc05be5be2a" name="a2a35135e847d2598fc987bc05be5be2a"></a>
+vector&lt; <a class="el" href="classtopology.html">topology</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TopologyList</b></td></tr>
+<tr class="memdesc:a2a35135e847d2598fc987bc05be5be2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TopologyList act as memory of the device while hold the converted json files from reading. <br /></td></tr>
+<tr class="separator:a2a35135e847d2598fc987bc05be5be2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >controller class which have all flow control function of the program </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a95c56822d667e94b031451729ce069a9" name="a95c56822d667e94b031451729ce069a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95c56822d667e94b031451729ce069a9">&#9670;&nbsp;</a></span>Controller()</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe6dbac253f5f3d44541d6e635be2f11" name="abe6dbac253f5f3d44541d6e635be2f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6dbac253f5f3d44541d6e635be2f11">&#9670;&nbsp;</a></span>deleteTopology()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Controller::Controller </td>
+          <td class="memname">bool Controller::deleteTopology </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>start the main program </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="abd7e2ce75590beb0f1258ec56666ba02" name="abd7e2ce75590beb0f1258ec56666ba02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd7e2ce75590beb0f1258ec56666ba02">&#9670;&nbsp;</a></span>startprogram()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Controller::startprogram </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>delete specific location in topologylist </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>index of deleted topology </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if deleted successfully </dd>
+<dd>
+false and not found or any exception </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_controller_abd7e2ce75590beb0f1258ec56666ba02_icgraph.png" border="0" usemap="#aclass_controller_abd7e2ce75590beb0f1258ec56666ba02_icgraph" alt=""/></div>
-<map name="aclass_controller_abd7e2ce75590beb0f1258ec56666ba02_icgraph" id="aclass_controller_abd7e2ce75590beb0f1258ec56666ba02_icgraph">
-<area shape="rect" title=" " alt="" coords="104,5,263,32"/>
-<area shape="rect" href="_topology___a_p_i_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main function just call start program" alt="" coords="5,5,56,32"/>
+<div class="center"><img src="class_controller_abe6dbac253f5f3d44541d6e635be2f11_icgraph.png" border="0" usemap="#aclass_controller_abe6dbac253f5f3d44541d6e635be2f11_icgraph" alt=""/></div>
+<map name="aclass_controller_abe6dbac253f5f3d44541d6e635be2f11_icgraph" id="aclass_controller_abe6dbac253f5f3d44541d6e635be2f11_icgraph">
+<area shape="rect" title="delete specific location in topologylist" alt="" coords="431,5,603,32"/>
+<area shape="rect" href="class_controller.html#adf9b256aecabb18e3dc722105998f3bc" title="Delete a given topology from memory after take the topology name from user and validate on it." alt="" coords="212,5,383,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ada742049b8312fe6aa2c13852d902bdc" name="ada742049b8312fe6aa2c13852d902bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada742049b8312fe6aa2c13852d902bdc">&#9670;&nbsp;</a></span>findTopology()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Controller::findTopology </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>topologyID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>general purose function to get topology index in memory </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topologyID</td><td>the string is of searched topology </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int if found will return i (index of the topology) if not found will return -1 </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_ada742049b8312fe6aa2c13852d902bdc_icgraph.png" border="0" usemap="#aclass_controller_ada742049b8312fe6aa2c13852d902bdc_icgraph" alt=""/></div>
+<map name="aclass_controller_ada742049b8312fe6aa2c13852d902bdc_icgraph" id="aclass_controller_ada742049b8312fe6aa2c13852d902bdc_icgraph">
+<area shape="rect" title="general purose function to get topology index in memory" alt="" coords="899,93,1056,120"/>
+<area shape="rect" href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03" title="Get the get Toplogy ID from user and check if exist or not by calling other function that iterate thr..." alt="" coords="691,93,851,120"/>
+<area shape="rect" href="class_controller.html#adf9b256aecabb18e3dc722105998f3bc" title="Delete a given topology from memory after take the topology name from user and validate on it." alt="" coords="472,5,643,32"/>
+<area shape="rect" href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53" title="Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio..." alt="" coords="473,57,642,98"/>
+<area shape="rect" href="class_controller.html#a0da792bea03fa3ed866889d3683e2b94" title="printout the devices connected in some topologies Query about which devices are in a given topology" alt="" coords="212,117,424,144"/>
+<area shape="rect" href="class_controller.html#a0e5c8c9370138962661f3c9d9aeabca7" title="Query about which devices are connected to a given netlist node in a given topology." alt="" coords="228,169,408,196"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,92,164,119"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="247,65,389,92"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab77a2425bc94722025e5865957af063c" name="ab77a2425bc94722025e5865957af063c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab77a2425bc94722025e5865957af063c">&#9670;&nbsp;</a></span>getchoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Controller::getchoice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function to get the user choice and validate on input </p>
+<ul>
+<li>its make it stick in while loop till chose correct choice</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>string correct user choice </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_ab77a2425bc94722025e5865957af063c_cgraph.png" border="0" usemap="#aclass_controller_ab77a2425bc94722025e5865957af063c_cgraph" alt=""/></div>
+<map name="aclass_controller_ab77a2425bc94722025e5865957af063c_cgraph" id="aclass_controller_ab77a2425bc94722025e5865957af063c_cgraph">
+<area shape="rect" title="function to get the user choice and validate on input" alt="" coords="5,5,147,32"/>
+<area shape="rect" href="class_controller.html#ab4279de6a80b1fd160a0ce531caa13cf" title="function to check the validation of user input if inout between 0 and 7 its correct else output wrong..." alt="" coords="195,5,305,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_ab77a2425bc94722025e5865957af063c_icgraph.png" border="0" usemap="#aclass_controller_ab77a2425bc94722025e5865957af063c_icgraph" alt=""/></div>
+<map name="aclass_controller_ab77a2425bc94722025e5865957af063c_icgraph" id="aclass_controller_ab77a2425bc94722025e5865957af063c_icgraph">
+<area shape="rect" title="function to get the user choice and validate on input" alt="" coords="212,5,353,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a76502e61551a693b9d4a9a847e73623f" name="a76502e61551a693b9d4a9a847e73623f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76502e61551a693b9d4a9a847e73623f">&#9670;&nbsp;</a></span>getInputJsonFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Controller::getInputJsonFileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get json file name from user and validate on it by chick its alreay created or not and user doent enter empty ot non json file </p>
+<dl class="section return"><dt>Returns</dt><dd>string the file name.json </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_a76502e61551a693b9d4a9a847e73623f_icgraph.png" border="0" usemap="#aclass_controller_a76502e61551a693b9d4a9a847e73623f_icgraph" alt=""/></div>
+<map name="aclass_controller_a76502e61551a693b9d4a9a847e73623f_icgraph" id="aclass_controller_a76502e61551a693b9d4a9a847e73623f_icgraph">
+<area shape="rect" title="get json file name from user and validate on it by chick its alreay created or not and user doent ent..." alt="" coords="620,35,779,76"/>
+<area shape="rect" href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53" title="Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio..." alt="" coords="403,5,572,47"/>
+<area shape="rect" href="class_controller.html#af1ca88ffc1cbe7125c82d9e376998442" title="Read a topology from a given JSON file and store it in the memory. by calling api...." alt="" coords="215,67,352,94"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,15,355,42"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,42,164,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f7b56a88638318d5cfdc9816e9bab53" name="a2f7b56a88638318d5cfdc9816e9bab53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7b56a88638318d5cfdc9816e9bab53">&#9670;&nbsp;</a></span>getOutputJsonFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pair&lt; string, int &gt; Controller::getOutputJsonFileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Output Json File Name object simple functionget the file name and topolgy id by ohter function and return a pair of them. </p>
+<dl class="section return"><dt>Returns</dt><dd>pair&lt;string, int&gt; &lt;filename , topologyID&gt; </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_a2f7b56a88638318d5cfdc9816e9bab53_cgraph.png" border="0" usemap="#aclass_controller_a2f7b56a88638318d5cfdc9816e9bab53_cgraph" alt=""/></div>
+<map name="aclass_controller_a2f7b56a88638318d5cfdc9816e9bab53_cgraph" id="aclass_controller_a2f7b56a88638318d5cfdc9816e9bab53_cgraph">
+<area shape="rect" title="Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio..." alt="" coords="5,35,175,76"/>
+<area shape="rect" href="class_controller.html#a76502e61551a693b9d4a9a847e73623f" title="get json file name from user and validate on it by chick its alreay created or not and user doent ent..." alt="" coords="223,5,382,47"/>
+<area shape="rect" href="class_controller.html#a7752ed6b27da2f0aed8e474caf422a03" title="Get the get Toplogy ID from user and check if exist or not by calling other function that iterate thr..." alt="" coords="223,71,383,98"/>
+<area shape="rect" href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc" title="general purose function to get topology index in memory" alt="" coords="431,71,588,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_a2f7b56a88638318d5cfdc9816e9bab53_icgraph.png" border="0" usemap="#aclass_controller_a2f7b56a88638318d5cfdc9816e9bab53_icgraph" alt=""/></div>
+<map name="aclass_controller_a2f7b56a88638318d5cfdc9816e9bab53_icgraph" id="aclass_controller_a2f7b56a88638318d5cfdc9816e9bab53_icgraph">
+<area shape="rect" title="Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio..." alt="" coords="403,5,572,47"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,13,355,39"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,13,164,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7752ed6b27da2f0aed8e474caf422a03" name="a7752ed6b27da2f0aed8e474caf422a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7752ed6b27da2f0aed8e474caf422a03">&#9670;&nbsp;</a></span>getToplogyID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Controller::getToplogyID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the get Toplogy ID from user and check if exist or not by calling other function that iterate throw the tobology list. </p>
+<dl class="section return"><dt>Returns</dt><dd>int if found will return i (index of the topology) if not found will return -1 </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_a7752ed6b27da2f0aed8e474caf422a03_cgraph.png" border="0" usemap="#aclass_controller_a7752ed6b27da2f0aed8e474caf422a03_cgraph" alt=""/></div>
+<map name="aclass_controller_a7752ed6b27da2f0aed8e474caf422a03_cgraph" id="aclass_controller_a7752ed6b27da2f0aed8e474caf422a03_cgraph">
+<area shape="rect" title="Get the get Toplogy ID from user and check if exist or not by calling other function that iterate thr..." alt="" coords="5,5,165,32"/>
+<area shape="rect" href="class_controller.html#ada742049b8312fe6aa2c13852d902bdc" title="general purose function to get topology index in memory" alt="" coords="213,5,371,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_a7752ed6b27da2f0aed8e474caf422a03_icgraph.png" border="0" usemap="#aclass_controller_a7752ed6b27da2f0aed8e474caf422a03_icgraph" alt=""/></div>
+<map name="aclass_controller_a7752ed6b27da2f0aed8e474caf422a03_icgraph" id="aclass_controller_a7752ed6b27da2f0aed8e474caf422a03_icgraph">
+<area shape="rect" title="Get the get Toplogy ID from user and check if exist or not by calling other function that iterate thr..." alt="" coords="691,93,851,120"/>
+<area shape="rect" href="class_controller.html#adf9b256aecabb18e3dc722105998f3bc" title="Delete a given topology from memory after take the topology name from user and validate on it." alt="" coords="472,5,643,32"/>
+<area shape="rect" href="class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53" title="Get the Output Json File Name object simple functionget the file name and topolgy id by ohter functio..." alt="" coords="473,57,642,98"/>
+<area shape="rect" href="class_controller.html#a0da792bea03fa3ed866889d3683e2b94" title="printout the devices connected in some topologies Query about which devices are in a given topology" alt="" coords="212,117,424,144"/>
+<area shape="rect" href="class_controller.html#a0e5c8c9370138962661f3c9d9aeabca7" title="Query about which devices are connected to a given netlist node in a given topology." alt="" coords="228,169,408,196"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,92,164,119"/>
+<area shape="rect" href="class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="247,65,389,92"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab4279de6a80b1fd160a0ce531caa13cf" name="ab4279de6a80b1fd160a0ce531caa13cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4279de6a80b1fd160a0ce531caa13cf">&#9670;&nbsp;</a></span>valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Controller::valid </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>choice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function to check the validation of user input if inout between 0 and 7 its correct else output wrong msg and request rfom user other valid input </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">choice</td><td>the input from user </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if valid coice </dd>
+<dd>
+false if invalid choice </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_controller_ab4279de6a80b1fd160a0ce531caa13cf_icgraph.png" border="0" usemap="#aclass_controller_ab4279de6a80b1fd160a0ce531caa13cf_icgraph" alt=""/></div>
+<map name="aclass_controller_ab4279de6a80b1fd160a0ce531caa13cf_icgraph" id="aclass_controller_ab4279de6a80b1fd160a0ce531caa13cf_icgraph">
+<area shape="rect" title="function to check the validation of user input if inout between 0 and 7 its correct else output wrong..." alt="" coords="401,5,512,32"/>
+<area shape="rect" href="class_controller.html#ab77a2425bc94722025e5865957af063c" title="function to get the user choice and validate on input" alt="" coords="212,5,353,32"/>
+<area shape="rect" href="class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>
 </div>
 

@@ -1,0 +1,4 @@
+<map id="Controller::getchoice" name="Controller::getchoice">
+<area shape="rect" id="node1" title="function to get the user choice and validate on input" alt="" coords="212,5,353,32"/>
+<area shape="rect" id="node2" href="$class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
+</map>

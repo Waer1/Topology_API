@@ -1,5 +1,21 @@
 var searchData=
 [
-  ['id_0',['id',['../class_device.html#a157555eda7bcf277b286458011604dd7',1,'Device']]],
-  ['isconnectednetlist_1',['ISconnectedNetList',['../classtopology.html#af7d6409e203045faa641db59ab9bff3d',1,'topology']]]
+  ['get_5fdefault_0',['get_Default',['../class_device.html#a2c3041835f84c73c86149976f2c6f565',1,'Device']]],
+  ['get_5fid_1',['get_id',['../class_device.html#acada68ab3f642242deb479ae553daae7',1,'Device']]],
+  ['get_5fmax_2',['get_max',['../class_device.html#a751b026eebbf5cb268dc0e3aa7f145d7',1,'Device']]],
+  ['get_5fmin_3',['get_min',['../class_device.html#a84b6c9c4b8cf7505c1e2441b16562661',1,'Device']]],
+  ['get_5fnetlist_4',['get_netList',['../class_device.html#a1d200a41b1a0b802997f984d50d543ef',1,'Device']]],
+  ['get_5ftype_5',['get_type',['../class_device.html#a2ac3ac9ed7a0de9f5f59ad5441eb1373',1,'Device']]],
+  ['getchoice_6',['getchoice',['../class_controller.html#ab77a2425bc94722025e5865957af063c',1,'Controller']]],
+  ['getconnecteddevices_7',['getConnectedDevices',['../classtopology.html#a4dee478d19e085b56cf34b7f908c62f2',1,'topology']]],
+  ['getdevices_8',['getDevices',['../classtopology.html#ab5b9447eb6f07912222e3e47e92dd1b7',1,'topology']]],
+  ['getdrain_9',['getDrain',['../class_three_terminal.html#a226bd66e422d7b684e8356d0fe0d4319',1,'ThreeTerminal']]],
+  ['getgate_10',['getGate',['../class_three_terminal.html#a83a7250805f5f98790476d5bfa9959b3',1,'ThreeTerminal']]],
+  ['getid_11',['getID',['../classtopology.html#a3a23246593d167560e4c06c5c3c6b37c',1,'topology']]],
+  ['getinputjsonfilename_12',['getInputJsonFileName',['../class_controller.html#a76502e61551a693b9d4a9a847e73623f',1,'Controller']]],
+  ['getoutputjsonfilename_13',['getOutputJsonFileName',['../class_controller.html#a2f7b56a88638318d5cfdc9816e9bab53',1,'Controller']]],
+  ['getsrc_14',['getSrc',['../class_three_terminal.html#a2fa826ec663f34e21242a22069b385ea',1,'ThreeTerminal']]],
+  ['gett1_15',['getT1',['../class_two_terminal.html#a5a0eae3771f18083952c6c2f2e5d9285',1,'TwoTerminal']]],
+  ['gett2_16',['getT2',['../class_two_terminal.html#a5a81030fb4fc3baa13831d21ce10c909',1,'TwoTerminal']]],
+  ['gettoplogyid_17',['getToplogyID',['../class_controller.html#a7752ed6b27da2f0aed8e474caf422a03',1,'Controller']]]
 ];

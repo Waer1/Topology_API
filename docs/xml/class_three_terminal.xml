@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_three_terminal" kind="class" language="C++" prot="public">
+    <compoundname>ThreeTerminal</compoundname>
+    <basecompoundref refid="class_device" prot="public" virt="non-virtual">Device</basecompoundref>
+    <derivedcompoundref refid="class_nmos" prot="public" virt="non-virtual">Nmos</derivedcompoundref>
+    <derivedcompoundref refid="class_pmos" prot="public" virt="non-virtual">Pmos</derivedcompoundref>
+    <includes refid="_three_terminal_8h" local="no">ThreeTerminal.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_three_terminal_1a551a49e99976179b6f1889480bb2b7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ThreeTerminal::ThreeTerminal</definition>
+        <argsstring>(string id, map&lt; string, string &gt; netList, float defalutval, float max, float min)</argsstring>
+        <name>ThreeTerminal</name>
+        <qualifiedname>ThreeTerminal::ThreeTerminal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt;</type>
+          <declname>netList</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>defalutval</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Three Terminal object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of that object passed to higher class </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>netList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of connected componentto this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defalutval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max valude from this device </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>min valude from this device </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="30" column="5" bodyfile="ThreeTerminal.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a2fa826ec663f34e21242a22069b385ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ThreeTerminal::getSrc</definition>
+        <argsstring>()</argsstring>
+        <name>getSrc</name>
+        <qualifiedname>ThreeTerminal::getSrc</qualifiedname>
+        <briefdescription>
+<para>Get src of the three terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="36" column="12" bodyfile="ThreeTerminal.cpp" bodystart="5" bodyend="5"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">Device::netList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a226bd66e422d7b684e8356d0fe0d4319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ThreeTerminal::getDrain</definition>
+        <argsstring>()</argsstring>
+        <name>getDrain</name>
+        <qualifiedname>ThreeTerminal::getDrain</qualifiedname>
+        <briefdescription>
+<para>Get the Drain of the three terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="42" column="12" bodyfile="ThreeTerminal.cpp" bodystart="9" bodyend="9"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">Device::netList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a83a7250805f5f98790476d5bfa9959b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ThreeTerminal::getGate</definition>
+        <argsstring>()</argsstring>
+        <name>getGate</name>
+        <qualifiedname>ThreeTerminal::getGate</qualifiedname>
+        <briefdescription>
+<para>Get the Gate of the three terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="48" column="12" bodyfile="ThreeTerminal.cpp" bodystart="7" bodyend="7"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">Device::netList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a0d1b525ce67cd51bf800dc219b8beffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreeTerminal::setSrc</definition>
+        <argsstring>(string src)</argsstring>
+        <name>setSrc</name>
+        <qualifiedname>ThreeTerminal::setSrc</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Set the Src of the three terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="54" column="10" bodyfile="ThreeTerminal.cpp" bodystart="11" bodyend="11"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">Device::netList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1aa1818205b0508cb4d294180122b3e6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreeTerminal::setGate</definition>
+        <argsstring>(string gate)</argsstring>
+        <name>setGate</name>
+        <qualifiedname>ThreeTerminal::setGate</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>gate</declname>
+        </param>
+        <briefdescription>
+<para>Set the Gate of the three terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="60" column="10" bodyfile="ThreeTerminal.cpp" bodystart="15" bodyend="15"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">Device::netList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a3504d9bb3840c9ecfb0fc97ae871bfe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreeTerminal::setDrain</definition>
+        <argsstring>(string drain)</argsstring>
+        <name>setDrain</name>
+        <qualifiedname>ThreeTerminal::setDrain</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>drain</declname>
+        </param>
+        <briefdescription>
+<para>Set the Drain of the three terminal <ref refid="class_device" kindref="compound">Device</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>drain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="66" column="10" bodyfile="ThreeTerminal.cpp" bodystart="13" bodyend="13"/>
+        <references refid="class_device_1a8d5b746dfca41668c1736728cb76030a" compoundref="_device_8h" startline="39">Device::netList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_three_terminal_1a41f8e495abe54ac8e077e4190b7cf1f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ThreeTerminal::~ThreeTerminal</definition>
+        <argsstring>()</argsstring>
+        <name>~ThreeTerminal</name>
+        <qualifiedname>ThreeTerminal::~ThreeTerminal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ThreeTerminal.h" line="68" column="5" bodyfile="ThreeTerminal.cpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>inheritance class from <ref refid="class_device" kindref="compound">Device</ref> that contain all devices with three terminal </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Device</label>
+        <link refid="class_device"/>
+      </node>
+      <node id="3">
+        <label>Nmos</label>
+        <link refid="class_nmos"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Pmos</label>
+        <link refid="class_pmos"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Device</label>
+        <link refid="class_device"/>
+      </node>
+      <node id="1">
+        <label>ThreeTerminal</label>
+        <link refid="class_three_terminal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ThreeTerminal.h" line="17" column="1" bodyfile="ThreeTerminal.h" bodystart="19" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_device_1a45e1856076d6698be39f3f7772491767" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>defaulval</name></member>
+      <member refid="class_device_1a9c17625480f49ed3306cb1f43dfad6f0" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>Device</name></member>
+      <member refid="class_device_1a64ba12dcc5f4267486c5d545d04dcf68" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>Device</name></member>
+      <member refid="class_device_1a2c3041835f84c73c86149976f2c6f565" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>get_Default</name></member>
+      <member refid="class_device_1acada68ab3f642242deb479ae553daae7" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>get_id</name></member>
+      <member refid="class_device_1a751b026eebbf5cb268dc0e3aa7f145d7" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>get_max</name></member>
+      <member refid="class_device_1a84b6c9c4b8cf7505c1e2441b16562661" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>get_min</name></member>
+      <member refid="class_device_1a1d200a41b1a0b802997f984d50d543ef" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>get_netList</name></member>
+      <member refid="class_device_1a2ac3ac9ed7a0de9f5f59ad5441eb1373" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>get_type</name></member>
+      <member refid="class_three_terminal_1a226bd66e422d7b684e8356d0fe0d4319" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>getDrain</name></member>
+      <member refid="class_three_terminal_1a83a7250805f5f98790476d5bfa9959b3" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>getGate</name></member>
+      <member refid="class_three_terminal_1a2fa826ec663f34e21242a22069b385ea" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>getSrc</name></member>
+      <member refid="class_device_1a157555eda7bcf277b286458011604dd7" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>id</name></member>
+      <member refid="class_device_1ac1a539b53f299c43ea749cfdaa91376f" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>max</name></member>
+      <member refid="class_device_1a1f0ac3ac3dc31ba764bedd52492d7a9d" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>min</name></member>
+      <member refid="class_device_1a8d5b746dfca41668c1736728cb76030a" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>netList</name></member>
+      <member refid="class_device_1a8941e81633c72f60a504c18492268696" prot="public" virt="virtual"><scope>ThreeTerminal</scope><name>Print_Device</name></member>
+      <member refid="class_device_1a44cd3b15f0e9a16cff36157653d6820c" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>set_Default</name></member>
+      <member refid="class_device_1aed16b99dbcd7b28d307adc668bda8dd3" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>set_Max</name></member>
+      <member refid="class_device_1ad74f349907b01a87ace4ea100f3b50e6" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>set_Min</name></member>
+      <member refid="class_device_1a143d5ae3424066aef14c824422683108" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>set_netList</name></member>
+      <member refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>set_type</name></member>
+      <member refid="class_three_terminal_1a3504d9bb3840c9ecfb0fc97ae871bfe0" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>setDrain</name></member>
+      <member refid="class_three_terminal_1aa1818205b0508cb4d294180122b3e6d1" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>setGate</name></member>
+      <member refid="class_device_1a440522d88e792af168cdc517b85c31a9" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>setID</name></member>
+      <member refid="class_three_terminal_1a0d1b525ce67cd51bf800dc219b8beffb" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>setSrc</name></member>
+      <member refid="class_three_terminal_1a551a49e99976179b6f1889480bb2b7c6" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>ThreeTerminal</name></member>
+      <member refid="class_device_1aecd8da12c9d5e6d70fbabca34e005c2f" prot="protected" virt="non-virtual"><scope>ThreeTerminal</scope><name>type</name></member>
+      <member refid="class_device_1a9dabc419c8d8df3a686c33ce042bc99a" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>~Device</name></member>
+      <member refid="class_three_terminal_1a41f8e495abe54ac8e077e4190b7cf1f9" prot="public" virt="non-virtual"><scope>ThreeTerminal</scope><name>~ThreeTerminal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

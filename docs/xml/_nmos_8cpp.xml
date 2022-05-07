@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_nmos_8cpp" kind="file" language="C++">
+    <compoundname>Nmos.cpp</compoundname>
+    <includes refid="_nmos_8h" local="yes">Nmos.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Device.h</label>
+        <link refid="_device_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Nmos.cpp</label>
+        <link refid="_nmos_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Nmos.h</label>
+        <link refid="_nmos_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ThreeTerminal.h</label>
+        <link refid="_three_terminal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_nmos_8h" kindref="compound">Nmos.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_nmos_1a17d7ad73ddabb9048cd4b11e3e8182a0" refkind="member"><highlight class="normal"><ref refid="class_nmos_1a17d7ad73ddabb9048cd4b11e3e8182a0" kindref="member">Nmos::Nmos</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>typ,<sp/>map&lt;string,<sp/>string&gt;<sp/>netList,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>def,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min):<ref refid="class_three_terminal" kindref="compound">ThreeTerminal</ref>(typ,<sp/>netList,<sp/>def,<sp/>max,<sp/>min)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_device_1ad2490d0be9a0bc107ceac733a07443d4" kindref="member">set_type</ref>(</highlight><highlight class="stringliteral">&quot;Nmos&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nmos_1a5ea1b8155fde8f80fb8aa989ade3402f" kindref="member">Nmos::Print_Device</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Nmos<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_device_1acada68ab3f642242deb479ae553daae7" kindref="member">get_id</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_device_1a8941e81633c72f60a504c18492268696" kindref="member">Device::Print_Device</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_nmos_1ac5fbbc5920499e56e2335e002b18a199" refkind="member"><highlight class="normal"><ref refid="class_nmos_1ac5fbbc5920499e56e2335e002b18a199" kindref="member">Nmos::~Nmos</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Nmos.cpp"/>
+  </compounddef>
+</doxygen>

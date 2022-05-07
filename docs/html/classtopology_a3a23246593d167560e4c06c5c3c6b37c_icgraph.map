@@ -1,5 +1,7 @@
 <map id="topology::getID" name="topology::getID">
-<area shape="rect" id="node1" title="getID object" alt="" coords="412,5,521,32"/>
-<area shape="rect" id="node2" href="$class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="180,5,364,32"/>
-<area shape="rect" id="node3" href="$class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node1" title="getID object" alt="" coords="809,5,919,32"/>
+<area shape="rect" id="node2" href="$class_a_p_i.html#a7f4a57de2252eabfdc856490fa7dfc97" title="convert the topology object to json object by divide it into smaller tasks. each task is convert Devi..." alt="" coords="577,5,761,32"/>
+<area shape="rect" id="node3" href="$class_a_p_i.html#ae3bae133372ce4d900e2bc6f51807fd0" title="function used to convert topology in memory to json file in a given json file name" alt="" coords="403,5,529,32"/>
+<area shape="rect" id="node4" href="$class_controller.html#a7744237c0146b480844fc39192ef43c2" title="Write a given topology from the memory to a JSON file by calling api.write with the input name and th..." alt="" coords="212,5,355,32"/>
+<area shape="rect" id="node5" href="$class_controller.html#abd7e2ce75590beb0f1258ec56666ba02" title="the start function of the program" alt="" coords="5,5,164,32"/>
 </map>
